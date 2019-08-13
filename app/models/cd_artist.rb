@@ -1,0 +1,2 @@
+class CdArtist < ApplicationRecord
+end
