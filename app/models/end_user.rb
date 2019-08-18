@@ -4,6 +4,11 @@ class EndUser < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  validates :zip , format: {with: /\A[0-9]{7}\z/}
+  validates :phone_number , format: {with: /\A[0-9]{11}\z/}
+  validates :kana_last , format: {with: /\A[ァ-ヶーー]+\z/}
+  validates :kana_first , format: {with: /\A[ァ-ヶーー]+\z/}
+
   has_many :delivery_addresses
   has_many :orders
   has_many :carts

@@ -4,6 +4,7 @@ class DeviseCreateEndUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :end_users do |t|
       ## Database authenticatable
+
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
@@ -26,6 +27,16 @@ class DeviseCreateEndUsers < ActiveRecord::Migration[5.2]
       # t.datetime :confirmed_at
       # t.datetime :confirmation_sent_at
       # t.string   :unconfirmed_email # Only if using reconfirmable
+      t.string :last_name,          null: false, default: ""
+      t.string :first_name,         null: false, default: ""
+      t.string :kana_last,          null: false, default: ""
+      t.string :kana_first,         null: false, default: ""
+      t.string :zip,                null: false, default: ""
+      t.text :address,              null: false, default: ""
+      t.string :phone_number,       null: false, default: ""
+      t.string :email,              null: false, default: ""
+      t.string :password,           null: false, default: ""
+      t.datetime :deleted_at,       null: false, default: ""
 
       ## Lockable
       # t.integer  :failed_attempts, default: 0, null: false # Only if lock strategy is :failed_attempts
@@ -35,6 +46,7 @@ class DeviseCreateEndUsers < ActiveRecord::Migration[5.2]
 
       t.timestamps null: false
     end
+
 
     add_index :end_users, :email,                unique: true
     add_index :end_users, :reset_password_token, unique: true
