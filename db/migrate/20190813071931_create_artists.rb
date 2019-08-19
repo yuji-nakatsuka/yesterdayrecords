@@ -4,6 +4,6 @@ class CreateArtists < ActiveRecord::Migration[5.2]
       t.string :artist,null: false
       t.timestamps
     end
-    add index :artists, :artist,unique:true
+    add_index :artists, :artist,unique:true
   end
 end
