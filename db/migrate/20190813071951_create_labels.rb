@@ -5,6 +5,6 @@ class CreateLabels < ActiveRecord::Migration[5.2]
       t.timestamps
       t.string :label,null: false
     end
-    add index :labels, :label,unique:true
+    add_index :labels, :label,unique:true
   end
 end

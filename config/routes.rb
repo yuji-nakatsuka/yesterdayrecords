@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  devise_for :end_users
+
+  devise_for :admins, controllers: {
+  sessions:      'admins/sessions',
+  passwords:     'admins/passwords',
+  registrations: 'admins/registrations'
+}
+devise_for :end_users, controllers: {
+  sessions:      'end_users/sessions',
+  passwords:     'end_users/passwords',
+  registrations: 'end_users/registrations'
+}
+
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :end_users, only: [:leave,:edit,:update] do
+  resources :end_users, only: [:leave,:edit,:update,:show] do
     resources :orders, only: [:confirm,:create,:finish,:index,:show]
     resources :carts, only: [:destroy,:index,:add]
   end
@@ -18,4 +28,6 @@ Rails.application.routes.draw do
       resources :orders, only: [:show,:update]
     end
   end
+
+
 end
