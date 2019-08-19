@@ -25,12 +25,16 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
   end
 
   create_table "artists", force: :cascade do |t|
-    t.string "artist"
+    t.string "artist", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["artist"], name: "index_artists_on_artist", unique: true
   end
 
   create_table "carts", force: :cascade do |t|
+    t.integer "end_user_id", null: false
+    t.integer "cd_id", null: false
+    t.integer "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,11 +47,16 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
   end
 
   create_table "delivery_addresses", force: :cascade do |t|
+    t.integer "end_user_id", null: false
+    t.string "zip", null: false
+    t.text "delivery_address", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "discs", force: :cascade do |t|
+    t.integer "sell_cd_id", null: false
+    t.string "disc", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -58,6 +67,7 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "password", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "first_name", default: "", null: false
@@ -76,20 +86,30 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "genre", null: false
+    t.index ["genre"], name: "index_genres_on_genre", unique: true
   end
 
   create_table "labels", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "label"
+    t.string "label", null: false
+    t.index ["label"], name: "index_labels_on_label", unique: true
   end
 
   create_table "order_contents", force: :cascade do |t|
+    t.integer "order_id", null: false
+    t.integer "sell_cd_id", null: false
+    t.string "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
+    t.integer "end_user_id", null: false
+    t.integer "total_price", null: false
+    t.integer "payment_method", null: false
+    t.integer "delivery_address_id", null: false
+    t.integer "delivery_status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -109,6 +129,9 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
   end
 
   create_table "songs", force: :cascade do |t|
+    t.integer "disc_id", null: false
+    t.integer "number", null: false
+    t.string "song", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
