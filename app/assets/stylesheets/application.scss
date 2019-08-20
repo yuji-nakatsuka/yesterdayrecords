@@ -13,11 +13,25 @@
  *= require_tree .
  *= require_self
  */
-<<<<<<< HEAD:app/assets/stylesheets/application.scss
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
-=======
  @import "bootstrap-sprockets";
  @import "bootstrap";
->>>>>>> 7e48367bea9975bbc95458759c7b110fd72e8373:app/assets/stylesheets/application.scss
+
+.admin-login{
+	text-align: center;
+	padding: 50px;
+}
+
+.admin-login-form{
+	display:inline-block;
+	border-style: solid;
+	padding: 20px;
+}
+
+.admin-login-form-label{
+	margin: 0 auto;
+	text-align: left;
+	padding: 5px;
+}
+.admin-login-form-remember{
+	text-align: right;
+}

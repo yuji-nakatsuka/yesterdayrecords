@@ -1,14 +1,24 @@
 class CartsController < ApplicationController
-def index
+	def index
+		@carts = Cart.where(end_user_if: params[current_end_user.id])
+	end
 
-end
+	def destroy
+		cart = Cart.find_by(params[:id])
+		cart.destroy
+		redirect_to end_user_carts_path
+	end
 
-def destroy
+	def add
+		cart = Cart.new(cart_params)
+		cart.save
+		redirect_to end_user_carts_path
+	end
 
-end
-
-def add
-
-end
+	private
+		def cart_params
+			params.require(:cart).permit(:end_user_id,:sell_cd_id,:quantity)
+		end
+	end
 
 end
