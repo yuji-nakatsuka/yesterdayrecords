@@ -1,54 +1,50 @@
  <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <nav class="nav navbar-nav navbar-left">
-      <span>Bookers</span>
-    </nav>
 
-        <% if user_signed_in? %>
+        <% if end_user_signed_in? %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li>
-         <%= link_to "マイページ", end_user_path(current_user.id), class: "glyphicon glyphicon-home home", style:"padding-top:15px;"%>
+         <%= link_to "マイページ", end_user_path(current_end_user.id), class: "glyphicon", style:"padding-top:15px;"%>
         </li>
         <li>
-           <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+           <%= link_to "Top", root_path,class: "glyphicon", style:"padding-top:15px;"%>
         </li>
         <li>
-          <%= link_to "カート", end_user_carts_path(current_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+          <%= link_to "カート", end_user_carts_path(current_end_user.id), class: "glyphicon", style:"padding-top:15px;"%>
         </li>
         <li>
-          <%= link_to "Log out", destroy_end_user_session_path, method: :delete, class: "glyphicon glyphicon-log-out logout", style:"padding-top:15px;"%>
+          <%= link_to "Log out", destroy_end_user_session_path, method: :delete, class: "glyphicon", style:"padding-top:15px;"%>
+        </li>
+        <li><%= link_to "#{current_end_user.kana_first}", end_user_path(current_end_user.id), class: "glyphicon", style:"padding-top:15px;" %>
         </li>
 
 
       </ul>
     </nav>
-
-        <div>
-        <p><%= current_user.name %></p>
-        </div>
 
         <% else %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to "Log in", new_end_user_session_path, class: "glyphicon glyphicon-home home", style:"padding-top:15px;" %>
+          <%= link_to "Log in", new_end_user_session_path, class: "glyphicon", style:"padding-top:15px;" %>
         </li>
         <li>
-          <%= link_to "Sign up", new_end_user_registration_path, class: "glyphicon glyphicon-link about", style:"padding-top:15px;"%>
+          <%= link_to "Sign up", new_end_user_registration_path, class: "glyphicon", style:"padding-top:15px;"%>
         </li>
         <li>
-          <%= link_to "カート", end_user_carts_path(current_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+          <%= link_to "カート", new_end_user_session_path, class: "glyphicon", style:"padding-top:15px;"%>
         </li>
         <li>
-          <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+          <%= link_to "Top", root_path,class: "glyphicon", style:"padding-top:15px;"%>
+        </li>
+        <li>
+          <%= link_to "未ログイン", new_end_user_session_path, class: "glyphicon", style:"padding-top:15px;" %>
+        </li>
         </li>
       </ul>
     </nav>
 
-    <div>
-        <p>未ログイン</p>
-    </div>
           <% end %>
   </div>
 </header>
