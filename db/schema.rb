@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
 
   create_table "discs", force: :cascade do |t|
     t.integer "sell_cd_id", null: false
+    t.integer "number", null: false
     t.string "disc", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
