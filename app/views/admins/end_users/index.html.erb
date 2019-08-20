@@ -10,17 +10,19 @@
 		<td></td>
 		<td></td>
 	</tr>
-	<tr>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>a</td>
-		<td>編集</td>
-		<td>削除</td>
-	</tr>
+	<% @end_users.each do |end_user| %>
+		<tr>
+			<td><%=end_user.first_name%></td>
+			<td><%=end_user.last_name%></td>
+			<td><%=end_user.kana_first%></td>
+			<td><%=end_user.kana_last%></td>
+			<td><%=end_user.zip%></td>
+			<td><%=end_user.address%></td>
+			<td><%=end_user.phone_number%></td>
+			<td><%=end_user.email%></td>
+			<td><%= end_user.created_at.strftime('%Y/%m/%d') %></td>
+			<td><%=link_to edit_end_user_path(end_user) do "編集" end%></td>
+			<td><%=link_to end_user_registration_path(end_user) do "削除" end%></td>
+		</tr>
+	<%end%>
 </table>

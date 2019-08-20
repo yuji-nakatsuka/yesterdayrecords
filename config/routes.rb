@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     resources :sell_cds, only: [:index,:edit,:destroy,:new,:show,:update,:create]
     get 'top' => 'top#top'
     resources :end_users, only: [:index,:edit,:destroy,:show,:update] do
-      resources :orders, only: [:show,:update]
+      resources :orders, only: [:show,:update,:index]
     end
   end
 end
