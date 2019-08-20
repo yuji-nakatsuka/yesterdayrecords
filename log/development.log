@@ -3153,3 +3153,1709 @@ Processing by EndUsers::SessionsController#new as HTML
 Completed 200 OK in 241ms (Views: 239.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (33.0ms)
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 644ms (Views: 643.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1296ms (Views: 1276.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 359ms (Views: 358.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/end_users/registrations_controller.rb:3:in `<top (required)>'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 1133ms (Views: 1106.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:28:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/end_users/registrations_controller.rb:3:in `<top (required)>'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:32:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 1132ms (Views: 1114.1ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-20 07:34:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zUWOYhrcGQuFEMCAvWIylvwRKaamwa2kAYflrGEQ1TdSQcXu4Dn/T0m4dRCdAOMp2VtjkMGShstei3E+0BQ1YA==", "end_user"=>{"first_name"=>"掛谷", "last_name"=>"啓人", "kana_last"=>"カケヤ", "kana_first"=>"ケイト", "zip"=>"5520022", "address"=>"大阪府大阪市", "phone_number"=>"07037718468", "email"=>"yotunazuna@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "yotunazuna@icloud.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Create (3.5ms)[0m  [1m[32mINSERT INTO "end_users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name", "kana_last", "kana_first", "zip", "address", "phone_number") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "yotunazuna@icloud.com"], ["encrypted_password", "$2a$11$MhHdUUhUsUtaiPKe2zIybe88aY51UQ5r79UNSTvbjGJYgAEz1fnpy"], ["created_at", "2019-08-20 07:34:02.720984"], ["updated_at", "2019-08-20 07:34:02.720984"], ["first_name", "掛谷"], ["last_name", "啓人"], ["kana_last", "カケヤ"], ["kana_first", "ケイト"], ["zip", "5520022"], ["address", "大阪府大阪市"], ["phone_number", "07037718468"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 6.9ms)
+
+
+  
+LoadError (Unable to autoload constant End_User, expected /vagrant/yesterdayrecords/app/models/end_user.rb to define it):
+  
+app/controllers/application_controller.rb:7:in `after_sign_in_path_for'
+Started POST "/end_users" for 10.0.2.2 at 2019-08-20 07:38:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zUWOYhrcGQuFEMCAvWIylvwRKaamwa2kAYflrGEQ1TdSQcXu4Dn/T0m4dRCdAOMp2VtjkMGShstei3E+0BQ1YA==", "end_user"=>{"first_name"=>"掛谷", "last_name"=>"啓人", "kana_last"=>"カケヤ", "kana_first"=>"ケイト", "zip"=>"5520022", "address"=>"大阪府大阪市", "phone_number"=>"07037718468", "email"=>"yotunazuna@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "yotunazuna@icloud.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 1164ms (Views: 1009.4ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-20 07:38:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kMpS/GGZOLJrvslh1BM/fgxVWRGw+ylOAsINk+PjbggPzhlwm3ze9qcWfPH0ce7BKR8TJ9eoAiFdzpkBUueOXw==", "end_user"=>{"first_name"=>"掛谷", "last_name"=>"啓人", "kana_last"=>"カケヤ", "kana_first"=>"ケイト", "zip"=>"5520022", "address"=>"大阪府大阪市", "phone_number"=>"07037718468", "email"=>"muryoku0es@icloud.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "muryoku0es@icloud.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Create (3.3ms)[0m  [1m[32mINSERT INTO "end_users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name", "kana_last", "kana_first", "zip", "address", "phone_number") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "muryoku0es@icloud.com"], ["encrypted_password", "$2a$11$WS5BYDuwC.btMf21n6QXjOBs55EQz/YG3/W2b0i0dQEUnsvH7VRke"], ["created_at", "2019-08-20 07:38:32.625075"], ["updated_at", "2019-08-20 07:38:32.625075"], ["first_name", "掛谷"], ["last_name", "啓人"], ["kana_last", "カケヤ"], ["kana_first", "ケイト"], ["zip", "5520022"], ["address", "大阪府大阪市"], ["phone_number", "07037718468"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:38:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 267ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users" for 10.0.2.2 at 2019-08-20 07:39:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 238ms (Views: 220.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 257ms (Views: 246.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:39:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (2.1ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 260ms (Views: 248.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users" for 10.0.2.2 at 2019-08-20 07:39:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/" for 10.0.2.2 at 2019-08-20 07:39:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:39:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 221ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:39:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 279ms (Views: 261.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:39:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  [1m[36mEndUser Load (1.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 216ms (Views: 207.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:39:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  [1m[36mEndUser Load (0.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 300ms (Views: 288.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:39:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 224ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/1/edit" for 10.0.2.2 at 2019-08-20 07:40:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/1/edit"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/1/edit" for 10.0.2.2 at 2019-08-20 07:40:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/1/edit"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/1/edit" for 10.0.2.2 at 2019-08-20 07:40:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/1/edit"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/1" for 10.0.2.2 at 2019-08-20 07:40:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/1/edit" for 10.0.2.2 at 2019-08-20 07:40:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/1/edit"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books" for 10.0.2.2 at 2019-08-20 07:40:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:40:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 183ms (Views: 171.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:40:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:40:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 254ms (Views: 241.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_user/1" for 10.0.2.2 at 2019-08-20 07:40:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_user/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_user/1" for 10.0.2.2 at 2019-08-20 07:41:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_user/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:41:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (0.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:41:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 216ms (Views: 201.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users" for 10.0.2.2 at 2019-08-20 07:41:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/" for 10.0.2.2 at 2019-08-20 07:41:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:41:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:41:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 251ms (Views: 237.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:41:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:41:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 212ms (Views: 197.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:41:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 223ms (Views: 211.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users" for 10.0.2.2 at 2019-08-20 07:41:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/" for 10.0.2.2 at 2019-08-20 07:41:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:41:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  [1m[36mEndUser Load (0.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:41:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 230ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 07:41:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 07:42:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 07:42:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/sign_out"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:42:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 249ms (Views: 236.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:42:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (1.4ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 244ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:42:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (0.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 212ms (Views: 203.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 07:42:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"53XJJhTZE5Pt7hhQKudXUHHkjhNPaEt5gRbeqLqaz5N4cYKq7jz11yFGrcAKhYbvVK7EJSg7YBbeGko6C54vxA=="}
+  [1m[36mEndUser Load (1.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 199ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 07:42:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jTUnYUywKHPX+4o18twF7jdurvr2C56rdGXxU2XPD+bnFoqAv0x6lbbW/NruUpdwbGh9qj9ZIEplmMbSSawMbQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 181ms (Views: 172.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:42:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 214ms (Views: 205.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for 10.0.2.2 at 2019-08-20 07:42:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sign_up" for 10.0.2.2 at 2019-08-20 07:43:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:43:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (128.9ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x000056165bf64dd0>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_47327016075320'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:43:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (154.8ms)
+Completed 500 Internal Server Error in 205ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x000056165c0088e0>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_47327016406280'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:43:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (127.2ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x000056165ce685e8>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_47327023942240'
+Started GET "/sign_up" for 10.0.2.2 at 2019-08-20 07:43:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:43:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (115.2ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x000056165c103128>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_47327016936500'
+Started GET "/end_users" for 10.0.2.2 at 2019-08-20 07:43:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/" for 10.0.2.2 at 2019-08-20 07:44:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:44:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  Rendering end_users/sessions/new.html.erb within layouts/application
+  Rendered end_users/shared/_links.html.erb (0.7ms)
+  Rendered end_users/sessions/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 1171ms (Views: 1154.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:44:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 286ms (Views: 284.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-20 07:44:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 388ms (Views: 387.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-20 07:46:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mzw5kjwQ3OBZR0RameW+BmOWBHf2KjxxZZUZrip/q+NZH5Rzz+yOBjhqMrWFayyYOJDXJz94gpB0aC4vBhyoaA==", "end_user"=>{"first_name"=>"田中", "last_name"=>"太郎", "kana_last"=>"タナカ", "kana_first"=>"タロウ", "zip"=>"5520000", "address"=>"大阪府大阪市中央区", "phone_number"=>"07000000000", "email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Create (2.6ms)[0m  [1m[32mINSERT INTO "end_users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name", "kana_last", "kana_first", "zip", "address", "phone_number") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "a@a"], ["encrypted_password", "$2a$11$n6PMgjrjzc7tlb0sZKgJBessQ7p2RHs44NzAUnX4rLJwx4uJogVPO"], ["created_at", "2019-08-20 07:46:40.002919"], ["updated_at", "2019-08-20 07:46:40.002919"], ["first_name", "田中"], ["last_name", "太郎"], ["kana_last", "タナカ"], ["kana_first", "タロウ"], ["zip", "5520000"], ["address", "大阪府大阪市中央区"], ["phone_number", "07000000000"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 158ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:46:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (128.1ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x00007f90cccf2fb0>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_70130005442900'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:47:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (151.1ms)
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000056165bf670d0>:0x00007f90b82c4070>):
+    4:       <span>Bookers</span>
+    5:     </nav>
+    6: 
+    7:         <% if user_signed_in? %>
+    8:     <nav>
+    9:       <ul class="nav navbar-nav navbar-right">
+   10:         <li>
+  
+app/views/tops/top.html.erb:7:in `_app_views_tops_top_html_erb__2585091087757243046_70129770964540'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:48:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (152.5ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x000055fc889df4b0>:0x000055fc889da168>):
+     8:     <nav>
+     9:       <ul class="nav navbar-nav navbar-right">
+    10:         <li>
+    11:          <%= link_to "マイページ", end_user_path(current_user.id), class: "glyphicon glyphicon-home home", style:"padding-top:15px;"%>
+    12:         </li>
+    13:         <li>
+    14:            <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+  
+app/views/tops/top.html.erb:11:in `_app_views_tops_top_html_erb__31678488615265353_47271556105200'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:54:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.7ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (150.4ms)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x000055fc889df4b0>:0x000055fc87eafea0>):
+    14:            <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+    15:         </li>
+    16:         <li>
+    17:           <%= link_to "カート", end_user_carts_path(current_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+    18:         </li>
+    19:         <li>
+    20:           <%= link_to "Log out", destroy_end_user_session_path, method: :delete, class: "glyphicon glyphicon-log-out logout", style:"padding-top:15px;"%>
+  
+app/views/tops/top.html.erb:17:in `_app_views_tops_top_html_erb__31678488615265353_47271549820260'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:54:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.4ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (124.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x000055fc889df4b0>:0x000055fc892d1348>):
+    25:     </nav>
+    26: 
+    27:         <div>
+    28:         <p><%= current_user.name %></p>
+    29:         </div>
+    30: 
+    31:         <% else %>
+  
+app/views/tops/top.html.erb:28:in `_app_views_tops_top_html_erb__31678488615265353_47271560777440'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:55:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.9ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<EndUser:0x000055fc88a1c400>):
+    25:     </nav>
+    26: 
+    27:         <div>
+    28:         <p><%= current_end_user.name %></p>
+    29:         </div>
+    30: 
+    31:         <% else %>
+  
+app/views/tops/top.html.erb:28:in `_app_views_tops_top_html_erb__31678488615265353_47271557949920'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:55:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<EndUser:0x000055fc88762fe8>):
+    25:     </nav>
+    26: 
+    27:         <div>
+    28:         <p><%= current_end_user.name %></p>
+    29:         </div>
+    30: 
+    31:         <% else %>
+  
+app/views/tops/top.html.erb:28:in `_app_views_tops_top_html_erb__31678488615265353_47271554970700'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:57:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:7
+  Rendered tops/top.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1055ms (Views: 1042.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:57:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (20.2ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    38:           <%= link_to "Sign up", new_end_user_registration_path, class: "glyphicon glyphicon-link about", style:"padding-top:15px;"%>
+    39:         </li>
+    40:         <li>
+    41:           <%= link_to "カート", end_user_carts_path(current_end_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+    42:         </li>
+    43:         <li>
+    44:           <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+  
+app/views/tops/top.html.erb:41:in `_app_views_tops_top_html_erb__31678488615265353_47271552963660'
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:58:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 281ms (Views: 266.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:59:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    36:           <%= link_to "Sign up", new_end_user_registration_path, class: "glyphicon glyphicon-link about", style:"padding-top:15px;"%>
+    37:         </li>
+    38:         <li>
+    39:           <%= link_to "カート", end_user_carts_path(current_end_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+    40:         </li>
+    41:         <li>
+    42:           <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+  
+app/views/tops/top.html.erb:39:in `_app_views_tops_top_html_erb__31678488615265353_47271526342880'
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:59:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  Rendering end_users/sessions/new.html.erb within layouts/application
+  Rendered end_users/shared/_links.html.erb (0.8ms)
+  Rendered end_users/sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 244ms (Views: 243.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 07:59:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qyIgmFz1A3J0w18Wcp9jBYBNu/BNBrJo4jHVXu3alHnjzNkhGwTbnI+dzWl1J4zhk0oQ+QKVgxRhVve7D5JkxQ==", "end_user"=>{"email"=>"a@a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mEndUser Load (1.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."email" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 139ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 07:59:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.9ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 252ms (Views: 240.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:00:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 331ms (Views: 317.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:00:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/yesterdayrecords/app/views/tops/top.html.erb:22: syntax error, unexpected tLABEL, expecting '='
+...ent_end_user.first_name ,style:"padding-top:15px;");@output_...
+...                         ^~~~~~):
+  
+app/views/tops/top.html.erb:22: syntax error, unexpected tLABEL, expecting '='
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:02:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (3.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 334ms (Views: 317.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:03:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 304ms (Views: 288.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:04:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.9ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 334ms (Views: 319.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:05:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.4ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 286ms (Views: 276.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:05:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 310ms (Views: 295.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:05:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.1ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 336ms (Views: 319.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:06:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (0.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 214ms (Views: 201.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/end_users/sign_out" for 10.0.2.2 at 2019-08-20 08:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e/OLJVhrjG1Tt3osKBRRBoH4Jk8+f1LlV9dTmSb+GowR0CbEq5feizKaDMM0msOY2v71H/ct7ARGKmQYCp0ZBw=="}
+  [1m[36mEndUser Load (1.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:06:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    36:           <%= link_to "Sign up", new_end_user_registration_path, class: "glyphicon glyphicon-link about", style:"padding-top:15px;"%>
+    37:         </li>
+    38:         <li>
+    39:           <%= link_to "カート", end_user_carts_path(current_end_user.id), class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+    40:         </li>
+    41:         <li>
+    42:           <%= link_to "Top", root_path,class: "glyphicon glyphicon-log-in sign_in", style:"padding-top:15px;"%>
+  
+app/views/tops/top.html.erb:39:in `_app_views_tops_top_html_erb__31678488615265353_70142656774640'
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:08:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (1.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/tops/top.html.erb:5
+  Rendered tops/top.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 1213ms (Views: 1191.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-20 08:08:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  Rendered tops/top.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 289ms (Views: 274.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-20 08:08:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::SessionsController#new as HTML
+  Rendering end_users/sessions/new.html.erb within layouts/application
+  Rendered end_users/shared/_links.html.erb (0.7ms)
+  Rendered end_users/sessions/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 1136ms (Views: 1118.6ms | ActiveRecord: 3.4ms)
+
+

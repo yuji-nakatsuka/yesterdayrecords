@@ -8,3 +8,9 @@ class SellCd < ApplicationRecord
 	belongs_to :genre
 	accepts_nested_attributes_for :discs, allow_destroy: true
 end
+
+
+def self.search(search)
+        return self.all unless search
+        self.where(['content LIKE ?', "%#{search}%"])
+    end
