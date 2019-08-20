@@ -1,0 +1,53 @@
+
+<div class="container">
+
+  <div class="main">
+
+    <div class="top-infos">
+      <div class="cd-image">
+        <img src=".jpg">
+      </div>
+
+      <div class="title-group">
+        <h2>title</h2>
+        <p class="genre-name">ジャンル名</p>
+        <h2>artist名</h2>
+      </div>
+
+      <div class="value">
+        <p class="info-label">価格</p>
+        <p class="info-status">2,000円</p>
+      </div>
+
+      <div class="stock">
+        <p class="info-label">在庫数</p>
+        <p class="info-status">16</p>
+      </div>
+
+      <div class="sale-status">
+        <p class="info-label">在庫数</p>
+        <p class="info-status">16</p>
+      </div>
+
+    <div class="order-infos">
+
+        <%= form_for @sell_cd do |f| %>
+        <div class="order-info">
+          <p class="info-label">購入個数</p>
+          <%= f.text_field :quantity %>
+        </div>
+
+          <%= f.hidden_field :sell_cd_id, :value => @sell_cd.id %>
+
+        <div class="order-info">
+          <%= f.submit "カートに追加", class:"btn btn-primary btn-lg btn-block" %>
+        </div>
+        <% end %>
+
+    </div>
+
+  <div class="songs-infos">
+    
+  </div>
+
+</div>
