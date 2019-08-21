@@ -39,13 +39,6 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "cd_artists", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "artist_id", null: false
-    t.integer "cd_id", null: false
-  end
-
   create_table "delivery_addresses", force: :cascade do |t|
     t.integer "end_user_id", null: false
     t.string "zip", null: false
@@ -118,6 +111,7 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
   create_table "sell_cds", force: :cascade do |t|
     t.integer "label_id", null: false
     t.integer "genre_id", null: false
+    t.integer "artist_id", null: false
     t.string "title", null: false
     t.integer "value", null: false
     t.text "image_id"

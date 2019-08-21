@@ -3,6 +3,7 @@ class CreateSellCds < ActiveRecord::Migration[5.2]
     create_table :sell_cds do |t|
       t.integer :label_id,null: false
       t.integer :genre_id,null: false
+      t.integer :artist_id,null: false
       t.string :title,null: false
       t.integer :value,null: false
       t.text :image_id
