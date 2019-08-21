@@ -15,7 +15,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :end_users, only: [:leave,:edit,:update] do
     resources :orders, only: [:confirm,:create,:finish,:index,:show]
-    resources :carts, only: [:destroy,:index,:add]
+    resources :carts, only: [:destroy,:index]
+    post 'carts/:id' => 'carts#add'
   end
 
   resources :sell_cds, only: [:searrch,:show]

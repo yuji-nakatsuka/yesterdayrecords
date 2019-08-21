@@ -3,5 +3,20 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   mo Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Artist.create(artist:"U-Z")
+Label.create(label:"sony")
+Genre.create(genre:"jpop")
+DeliveryAddress.create(end_user_id:1,zip:"0000000",delivery_address:"滋賀")
+SellCd.create(artist:1,label_id:1,genre_id:1,title:"yahoooooooo",value:100,sell_status:1,stock:10)
+Order.create(end_user_id:1,total_price:1000,payment_method:1,delivery_address_id:1,delivery_status:1)
+Disc.create(sell_cd_id:1,disc:"DISC1")#:number追加まだしてない
+Cart.create( sell_cd_id:1 , end_user_id:1 , quantity:2 )
+OrderContent.create(sell_cd_id:1,order_id:1,quantity:2)
+Song.create(disc_id:1,number:1,song:"ワイワイ")
+
+# Cart.create(cd_id:1,end_user_id:1,quantity:2)
+# cd_aCdArtist.create(cd_id:1,artist_id:1)

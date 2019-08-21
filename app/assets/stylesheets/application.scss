@@ -32,6 +32,13 @@
 	text-align: left;
 	padding: 5px;
 }
+
 .admin-login-form-remember{
 	text-align: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }

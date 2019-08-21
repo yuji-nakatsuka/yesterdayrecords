@@ -1,6 +1,6 @@
 class CartsController < ApplicationController
 	def index
-		@carts = Cart.where(end_user_if: params[current_end_user.id])
+		@carts = Cart.where(end_user_id: current_end_user.id)
 	end
 
 	def destroy
@@ -19,6 +19,5 @@ class CartsController < ApplicationController
 		def cart_params
 			params.require(:cart).permit(:end_user_id,:sell_cd_id,:quantity)
 		end
-	end
 
 end

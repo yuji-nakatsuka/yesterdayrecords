@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_18_105926) do
+ActiveRecord::Schema.define(version: 2019_08_14_103345) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_08_18_105926) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "end_user_id", null: false
-    t.integer "cd_id", null: false
+    t.integer "sell_cd_id", null: false
     t.integer "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2019_08_18_105926) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "artist_id", null: false
-    t.integer "cd_id", null: false
+    t.integer "sell_cd_id", null: false
   end
 
   create_table "delivery_addresses", force: :cascade do |t|
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 2019_08_18_105926) do
     t.string "zip", default: "", null: false
     t.text "address", default: "", null: false
     t.string "phone_number", default: "", null: false
+    t.string "deleted_at", default: "", null: false
     t.index ["email"], name: "index_end_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_end_users_on_reset_password_token", unique: true
   end

@@ -1,3 +1,3 @@
 class Artist < ApplicationRecord
-  has_many :cd_artists
+  has_many :sell_cds
 end

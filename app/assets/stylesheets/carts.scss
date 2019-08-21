@@ -12,13 +12,21 @@
 .cart-index-box-order-item{
 	text-align: right;
 }
-
-.carts-index-value table{
-	border-collapse:collapse
+.carts-index-value td{
+	text-align: right;
 }
 
-.carts-index-value-total{
+.carts-index-value table{
+	border-collapse:collapse;
+	width:100%;
+}
+
+.carts-index-value-last{
 	border-bottom-style: solid;
 	border-bottom-color: black;
 }
-
+.carts-index-value{
+	padding: 10px;
+	width: 20%;
+	float: right;
+}
