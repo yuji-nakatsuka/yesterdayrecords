@@ -1,0 +1,72 @@
+
+<div class="container">
+
+  <div class="sell_cd_show_all">
+
+  <div class="image-top-infos clearfix">
+    <div class="cd-image">
+      <img src=".jpg">
+       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %>
+    </div>
+
+    <div class="top-infos">
+
+      <div class="title-group">
+        <h2><%= @sell_cd.title %></h2>
+        <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+        <h2>U-Z</h2>
+      </div>
+
+
+      <table class="order-info">
+        <tr>
+          <td>価格</td>
+          <td>在庫数</td>
+          <td>status</td>
+        </tr>
+
+        <tr>
+          <td><%= @sell_cd.value %>円</td>
+          <td><%= @sell_cd.stock %></td>
+          <td><%= enum(@sell_cd.sell_status) %></td>
+        </tr>
+
+    <% if end_user_signed_in? %>
+      <%= form_for(@cart, url: end_user_cart_add_path(current_end_user)) do |f| %>
+
+        <tr>
+          <td>購入個数</td>
+          <td colspan="2" rowspan="2"><%= f.submit "カートに追加", class:"btn btn-primary btn-lg btn-block" %></td>
+        </tr>
+
+        <tr>
+          <td><%= f.text_field :quantity , :size=>"4"%></td>
+        </tr>
+
+        <%= f.hidden_field :sell_cd_id, :value => @sell_cd.id %>
+
+      <% end %>
+
+    <% end %>
+      </table>
+
+    </div>
+  </div>
+
+   <% @discs.each do |disc| %>
+    <div class="disc-infos">
+      <p><%= disc.disc %></p>
+      <% disc.songs.order(number: "ASC").each do |song| %>
+      <table class="disc-info">
+        <tr>
+          <td><%= song.number %></td>
+          <td><%= song.song %></td>
+        </tr>
+      </table>
+      <% end %>
+    </div>
+  <% end %>
+
+  </div>
+
+</div>
