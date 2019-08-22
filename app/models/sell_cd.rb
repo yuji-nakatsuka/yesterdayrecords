@@ -10,13 +10,9 @@ class SellCd < ApplicationRecord
 
 
 	def self.search(search)
-		return self.all unless search
-		self.where(['content LIKE ?', "%#{search}%"])
+			return self.all unless search
+			self.where(['content LIKE ?', "%#{search}%"])
 	end
+
+
 end
-
-
-def self.search(search)
-        return self.all unless search
-        self.where(['content LIKE ?', "%#{search}%"])
-    end

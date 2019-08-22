@@ -1,3 +1,25 @@
 // Place all the styles related to the sell_cds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  background-color: rgb(231, 232, 231)
+}
+
+.cd-image {
+  float:left;
+}
+
+.top-infos {
+  float:right;
+  width:60%;
+}
+
+.order-info {
+  width:100%;
+}
+
+.order-info td{
+  text-align: left;
+  padding:5px 0;
+}

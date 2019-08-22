@@ -4,8 +4,9 @@ class SellCdsController < ApplicationController
   end
 
   def show
-    @sell_cd = SellCd.find(params.[:id])
-    @discs = @sell_cd.Disc.all
+    @sell_cd = SellCd.find(params[:id])
+    @discs = @sell_cd.discs.order(number: "ASC")
+    @cart = Cart.new
   end
 
 end
