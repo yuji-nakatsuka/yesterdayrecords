@@ -1,3 +1,32 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.carts-index-box{
+	border-style: solid;
+	margin:5px;
+}
+.carts-index-box table{
+	width: 100%;
+}
+.cart-index-box-order-item{
+	text-align: right;
+}
+.carts-index-value td{
+	text-align: right;
+}
+
+.carts-index-value table{
+	border-collapse:collapse;
+	width:100%;
+}
+
+.carts-index-value-last{
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+.carts-index-value{
+	padding: 10px;
+	width: 20%;
+	float: right;
+}

@@ -1,4 +1,5 @@
 class SellCdsController < ApplicationController
+
   def search
     @sell_cd = SellCd.search(params[:search])
   end

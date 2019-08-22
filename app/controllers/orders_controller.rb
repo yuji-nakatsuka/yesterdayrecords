@@ -1,7 +1,6 @@
 class OrdersController < ApplicationController
 
   def confirm
-    
   end
 
   def create
@@ -19,5 +18,8 @@ class OrdersController < ApplicationController
   def show
 
   end
+
+	def update
+	end
 
 end

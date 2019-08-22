@@ -33,11 +33,12 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
 
   create_table "carts", force: :cascade do |t|
     t.integer "end_user_id", null: false
-    t.integer "cd_id", null: false
+    t.integer "sell_cd_id", null: false
     t.integer "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
 
   create_table "delivery_addresses", force: :cascade do |t|
     t.integer "end_user_id", null: false

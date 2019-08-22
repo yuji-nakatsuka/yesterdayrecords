@@ -1,3 +1,18 @@
-<div>
+<div class="container">
 	<h1>管理画面</h1>
+
+	<div class="row">
+		<div>
+			<button><%= link_to "顧客管理画面" , admins_end_users_path ,class:"btn btn-success"%></button>
+		</div>
+		<div>
+			<button><%= link_to "商品管理画面" , admins_sell_cds_path ,class:"btn btn-success"%></button>
+			<div><%= link_to "Artist追加" ,  admins_sell_cds_artist_new_path ,class:"btn btn-danger"%></div>
+			<div><%= link_to "Genre追加" , admins_sell_cds_genre_new_path ,class:"btn btn-danger"%></div>
+			<div><%= link_to "Label追加" , admins_sell_cds_label_new_path,class:"btn btn-danger"%></div>
+		</div>
+		<div>
+			
+		</div>
+	</div>
 </div>

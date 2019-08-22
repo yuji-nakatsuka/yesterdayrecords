@@ -1,6 +1,5 @@
 class SellCd < ApplicationRecord
 	attachment :image
-	has_many :artists, through: :cd_artists
 	has_many :carts
 	has_many :discs
 	has_many :order_contents
@@ -16,8 +15,3 @@ class SellCd < ApplicationRecord
 	end
 end
 
-
-def self.search(search)
-        return self.all unless search
-        self.where(['content LIKE ?', "%#{search}%"])
-    end

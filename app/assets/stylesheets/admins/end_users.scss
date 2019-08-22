@@ -1,3 +1,27 @@
 // Place all the styles related to the admins/end_users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.end-user-info{
+	text-align: center;
+}
+.end_users-table{
+	display: inline-block;
+	padding: 50px 0 0 0;
+	width: 80%;
+	text-align: left;
+}
+
+.end_users-table-title{
+	text-align: center;
+}
+
+.end_user-edit-btns{
+	width: 80%;
+	text-align: right;
+	display: inline-block;
+}
+
+.end_user-edit-btns table{
+	display: inline-block;
+}

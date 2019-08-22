@@ -1,0 +1,32 @@
+<div class="admin-index">
+	<h2>顧客一覧画面</h2>
+
+	<table class="table table-striped">
+		<tr>
+			<td colspan="2">名前</td>
+			<td colspan="2">カナ</td>
+			<td>郵便番号</td>
+			<td>住所</td>
+			<td>電話番号</td>
+			<td>メールアドレス</td>
+			<td>登録日</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<% @end_users.each do |end_user| %>
+			<tr>
+					<td><%=link_to "#{end_user.first_name}", admins_end_user_path(end_user)%></td>
+					<td><%=link_to "#{end_user.last_name}", admins_end_user_path(end_user)%></td>
+					<td><%=end_user.kana_first%></td>
+					<td><%=end_user.kana_last%></td>
+					<td><%=end_user.zip%></td>
+					<td><%=end_user.address%></td>
+					<td><%=end_user.phone_number%></td>
+					<td><%=end_user.email%></td>
+					<td><%= end_user.created_at.strftime('%Y/%m/%d') %></td>
+					<td><%=link_to "編集", edit_end_user_path(end_user) %></td>
+					<td><%=link_to "削除", end_user_registration_path(end_user) %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
