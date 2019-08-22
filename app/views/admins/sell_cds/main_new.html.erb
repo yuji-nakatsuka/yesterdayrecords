@@ -1,0 +1,78 @@
+<script>
+    $(function() {
+    	$('.disc input[type=text]').eq(0).val(1);
+    	$(document).on('click', '.links .add_fields', function() {
+    		var size = $(".disc").length;
+    		alert(size);
+    		for (var i = 0; i < size*2; i++) {
+    			if (i % 2 == 0) {
+    				if (i == 0) {
+	    				$('.disc input[type=text]').eq(i).val(1);
+    				} else {
+		    			$('.disc input[type=text]').eq(i).val(i/2+1);
+		    		}
+	    		}
+    		}
+    	});
+    	$('.disc input[type=text]').eq(0).val(1);
+    	$(document).on('click', '.links .add_fields', function() {
+    		var size = $(".disc").length;
+    		alert(size);
+    		for (var i = 0; i < size*2; i++) {
+    			if (i % 2 == 0) {
+    				if (i == 0) {
+	    				$('.disc input[type=text]').eq(i).val(1);
+    				} else {
+		    			$('.disc input[type=text]').eq(i).val(i/2+1);
+		    		}
+	    		}
+    		}
+    	});
+	})
+</script>
+<input  type="button" value="ボタン" onclick="test()">
+<h2>商品作成画面</h2>
+
+<%= form_with(model: @sell_cd, url: admins_sell_cds_main_create_path, local: true) do |form| %>
+  <div class="field">
+<!-- title -->
+    <%= form.label :title %><br>
+    <%= form.text_field :title %><br>
+<!-- value -->
+    <%= form.label :value %><br>
+    <%= form.text_field :value %><br>
+<!-- image_id   refile -->
+<!--     <%= form.label :title %>
+    <%= form.text_field :title %> -->
+    <%= form.label :stock %><br>
+    <%= form.text_field :stock %><br>
+<!-- label_id -->
+<!-- プルダウン式に変更 -->
+    <%= form.label :label_id %><br>
+    <%= form.text_field :label_id %><br>
+<!-- artist_id -->
+<!-- プルダウン式に変更 -->
+    <%= form.label :artist_id %><br>
+    <%= form.text_field :artist_id %><br>
+<!-- label_id -->
+<!-- プルダウン式に変更 -->
+    <%= form.label :genre_id %><br>
+    <%= form.text_field :genre_id %><br>
+<!-- sell_status -->
+<!-- プルダウン式に変更 -->
+    <%= form.label :sell_status %><br>
+    <%= form.text_field :sell_status %><br>
+
+  </div>
+  <div class="discs">
+    <%= form.fields_for :discs do |f| %>
+      <%= render "disc_fields", f: f %>
+    <% end %>
+    <div class="links">
+      <%= link_to_add_association "add disc", form, :discs %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
