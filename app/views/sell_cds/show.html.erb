@@ -3,6 +3,7 @@
 
   <div class="sell_cd_show_all">
 
+  <div class="image-top-infos clearfix">
     <div class="cd-image">
       <img src=".jpg">
        <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %>
@@ -49,6 +50,7 @@
     <% end %>
       </table>
 
+    </div>
   </div>
 
    <% @discs.each do |disc| %>
@@ -58,7 +60,7 @@
       <table class="disc-info">
         <tr>
           <td><%= song.number %></td>
-          <td><%= song.title %></td>
+          <td><%= song.song %></td>
         </tr>
       </table>
       <% end %>

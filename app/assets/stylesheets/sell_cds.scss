@@ -23,3 +23,18 @@
   text-align: left;
   padding:5px 0;
 }
+
+.disc-infos table{
+  width:100%
+}
+
+.disc-infos td{
+  border-collapse: collapse;
+    border:1px solid #333;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

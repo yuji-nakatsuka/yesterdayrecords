@@ -11,7 +11,7 @@ class OrdersController < ApplicationController
   end
 
   def finish
-    @order = Order.find(params[:id])
+    @cart = Cart.where(current_end_user)
   end
 
   def index

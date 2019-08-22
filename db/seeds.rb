@@ -16,4 +16,4 @@ Disc.create(sell_cd_id:1,disc:"DISC1",number:1)#:number追加まだしてない
 CdArtist.create(sell_cd_id:1,artist_id:1)
 Cart.create( sell_cd_id:1 , end_user_id:1 , quantity:2 )
 OrderContent.create(sell_cd_id:1,order_id:1,quantity:2)
-Song.create(disc_id:1,number:1,song:"Futuristic Drive")
+Song.create(disc_id:1, number:1, song:"Futuristic Drive")
