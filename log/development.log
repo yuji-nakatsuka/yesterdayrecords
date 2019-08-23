@@ -31523,3 +31523,113 @@ Processing by Admins::SellCdsController#main_new as HTML
 Completed 200 OK in 1086ms (Views: 1007.4ms | ActiveRecord: 16.0ms)
 
 
+Started GET "/" for 10.0.2.2 at 2019-08-23 14:45:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (2.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 7541ms (Views: 7426.6ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 14:45:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (6.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (17.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (3.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (37.6ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (312.8ms)
+Completed 200 OK in 2032ms (Views: 1631.2ms | ActiveRecord: 123.0ms)
+
+
+Started POST "/admins/sell_cds/main_create" for 10.0.2.2 at 2019-08-23 14:47:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SW8S3ugwVbI/JOU/4vGznIPc7hYRUK7QBpQkuoVoL+OPlnCNPq7HJBPOmPoTM9o5evC9k+CGIocns5bHNI4DCA==", "sell_cd"=>{"title"=>"宿命", "value"=>"1000", "image"=>"{}", "stock"=>"1000000", "label_id"=>"1", "artist_id"=>"1", "genre_id"=>"1", "sell_status"=>"1", "discs_attributes"=>{"0"=>{"number"=>"1", "disc"=>"DISC1", "_destroy"=>"false", "songs_attributes"=>{"0"=>{"number"=>"1", "song"=>"宿命", "_destroy"=>"false"}}}}}, "commit"=>"Create Sell cd"}
+Unpermitted parameter: :image
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `discs_attributes' for #<SellCd:0x00007f87f64ea568>):
+  
+app/controllers/admins/sell_cds_controller.rb:57:in `main_create'
+Started POST "/admins/sell_cds/main_create" for 10.0.2.2 at 2019-08-23 14:48:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SW8S3ugwVbI/JOU/4vGznIPc7hYRUK7QBpQkuoVoL+OPlnCNPq7HJBPOmPoTM9o5evC9k+CGIocns5bHNI4DCA==", "sell_cd"=>{"title"=>"宿命", "value"=>"1000", "image"=>"{}", "stock"=>"1000000", "label_id"=>"1", "artist_id"=>"1", "genre_id"=>"1", "sell_status"=>"1", "discs_attributes"=>{"0"=>{"number"=>"1", "disc"=>"DISC1", "_destroy"=>"false", "songs_attributes"=>{"0"=>{"number"=>"1", "song"=>"宿命", "_destroy"=>"false"}}}}}, "commit"=>"Create Sell cd"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mLabel Load (1.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mGenre Load (1.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mSellCd Create (9.7ms)[0m  [1m[32mINSERT INTO "sell_cds" ("label_id", "genre_id", "artist_id", "title", "value", "sell_status", "stock", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["label_id", 1], ["genre_id", 1], ["artist_id", 1], ["title", "宿命"], ["value", 1000], ["sell_status", 1], ["stock", 1000000], ["created_at", "2019-08-23 14:48:09.841886"], ["updated_at", "2019-08-23 14:48:09.841886"]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mDisc Create (1.6ms)[0m  [1m[32mINSERT INTO "discs" ("sell_cd_id", "number", "disc", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["sell_cd_id", 2], ["number", 1], ["disc", "DISC1"], ["created_at", "2019-08-23 14:48:09.867942"], ["updated_at", "2019-08-23 14:48:09.867942"]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[36mSong Create (2.7ms)[0m  [1m[32mINSERT INTO "songs" ("disc_id", "number", "song", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["disc_id", 2], ["number", 1], ["song", "宿命"], ["created_at", "2019-08-23 14:48:09.873870"], ["updated_at", "2019-08-23 14:48:09.873870"]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:56
+Redirected to http://localhost:3000/admins/sell_cds/2
+Completed 302 Found in 256ms (ActiveRecord: 49.3ms)
+
+
+Started GET "/admins/sell_cds/2" for 10.0.2.2 at 2019-08-23 14:48:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSellCd Load (10.5ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (5.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:16
+  Rendered admins/sell_cds/show.html.erb within layouts/application (53.5ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 15.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    39:       </div>
+    40:     </div>
+    41: 
+    42:       <% @discs.each do |disc| %>
+    43:        <div class="disc-infos">
+    44:          <p><%= disc.disc %></p>
+    45:          <% disc.songs.order(number: "ASC").each do |song| %>
+  
+app/views/admins/sell_cds/show.html.erb:42:in `_app_views_admins_sell_cds_show_html_erb___4588931008216834200_47030663493680'
+Started GET "/" for 10.0.2.2 at 2019-08-23 14:48:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (2.5ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 3148ms (Views: 3085.1ms | ActiveRecord: 2.5ms)
+
+

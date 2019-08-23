@@ -53,19 +53,6 @@ class Admins::SellCdsController < ApplicationController
 	def main_create
 		sell_cd = SellCd.new(sell_cd_params)
 		disc_number = 0
-
-		sell_cd.discs_attributes.each do |disc|
-			disc_number += 1
-			disc.number = disc_number
-
-			song_number = 0
-
-			disc.songs_attributes.each do |song|
-				song_number += 1
-				song.number = song_number
-			end
-		end
-
 		if sell_cd.save
 			redirect_to admins_sell_cd_path(sell_cd.id)
 		else
