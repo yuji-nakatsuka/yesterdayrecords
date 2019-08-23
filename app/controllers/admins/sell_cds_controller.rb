@@ -30,8 +30,15 @@ class Admins::SellCdsController < ApplicationController
 
 	def main_new
 		@sell_cd = SellCd.new
-		@discs = @sell_cd.discs.build
-		@songs = @discs.songs.build
+
+		# disc,song作成時使用 cocoon
+			@discs = @sell_cd.discs.build
+			@songs = @discs.songs.build
+
+		# label,artist,genre表示のため
+			@labelid = Label.getlabelid
+			@artistid = Artist.getartistid
+			@genreid = Genre.getgenreid
 	end
 
 	def artist_create

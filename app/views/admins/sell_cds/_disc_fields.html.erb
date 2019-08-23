@@ -9,6 +9,7 @@
 	</div>
 
 	<div class="songs">
+
 		<%= f.fields_for :songs do |d| %>
 			<%= render "song_fields", f: d %>
 		<%end%>
@@ -16,6 +17,7 @@
 		<div class="links">
 			<%= link_to_add_association "add song", f, :songs%>
 		</div>
+
 	</div>
 
 </div>

@@ -1,7 +1,9 @@
 <div class="nested-fields">
-	<%= f.label "number"%>
-	<%= f.text_field :number %>
-	<%= f.label "song"%>
-    <%= f.text_field :song %>
-    <%= link_to_remove_association "remove song", f %>
+	<div class="song">
+		<%= f.label "number"%>
+		<%= f.text_field :number %>
+		<%= f.label "song"%>
+	    <%= f.text_field :song %>
+	    <%= link_to_remove_association "remove song", f %>
+	</div>
 </div>

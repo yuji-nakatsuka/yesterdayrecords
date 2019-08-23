@@ -1,36 +1,3 @@
-<script>
-    $(function() {
-    	$('.disc input[type=text]').eq(0).val(1);
-    	$(document).on('click', '.links .add_fields', function() {
-    		var size = $(".disc").length;
-    		alert(size);
-    		for (var i = 0; i < size*2; i++) {
-    			if (i % 2 == 0) {
-    				if (i == 0) {
-	    				$('.disc input[type=text]').eq(i).val(1);
-    				} else {
-		    			$('.disc input[type=text]').eq(i).val(i/2+1);
-		    		}
-	    		}
-    		}
-    	});
-    	$('.disc input[type=text]').eq(0).val(1);
-    	$(document).on('click', '.links .add_fields', function() {
-    		var size = $(".disc").length;
-    		alert(size);
-    		for (var i = 0; i < size*2; i++) {
-    			if (i % 2 == 0) {
-    				if (i == 0) {
-	    				$('.disc input[type=text]').eq(i).val(1);
-    				} else {
-		    			$('.disc input[type=text]').eq(i).val(i/2+1);
-		    		}
-	    		}
-    		}
-    	});
-	})
-</script>
-<input  type="button" value="ボタン" onclick="test()">
 <h2>商品作成画面</h2>
 
 <%= form_with(model: @sell_cd, url: admins_sell_cds_main_create_path, local: true) do |form| %>
@@ -42,26 +9,30 @@
     <%= form.label :value %><br>
     <%= form.text_field :value %><br>
 <!-- image_id   refile -->
-<!--     <%= form.label :title %>
-    <%= form.text_field :title %> -->
+    <%= form.label :image %><br>
+    <%= form.attachment_field :image %><br>
+<!-- stock -->
     <%= form.label :stock %><br>
     <%= form.text_field :stock %><br>
 <!-- label_id -->
-<!-- プルダウン式に変更 -->
     <%= form.label :label_id %><br>
-    <%= form.text_field :label_id %><br>
+    <%= form.select :label_id, @labelid %>
+    <%= link_to admins_sell_cds_label_new_path(params[:id]) ,class:"btn" do%>新規レーベルの追加<%end%>
+    <br>
 <!-- artist_id -->
-<!-- プルダウン式に変更 -->
     <%= form.label :artist_id %><br>
-    <%= form.text_field :artist_id %><br>
+    <%= form.select :artist_id,@artistid %>
+    <%= link_to admins_sell_cds_artist_new_path(params[:id]) ,class:"btn" do%>新規アーティストの追加<%end%>
+    <br>
 <!-- label_id -->
-<!-- プルダウン式に変更 -->
     <%= form.label :genre_id %><br>
-    <%= form.text_field :genre_id %><br>
+    <%= form.select :genre_id,@genreid %>
+    <%= link_to admins_sell_cds_genre_new_path(params[:id]) ,class:"btn" do%>新規ジャンルの追加<%end%>
+    <br>
 <!-- sell_status -->
-<!-- プルダウン式に変更 -->
+<!-- select:enum @helpers/admins/sell_cds_helper.rb -->
     <%= form.label :sell_status %><br>
-    <%= form.text_field :sell_status %><br>
+    <%= form.select :sell_status, [[enum(1), 1],[enum(2), 2]] %><br>
 
   </div>
   <div class="discs">

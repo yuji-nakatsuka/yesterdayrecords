@@ -29586,3 +29586,1940 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
     45:          <% disc.songs.order(number: "ASC").each do |song| %>
   
 app/views/admins/sell_cds/show.html.erb:42:in `_app_views_admins_sell_cds_show_html_erb__853546334652274070_70207692962220'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:26:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (84.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (37.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (239.7ms)
+Completed 500 Internal Server Error in 4198ms (ActiveRecord: 26.7ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...a4924d70b32d0cf": expected "{", was ""):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:49
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3307872111277545324_46919247557480'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:28:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (75.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (32.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (175.9ms)
+Completed 200 OK in 6777ms (Views: 6726.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:32:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (78.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (69.9ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (232.3ms)
+Completed 200 OK in 1069ms (Views: 1018.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:33:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (71.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (34.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (178.3ms)
+Completed 200 OK in 981ms (Views: 923.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:34:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (4.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (84.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (41.5ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (207.8ms)
+Completed 200 OK in 1046ms (Views: 990.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:35:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (5.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (84.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (30.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (187.2ms)
+Completed 200 OK in 1059ms (Views: 1006.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:36:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (118.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (44.7ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (268.8ms)
+Completed 200 OK in 1069ms (Views: 1019.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:38:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (70.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (39.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (229.0ms)
+Completed 200 OK in 1380ms (Views: 1090.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-22 12:50:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (73.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (0.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (32.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (165.9ms)
+Completed 200 OK in 942ms (Views: 890.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-23 06:44:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (3.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1053ms (Views: 994.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1" for 10.0.2.2 at 2019-08-23 06:45:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for 10.0.2.2 at 2019-08-23 06:45:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/sign_in" for 10.0.2.2 at 2019-08-23 06:45:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#new as HTML
+  Rendering end_users/sessions/new.html.erb within layouts/application
+  Rendered end_users/shared/_links.html.erb (1.3ms)
+  Rendered end_users/sessions/new.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 932ms (Views: 868.3ms | ActiveRecord: 18.1ms)
+
+
+Started POST "/end_users/sign_in" for 10.0.2.2 at 2019-08-23 06:45:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oyZazEsh2BfrkP6qmA5lwKc2pHCIRwdp3mKOCWoNfZtl3zifnb9Kgcd6g29pzAxlXhr39XmRiz7/RTx02+tRcA==", "end_user"=>{"email"=>"hoge@hoge", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mEndUser Load (2.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."email" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["email", "hoge@hoge"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 10ms (ActiveRecord: 2.6ms)
+
+
+Processing by EndUsers::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oyZazEsh2BfrkP6qmA5lwKc2pHCIRwdp3mKOCWoNfZtl3zifnb9Kgcd6g29pzAxlXhr39XmRiz7/RTx02+tRcA==", "end_user"=>{"email"=>"hoge@hoge", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering end_users/sessions/new.html.erb within layouts/application
+  Rendered end_users/shared/_links.html.erb (1.1ms)
+  Rendered end_users/sessions/new.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 858ms (Views: 661.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-23 06:46:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#new as HTML
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered admins/shared/_links.html.erb (2.6ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (152.2ms)
+Completed 200 OK in 1338ms (Views: 1334.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-23 06:46:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qk9oI2zQwvalZhriu2+dn0NdhXD1STdKjifnLjYmXKlstgpwuk5QYImMZydKrfQ6unHW9QSfux2vAFVTh8BwQg==", "end_user"=>{"first_name"=>"田中", "last_name"=>"太郎", "kana_last"=>"タナカ", "kana_first"=>"タロウ", "zip"=>"0000000", "address"=>"大阪", "phone_number"=>"0000000000", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (3.9ms)
+  Rendered admins/shared/_links.html.erb (3.2ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 1059ms (Views: 912.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-23 06:47:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8EBIhFF7zLyiYRwE+sNXR/KmNrIrY0OcnBOoWH1jNRI2uSrXh+VeKo6LYcELAT7iC4plN9q1z8u9NBolzIUZ+Q==", "end_user"=>{"first_name"=>"田中", "last_name"=>"太郎", "kana_last"=>"タナカ", "kana_first"=>"タロウ", "zip"=>"0000000", "address"=>"大阪", "phone_number"=>"0000000000", "email"=>"hoge@hoge", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "hoge@hoge"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering end_users/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.5.0/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered end_users/registrations/new.html.erb within layouts/application (106.8ms)
+Completed 200 OK in 1619ms (Views: 1155.6ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/end_users" for 10.0.2.2 at 2019-08-23 06:47:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsers::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"exoAtR1amdfWvjM/M8SYtQrN0SAEFkPaVB3bE6CBxk6942Lmy8QLQfpUTvrCBvEQ8+GCpfXAz411OmluEWfqpQ==", "end_user"=>{"first_name"=>"田中", "last_name"=>"太郎", "kana_last"=>"タナカ", "kana_first"=>"タロウ", "zip"=>"0000000", "address"=>"大阪", "phone_number"=>"00000000000", "email"=>"hoge@hoge", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"アカウントを作成"}
+  [1m[35m (0.9ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "end_users" WHERE "end_users"."email" = ? LIMIT ?[0m  [["email", "hoge@hoge"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mEndUser Create (6.7ms)[0m  [1m[32mINSERT INTO "end_users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name", "kana_last", "kana_first", "zip", "address", "phone_number") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "hoge@hoge"], ["encrypted_password", "$2a$11$1RUbpOHRm3bDkPj.lQL2D.OC1Oo/IWfvvAjOpOiPrHb.PWHpAQGR2"], ["created_at", "2019-08-23 06:47:17.252078"], ["updated_at", "2019-08-23 06:47:17.252078"], ["first_name", "田中"], ["last_name", "太郎"], ["kana_last", "タナカ"], ["kana_first", "タロウ"], ["zip", "0000000"], ["address", "大阪"], ["phone_number", "00000000000"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 399ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-23 06:47:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (1.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 704ms (Views: 667.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/end_users/1/carts" for 10.0.2.2 at 2019-08-23 06:47:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartsController#index as HTML
+  Parameters: {"end_user_id"=>"1"}
+  [1m[36mEndUser Load (1.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:3
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (2.7ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/views/carts/index.html.erb:8
+  Rendered carts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 724ms (Views: 670.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 07:16:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (115.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (58.7ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 1445ms (Views: 1315.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 07:42:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (8.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (108.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (51.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (301.1ms)
+Completed 200 OK in 1391ms (Views: 1318.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 07:43:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (88.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (38.5ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (211.2ms)
+Completed 200 OK in 998ms (Views: 941.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 07:46:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (108.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (60.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (285.6ms)
+Completed 200 OK in 1228ms (Views: 1173.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:01:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (8.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (153.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (91.6ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (474.2ms)
+Completed 200 OK in 1876ms (Views: 1769.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:03:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (70.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (33.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (164.7ms)
+Completed 200 OK in 859ms (Views: 809.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:03:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (70.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (0.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (35.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (175.7ms)
+Completed 200 OK in 1039ms (Views: 935.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:06:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (149.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (0.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (51.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (317.3ms)
+Completed 200 OK in 1415ms (Views: 1347.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:07:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (142.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (46.5ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (309.9ms)
+Completed 200 OK in 1198ms (Views: 1132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:07:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (133.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (314.3ms)
+Completed 200 OK in 1136ms (Views: 1097.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:07:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (134.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (337.2ms)
+Completed 200 OK in 1223ms (Views: 1122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:07:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (96.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (50.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (256.7ms)
+Completed 200 OK in 1239ms (Views: 1180.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:10:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (128.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (62.9ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (342.9ms)
+Completed 200 OK in 1359ms (Views: 1287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:22:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (130.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (49.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (286.0ms)
+Completed 200 OK in 1482ms (Views: 1444.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:23:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (75.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (31.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (170.3ms)
+Completed 200 OK in 1055ms (Views: 1005.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:23:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (66.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (39.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (173.6ms)
+Completed 200 OK in 964ms (Views: 879.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:43:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (181.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (49.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (387.4ms)
+Completed 200 OK in 1586ms (Views: 1461.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:45:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (16.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (146.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (4.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (71.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (366.4ms)
+Completed 200 OK in 1510ms (Views: 1391.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:48:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (99.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (54.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (242.6ms)
+Completed 200 OK in 1104ms (Views: 1054.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:51:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (4.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (124.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (49.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (287.5ms)
+Completed 200 OK in 1714ms (Views: 1663.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:51:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (116.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (37.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (242.5ms)
+Completed 200 OK in 1069ms (Views: 1025.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:51:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (124.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (37.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (256.8ms)
+Completed 200 OK in 1219ms (Views: 1115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:52:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (119.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (38.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (310.0ms)
+Completed 200 OK in 1288ms (Views: 1192.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:56:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (36.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (181.8ms)
+Completed 200 OK in 1017ms (Views: 947.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 08:57:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (105.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (47.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (236.0ms)
+Completed 200 OK in 1032ms (Views: 955.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:07:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (84.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (32.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (198.1ms)
+Completed 200 OK in 1056ms (Views: 1013.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:08:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (32.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (168.8ms)
+Completed 200 OK in 879ms (Views: 820.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:15:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (26.6ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (166.1ms)
+Completed 200 OK in 910ms (Views: 855.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:17:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (62.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (0.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (33.9ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (159.0ms)
+Completed 200 OK in 1007ms (Views: 963.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:20:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (48.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (255.5ms)
+Completed 200 OK in 1099ms (Views: 1049.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:25:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (80.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (55.9ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (208.0ms)
+Completed 200 OK in 937ms (Views: 897.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:30:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (73.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (34.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (209.4ms)
+Completed 200 OK in 970ms (Views: 926.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:46:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/vagrant/yesterdayrecords/app/views/admins/sell_cds/main_new.html.erb:63: syntax error, unexpected ')', expecting ']'
+...m.select :label_id, [@labelid );@output_buffer.safe_append='...
+...                              ^
+/vagrant/yesterdayrecords/app/views/admins/sell_cds/main_new.html.erb:89: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/vagrant/yesterdayrecords/app/views/admins/sell_cds/main_new.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/vagrant/yesterdayrecords/app/views/admins/sell_cds/main_new.html.erb:93: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/sell_cds/main_new.html.erb:63: syntax error, unexpected ')', expecting ']'
+app/views/admins/sell_cds/main_new.html.erb:89: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/sell_cds/main_new.html.erb:91: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/sell_cds/main_new.html.erb:93: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:46:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (63.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (28.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (153.4ms)
+Completed 200 OK in 842ms (Views: 788.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:46:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (35.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (165.0ms)
+Completed 200 OK in 867ms (Views: 822.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (5.0ms)[0m  [1m[32mINSERT INTO "artists" ("artist", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["artist", "U-Z"], ["created_at", "2019-08-23 09:46:56.744323"], ["updated_at", "2019-08-23 09:46:56.744323"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:10
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:47:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/vagrant/yesterdayrecords/app/helpers/admins/sell_cds_helper.rb:4: formal argument cannot be a constant
+	def GetColumnId(Model,column)
+	                ^~~~~):
+  
+app/helpers/admins/sell_cds_helper.rb:4: formal argument cannot be a constant
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/admins/sell_cds_controller.rb:1:in `<top (required)>'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 09:50:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 22.2ms)
+
+
+  
+NameError (undefined local variable or method `label' for #<Admins::SellCdsController:0x000055e671b35760>):
+  
+app/controllers/admins/sell_cds_controller.rb:39:in `main_new'
+Started GET "/" for 10.0.2.2 at 2019-08-23 10:19:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/vagrant/yesterdayrecords/app/helpers/admins/sell_cds_helper.rb:4: syntax error, unexpected '.', expecting ')'
+... GetColumnId(model_names,model.column)
+...                              ^
+/vagrant/yesterdayrecords/app/helpers/admins/sell_cds_helper.rb:12: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/helpers/admins/sell_cds_helper.rb:4: syntax error, unexpected '.', expecting ')'
+app/helpers/admins/sell_cds_helper.rb:12: syntax error, unexpected keyword_end, expecting end-of-input
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/tops_controller.rb:1:in `<top (required)>'
+Started GET "/" for 10.0.2.2 at 2019-08-23 10:19:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/tops_controller.rb:1:in `<top (required)>'
+Started GET "/" for 10.0.2.2 at 2019-08-23 10:20:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/tops_controller.rb:1:in `<top (required)>'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-23 10:20:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/end_users/registrations_controller.rb:3:in `<top (required)>'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-23 10:21:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (Couldn't find Admins::EndUsersHelper, expected it to be defined in helpers/admins/end_users_helper.rb):
+  
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/end_users/registrations_controller.rb:3:in `<top (required)>'
+Started GET "/end_users/sign_up" for 10.0.2.2 at 2019-08-23 10:21:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsers::RegistrationsController#new as HTML
+  [1m[36mEndUser Load (4.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 92ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2019-08-23 10:21:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (1.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 2811ms (Views: 2752.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:21:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"main_new"}
+  [1m[36mSellCd Load (2.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+Completed 404 Not Found in 7ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find SellCd with 'id'=main_new):
+  
+app/controllers/sell_cds_controller.rb:7:in `show'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:21:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[36mLabel Load (3.4ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 12.5ms)
+
+
+  
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `label' for #<Label::ActiveRecord_Relation:0x00007efcc8dfe960>):
+  
+app/controllers/admins/sell_cds_controller.rb:40:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:23:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[36mLabel Load (3.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 18.9ms)
+
+
+  
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `label' for #<Label::ActiveRecord_Relation:0x000055f4c9f7cad8>):
+  
+app/controllers/admins/sell_cds_controller.rb:40:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[36mLabel Load (2.5ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Label Load (0.0ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `label' for #<Label::ActiveRecord_Relation:0x000055f4c90c1e08>):
+  
+app/controllers/admins/sell_cds_controller.rb:40:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:27:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[36mLabel Load (3.5ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 37.1ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/admins/sell_cds_controller.rb:42:in `block in main_new'
+app/controllers/admins/sell_cds_controller.rb:41:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:28:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 31.0ms)
+
+
+  
+NoMethodError (undefined method `size=' for nil:NilClass):
+  
+app/controllers/admins/sell_cds_controller.rb:41:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:30:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 34.3ms)
+
+
+  
+NoMethodError (undefined method `new' for nil:NilClass):
+  
+app/controllers/admins/sell_cds_controller.rb:41:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:31:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+  [1m[36mLabel Load (2.5ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:42
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (88.4ms)
+Completed 500 Internal Server Error in 334ms (ActiveRecord: 36.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    61: <!-- プルダウン式に変更 -->
+    62:     <%=@labelid%>
+    63:     <%= form.label :label_id %><br>
+    64:     <%= form.select :label_id, [@labelid] %><br>
+    65: <!-- artist_id -->
+    66: <!-- プルダウン式に変更 -->
+    67:     <%= form.label :artist_id %><br>
+  
+app/views/admins/sell_cds/main_new.html.erb:64:in `block in _app_views_admins_sell_cds_main_new_html_erb__3670765021387733571_47362287945660'
+app/views/admins/sell_cds/main_new.html.erb:47:in `_app_views_admins_sell_cds_main_new_html_erb__3670765021387733571_47362287945660'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:32:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+  [1m[36mLabel Load (2.6ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:42
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (131.7ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (43.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (257.8ms)
+Completed 200 OK in 3366ms (Views: 3317.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:39:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:41
+  [1m[36mLabel Load (3.4ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/controllers/admins/sell_cds_controller.rb:42
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (27.4ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (153.8ms)
+Completed 200 OK in 980ms (Views: 920.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:39:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 24.8ms)
+
+
+  
+NameError (uninitialized constant Admins::SellCdsController::Lavel):
+  
+app/controllers/admins/sell_cds_controller.rb:39:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:40:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Admins::SellCdsController::Lavel):
+  
+app/controllers/admins/sell_cds_controller.rb:39:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:40:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 236ms (ActiveRecord: 24.3ms)
+
+
+  
+NoMethodError (undefined method `GetColumnId' for #<Admins::SellCdsController:0x0000564e16e06270>):
+  
+app/controllers/admins/sell_cds_controller.rb:39:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:49:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 255ms (ActiveRecord: 23.8ms)
+
+
+  
+NameError (undefined local variable or method `label' for #<Admins::SellCdsController:0x000055c013db5280>):
+  
+app/controllers/admins/sell_cds_controller.rb:46:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:51:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 31.3ms)
+
+
+  
+NoMethodError (undefined method `getcolumn' for #<Class:0x00005574f3878580>):
+  
+app/controllers/admins/sell_cds_controller.rb:47:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:51:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `getcolumn' for #<Class:0x00005574f3878580>):
+  
+app/controllers/admins/sell_cds_controller.rb:47:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:51:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/application_record.rb:8
+  [1m[36mLabel Load (2.4ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/application_record.rb:9
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 36.4ms)
+
+
+  
+NoMethodError (undefined method `column_name' for #<Label:0x000055cda1c2bd88>):
+  
+app/models/application_record.rb:10:in `block in getcolumnid'
+app/models/application_record.rb:9:in `getcolumnid'
+app/controllers/admins/sell_cds_controller.rb:47:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:54:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.6ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 39.3ms)
+
+
+  
+NoMethodError (undefined method `column_name' for #<Label:0x00005604501cd8b0>):
+  
+app/models/label.rb:10:in `block in getlabelid'
+app/models/label.rb:9:in `getlabelid'
+app/controllers/admins/sell_cds_controller.rb:46:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:55:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.5ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 33.0ms)
+
+
+  
+NameError (uninitialized constant Label::ColumnId):
+  
+app/models/label.rb:13:in `getlabelid'
+app/controllers/admins/sell_cds_controller.rb:46:in `main_new'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 10:55:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (3.4ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (40.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (220.9ms)
+Completed 200 OK in 3162ms (Views: 2992.6ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:00:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (3.0ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:8
+  [1m[36mArtist Load (2.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:8
+  [1m[36mGenre Load (2.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (40.5ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (207.5ms)
+Completed 200 OK in 2948ms (Views: 2711.5ms | ActiveRecord: 57.1ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:03:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.2ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:8
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:8
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (64.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (0.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (33.9ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (167.2ms)
+Completed 200 OK in 830ms (Views: 767.2ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:08:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.9ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (3.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (347.5ms)
+Completed 500 Internal Server Error in 739ms (ActiveRecord: 70.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `admins_sell_cds_genru_new_path' for #<#<Class:0x0000562c7f4a79a8>:0x0000562c7f49a910>):
+    73: <!-- プルダウン式に変更 -->
+    74:     <%= form.label :genre_id %><br>
+    75:     <%= form.select :genre_id,@genreid %>
+    76:     <%= link_to admins_sell_cds_genru_new_path(params[:id]) ,class:"btn btn-primary btn-lg btn-block" do%>新規ジャンルの追加<%end%>
+    77:     <br>
+    78: <!-- sell_status -->
+    79: <!-- select:enum @helpers/admins/sell_cds_helper.rb -->
+  
+app/views/admins/sell_cds/main_new.html.erb:76:in `block in _app_views_admins_sell_cds_main_new_html_erb__3044351330177230555_47374557083140'
+app/views/admins/sell_cds/main_new.html.erb:47:in `_app_views_admins_sell_cds_main_new_html_erb__3044351330177230555_47374557083140'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:08:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.5ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (8.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (6.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (6.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.8ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (127.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (336.9ms)
+Completed 200 OK in 3222ms (Views: 3130.3ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:09:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.6ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (62.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (34.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (179.5ms)
+Completed 200 OK in 998ms (Views: 922.9ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/admins/sell_cds/label_new" for 10.0.2.2 at 2019-08-23 11:09:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#label_new as HTML
+Completed 406 Not Acceptable in 1539ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admins::SellCdsController#label_new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:10:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.3ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (14.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (8.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (90.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (41.7ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (223.2ms)
+Completed 200 OK in 1004ms (Views: 899.9ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/admins/sell_cds/artist_new" for 10.0.2.2 at 2019-08-23 11:10:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#artist_new as HTML
+Completed 406 Not Acceptable in 2426ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admins::SellCdsController#artist_new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:10:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.0ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.9ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (157.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (67.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (392.6ms)
+Completed 200 OK in 1324ms (Views: 1243.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/admins/sell_cds/genre_new" for 10.0.2.2 at 2019-08-23 11:10:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#genre_new as HTML
+Completed 406 Not Acceptable in 2592ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Admins::SellCdsController#genre_new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:10:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (139.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (65.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (428.6ms)
+Completed 200 OK in 1452ms (Views: 1360.5ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:18:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.9ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (3.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (341.8ms)
+Completed 500 Internal Server Error in 661ms (ActiveRecord: 63.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x000055ac99fc71a0>:0x000055ac99fb5ae0>):
+    53:     <%= form.label :value %><br>
+    54:     <%= form.text_field :value %><br>
+    55: <!-- image_id   refile -->
+    56:     <%= f.label :image %><br>
+    57:     <%= f.attachment_field :image %><br>
+    58: <!-- stock -->
+    59:     <%= form.label :stock %><br>
+  
+app/views/admins/sell_cds/main_new.html.erb:56:in `block in _app_views_admins_sell_cds_main_new_html_erb__3589708439020829572_47099903110000'
+app/views/admins/sell_cds/main_new.html.erb:47:in `_app_views_admins_sell_cds_main_new_html_erb__3589708439020829572_47099903110000'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:18:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.5ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (63.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (35.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (182.3ms)
+Completed 200 OK in 2877ms (Views: 2805.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:21:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.6ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.2ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (88.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (37.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (199.7ms)
+Completed 200 OK in 1079ms (Views: 975.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:22:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.1ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (16.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (3.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (120.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (66.5ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (344.1ms)
+Completed 200 OK in 1460ms (Views: 1291.0ms | ActiveRecord: 32.1ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:25:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (1.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (75.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (33.7ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (182.4ms)
+Completed 200 OK in 4519ms (Views: 4445.9ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (61.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (3.0ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (34.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (179.3ms)
+Completed 200 OK in 1328ms (Views: 1246.3ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:39:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (2.3ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (2.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (58.1ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (32.1ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (155.2ms)
+Completed 200 OK in 1519ms (Views: 1437.7ms | ActiveRecord: 19.8ms)
+
+
+Started POST "/admins/sell_cds/main_create" for 10.0.2.2 at 2019-08-23 11:39:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"guKiqw+Qq8My61LroZTBCVO5R3Nm7SeC53w94Z3gCvREG8D42Q45VR4BLy5QVqisqpUU9pc7q9XGW4+cLAYmHw==", "sell_cd"=>{"title"=>"", "value"=>"", "image"=>"{}", "stock"=>"", "label_id"=>"1", "artist_id"=>"1", "genre_id"=>"1", "sell_status"=>"1", "discs_attributes"=>{"0"=>{"number"=>"1", "disc"=>"", "_destroy"=>"false", "songs_attributes"=>{"0"=>{"number"=>"1", "song"=>"", "_destroy"=>"false"}}}, "1566560367396"=>{"number"=>"2", "disc"=>"", "_destroy"=>"false"}}}, "commit"=>"Create Sell cd"}
+Unpermitted parameter: :image
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `discs_attributes' for #<SellCd:0x00007f1b459ae040>):
+  
+app/controllers/admins/sell_cds_controller.rb:57:in `main_create'
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:41:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (5.7ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (5.2ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (3.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.6ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (69.2ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (44.3ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (235.2ms)
+Completed 200 OK in 7128ms (Views: 6710.2ms | ActiveRecord: 97.3ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:42:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.6ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (3.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (2.3ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (82.8ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.1ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (46.8ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (229.3ms)
+Completed 200 OK in 1464ms (Views: 1366.6ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:43:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (4.0ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (7.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (4.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.5ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (77.5ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.4ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (67.0ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (257.3ms)
+Completed 200 OK in 1136ms (Views: 1014.9ms | ActiveRecord: 31.7ms)
+
+
+Started GET "/admins/sell_cds/main_new" for 10.0.2.2 at 2019-08-23 11:48:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#main_new as HTML
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "labels"[0m
+  ↳ app/models/label.rb:8
+  [1m[36mLabel Load (1.8ms)[0m  [1m[34mSELECT "labels".* FROM "labels"[0m
+  ↳ app/models/label.rb:9
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  ↳ app/models/artist.rb:9
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/models/artist.rb:10
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "genres"[0m
+  ↳ app/models/genre.rb:9
+  [1m[36mGenre Load (4.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/models/genre.rb:10
+  Rendering admins/sell_cds/main_new.html.erb within layouts/application
+  Rendered admins/sell_cds/_song_fields.html.erb (2.0ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.7ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (78.3ms)
+  Rendered admins/sell_cds/_song_fields.html.erb (1.9ms)
+  Rendered admins/sell_cds/_disc_fields.html.erb (33.2ms)
+  Rendered admins/sell_cds/main_new.html.erb within layouts/application (188.3ms)
+Completed 200 OK in 1086ms (Views: 1007.4ms | ActiveRecord: 16.0ms)
+
+
