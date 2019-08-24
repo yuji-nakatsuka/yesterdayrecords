@@ -11,6 +11,9 @@ class Admins::SellCdsController < ApplicationController
 		@sell_cds = SellCd.all
 	end
 
+	def search
+	end
+
 	def destroy
 		sell_cd = SellCd.find(params[:id])
 		if sell_cd.destroy

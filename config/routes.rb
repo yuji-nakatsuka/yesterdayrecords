@@ -17,12 +17,15 @@ Rails.application.routes.draw do
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :end_users, only: [:leave,:edit,:update,:show] do
-    resources :orders, only: [:confirm,:create,:finish,:index,:show]
-    post 'carts/:id' => 'carts#add'
+    get 'orders/finish' => 'orders#finish'
+    get 'orders/confirm' => 'orders#confirm'
+    resources :orders, only: [:create,:index,:show]
+    post 'carts/:id' => 'carts#add', as: 'cart_add'
     resources :carts, only: [:destroy,:index]
   end
-
-  resources :sell_cds, only: [:searrch,:show]
+  # artist,labelでも拡張可能？
+  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
+  resources :sell_cds, only: [:search,:show]
 
 
 
@@ -41,8 +44,9 @@ Rails.application.routes.draw do
     put 'sell_cds/main_update' => 'sell_cds#main_update'
     resources :sell_cds, only: [:index,:edit,:destroy,:show]
     get 'top' => 'top#top'
+    resources :orders, only: [:index]
     resources :end_users, only: [:index,:edit,:destroy,:show,:update] do
-      resources :orders, only: [:show,:update,:index]
+      resources :orders, only: [:show,:update]
     end
   end
 

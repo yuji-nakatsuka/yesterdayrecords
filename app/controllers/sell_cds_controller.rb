@@ -9,4 +9,8 @@ class SellCdsController < ApplicationController
     @cart = Cart.new
   end
 
+  def genreidsearch
+  	@sell_cds = SellCd.where(genre_id: params[:genre_id])
+  end
+
 end
