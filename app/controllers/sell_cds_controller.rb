@@ -12,5 +12,4 @@ class SellCdsController < ApplicationController
   def genreidsearch
   	@sell_cds = SellCd.where(genre_id: params[:genre_id])
   end
-
 end
