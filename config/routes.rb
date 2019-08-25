@@ -15,8 +15,9 @@ Rails.application.routes.draw do
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :end_users, only: [:leave,:edit,:update,:show] do
-    get 'orders/finish',  to: 'orders#finish', as: 'finish'
-    resources :orders, only: [:confirm,:create,:index,:show]
+    get 'end_users/end_user_id/orders/:id/finish',  to: 'orders#finish', as: 'finish'
+    get 'end_users/end_user_id/orders/confirm',  to: 'orders#confirm', as: 'confirm'
+    resources :orders, only: [:create,:index,:show]
     post 'carts/:id' => 'carts#add'
     resources :carts, only: [:destroy,:index]
   end
