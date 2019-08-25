@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'end_users/end_user_id/orders/:id/finish',  to: 'orders#finish', as: 'finish'
 
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
@@ -15,7 +14,8 @@ Rails.application.routes.draw do
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :end_users, only: [:leave,:edit,:update,:show] do
-    resources :orders, only: [:confirm,:create,:finish,:index,:show]
+    get 'orders/finish',  to: 'orders#finish', as: 'finish'
+    resources :orders, only: [:confirm,:create,:index,:show]
     resources :carts, only: [:destroy,:index]
     post 'carts/:id' => 'carts#add' ,as: 'cart_add'
 

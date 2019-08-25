@@ -17593,3 +17593,47 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/3/orders/finish" for 10.0.2.2 at 2019-08-25 08:45:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OrdersController#show as HTML
+  Parameters: {"end_user_id"=>"3", "id"=>"finish"}
+  [1m[36mOrder Load (1.5ms)[0m  [1m[34mSELECT  "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:22
+Completed 404 Not Found in 31ms (ActiveRecord: 6.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Order with 'id'=finish):
+  
+app/controllers/orders_controller.rb:22:in `show'
+Started GET "/end_users/3/orders/finish" for 10.0.2.2 at 2019-08-25 08:49:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by OrdersController#finish as HTML
+  Parameters: {"end_user_id"=>"3"}
+  Rendering orders/finish.html.erb within layouts/application
+  Rendered orders/finish.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9969ms (Views: 9924.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/3/orders/finish" for 10.0.2.2 at 2019-08-25 08:50:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#finish as HTML
+  Parameters: {"end_user_id"=>"3"}
+  Rendering orders/finish.html.erb within layouts/application
+  Rendered orders/finish.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4488ms (Views: 4457.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/end_users/3/orders/finish" for 10.0.2.2 at 2019-08-25 08:51:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OrdersController#finish as HTML
+  Parameters: {"end_user_id"=>"3"}
+  Rendering orders/finish.html.erb within layouts/application
+  Rendered orders/finish.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3970ms (Views: 3937.6ms | ActiveRecord: 0.0ms)
+
+
