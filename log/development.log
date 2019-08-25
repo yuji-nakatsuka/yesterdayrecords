@@ -40094,3 +40094,581 @@ Processing by Admins::SellCdsController#main_new as HTML
 Completed 200 OK in 3483ms (Views: 3192.8ms | ActiveRecord: 84.8ms)
 
 
+<<<<<<< HEAD
+=======
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    39:       </div>
+    40:     </div>
+    41: 
+    42:       <% @discs.each do |disc| %>
+    43:        <div class="disc-infos">
+    44:          <p><%= disc.disc %></p>
+    45:          <% disc.songs.order(number: "ASC").each do |song| %>
+  
+app/views/admins/sell_cds/show.html.erb:42:in `_app_views_admins_sell_cds_show_html_erb__853546334652274070_70207692962220'
+Started GET "/" for 10.0.2.2 at 2019-08-22 11:10:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mSellCd Load (2.3ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:9
+  Rendered tops/top.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 6062ms (Views: 5973.3ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:31:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.3ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  [1m[36mDisc Load (2.0ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:56
+  [1m[36mSong Load (2.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:59
+  Rendered sell_cds/show.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 755ms (Views: 666.9ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-22 11:31:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:35:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.1ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  Rendered sell_cds/show.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for #<SellCd:0x00007efd2401e550>):
+    15:         <h2><%= @sell_cd.title %></h2>
+    16:         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+    17:         <h2>U-Z</h2>
+    18:         <!--モデル編集後、アーティスト置き換え <%= @sell_cd.artist.artst %> -->
+    19:       </div>
+    20: 
+    21: 
+  
+app/views/sell_cds/show.html.erb:18:in `_app_views_sell_cds_show_html_erb___38784806770458889_69812814404560'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:36:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (0.9ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  Rendered sell_cds/show.html.erb within layouts/application (24.7ms)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for #<SellCd:0x00007efd103ad7e8>):
+    15:         <h2><%= @sell_cd.title %></h2>
+    16:         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+    17:         <h2>U-Z</h2>
+    18:         <!--モデル編集後、アーティスト置き換え #<%= @sell_cd.artist.artst %> -->
+    19:       </div>
+    20: 
+    21: 
+  
+app/views/sell_cds/show.html.erb:18:in `_app_views_sell_cds_show_html_erb___38784806770458889_69812791985620'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:36:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.3ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  Rendered sell_cds/show.html.erb within layouts/application (30.5ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for #<SellCd:0x00007efd1e2bfda0>):
+    15:         <h2><%= @sell_cd.title %></h2>
+    16:         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+    17:         <h2>U-Z</h2>
+    18:         <!--モデル編集後、アーティスト置き換え #<%= @sell_cd.artist.artst %> -->
+    19:       </div>
+    20: 
+    21: 
+  
+app/views/sell_cds/show.html.erb:18:in `_app_views_sell_cds_show_html_erb___38784806770458889_69812799006880'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:36:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  Rendered sell_cds/show.html.erb within layouts/application (30.3ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for #<SellCd:0x00007efd10e3bef8>):
+    15:         <h2><%= @sell_cd.title %></h2>
+    16:         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+    17:         <h2>U-Z</h2>
+    18:         <!--モデル編集後、アーティスト置き換え /* <%= @sell_cd.artist.artst %>*/ -->
+    19:       </div>
+    20: 
+    21: 
+  
+app/views/sell_cds/show.html.erb:18:in `_app_views_sell_cds_show_html_erb___38784806770458889_69812687587640'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:36:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.6ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  Rendered sell_cds/show.html.erb within layouts/application (37.6ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `artist' for #<SellCd:0x00007efd24446010>):
+    15:         <h2><%= @sell_cd.title %></h2>
+    16:         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
+    17:         <h2>U-Z</h2>
+    18:         <!--モデル編集後、アーティスト置き換え /* <%= @sell_cd.artist.artst %>*/ -->
+    19:       </div>
+    20: 
+    21: 
+  
+app/views/sell_cds/show.html.erb:18:in `_app_views_sell_cds_show_html_erb___38784806770458889_69812850121120'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:42:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.7ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  [1m[36mDisc Load (1.2ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:57
+  [1m[36mSong Load (1.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:60
+  Rendered sell_cds/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 617ms (Views: 582.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-22 11:42:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-22 11:42:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:16
+  [1m[36mDisc Load (1.3ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:57
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:60
+  Rendered sell_cds/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 567ms (Views: 537.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-22 11:42:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+>>>>>>> 9a2d916d37e0ce8c5ecce1e58a54b62e2fc5ae35
+Started GET "/admins/sell_cds/1" for 10.0.2.2 at 2019-08-25 08:36:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (1.3ms)
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:17
+  Rendered admins/sell_cds/show.html.erb within layouts/application (80.4ms)
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 25.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:       </div>
+    41:     </div>
+    42: 
+    43:       <% @discs.each do |disc| %>
+    44:        <div class="disc-infos">
+    45:          <p><%= disc.disc %></p>
+    46:          <% disc.songs.order(number: "ASC").each do |song| %>
+  
+app/views/admins/sell_cds/show.html.erb:43:in `_app_views_admins_sell_cds_show_html_erb___449373878205026362_47336072817560'
+Started GET "/admins/sell_cds/1" for 10.0.2.2 at 2019-08-25 08:38:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (0.9ms)
+  [1m[36mGenre Load (2.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:17
+  [1m[36mDisc Load (3.9ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:43
+  [1m[36mSong Load (1.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:46
+  Rendered admins/sell_cds/show.html.erb within layouts/application (238.0ms)
+Completed 200 OK in 12509ms (Views: 12434.1ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/admins/sell_cds/.jpg" for 10.0.2.2 at 2019-08-25 08:38:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/1" for 10.0.2.2 at 2019-08-25 08:39:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.7ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (1.9ms)
+  [1m[36mGenre Load (4.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:17
+  [1m[36mDisc Load (6.1ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:43
+  [1m[36mSong Load (2.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:46
+  Rendered admins/sell_cds/show.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 1073ms (Views: 961.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/admins/sell_cds/.jpg" for 10.0.2.2 at 2019-08-25 08:39:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/1" for 10.0.2.2 at 2019-08-25 08:39:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.3ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (1.7ms)
+  [1m[36mGenre Load (1.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:17
+  [1m[36mArtist Load (2.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:18
+  [1m[36mDisc Load (2.4ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:43
+  [1m[36mSong Load (1.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:46
+  Rendered admins/sell_cds/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 782ms (Views: 733.3ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/admins/sell_cds/.jpg" for 10.0.2.2 at 2019-08-25 08:39:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-25 09:29:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (3.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:4
+  Rendered layouts/_end_header.html.erb (25.7ms)
+  [1m[36mGenre Load (3.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:17
+  [1m[36mDisc Load (2.2ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:58
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:61
+  Rendered sell_cds/show.html.erb within layouts/application (143.6ms)
+Completed 200 OK in 3315ms (Views: 3145.3ms | ActiveRecord: 61.1ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-25 09:29:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-25 09:37:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (3.9ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (4.4ms)
+  [1m[36mGenre Load (2.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:17
+  [1m[36mDisc Load (2.9ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:58
+  [1m[36mSong Load (2.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:61
+  Rendered sell_cds/show.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 731ms (Views: 678.9ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-25 09:37:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
