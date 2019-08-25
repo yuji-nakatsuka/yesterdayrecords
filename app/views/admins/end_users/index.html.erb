@@ -27,8 +27,8 @@
 					<td><%=end_user.phone_number%></td>
 					<td><%=end_user.email%></td>
 					<td><%= end_user.created_at.strftime('%Y/%m/%d') %></td>
-					<td><%=link_to "編集", edit_end_user_path(end_user) %></td>
-					<td><%=link_to "削除", end_user_registration_path(end_user) %></td>
+					<td><%=link_to "編集", edit_admins_end_user_path(end_user) %></td>
+					<td><%=link_to "削除", admins_end_user_path(end_user.id), method: :delete %></td>
 			</tr>
 		<% end %>
 	</table>

@@ -56,6 +56,7 @@ class Admins::SellCdsController < ApplicationController
 	def main_create
 		sell_cd = SellCd.new(sell_cd_params)
 		disc_number = 0
+
 		if sell_cd.save
 			redirect_to admins_sell_cd_path(sell_cd.id)
 		else
