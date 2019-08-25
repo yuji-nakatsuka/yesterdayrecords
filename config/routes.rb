@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'end_users/end_user_id/orders/:id/finish',  to: 'orders#finish', as: 'finish'
 
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
