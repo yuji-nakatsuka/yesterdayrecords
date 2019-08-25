@@ -1,6 +1,9 @@
 class CartsController < ApplicationController
 	def index
+		@genres = Genre.all
 		@carts = Cart.where(end_user_id: current_end_user.id)
+		# 消費税表示 変更可能にしたい
+		@sales_tax_rate = 0.08
 	end
 
 	def destroy
@@ -11,8 +14,12 @@ class CartsController < ApplicationController
 
 	def add
 		cart = Cart.new(cart_params)
-		cart.save
-		redirect_to end_user_carts_path
+		cart.end_user_id = current_end_user.id
+		if cart.save
+			redirect_to end_user_carts_path
+		else
+			redirect_to sell_cd_path(cart.sell_cd_id)
+		end
 	end
 
 	private

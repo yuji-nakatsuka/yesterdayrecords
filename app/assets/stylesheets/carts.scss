@@ -5,6 +5,7 @@
 .carts-index-box{
 	border-style: solid;
 	margin:5px;
+	padding: 10px;
 }
 .carts-index-box table{
 	width: 100%;
@@ -28,5 +29,8 @@
 .carts-index-value{
 	padding: 10px;
 	width: 20%;
+	float: right;
+}
+.to-order-confirm-btn{
 	float: right;
 }

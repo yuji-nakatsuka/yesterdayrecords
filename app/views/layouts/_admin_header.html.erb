@@ -1,0 +1,23 @@
+<header>
+  <div class="container">
+    <nav>
+      <font face="fantasy" size="5pt">YESterdayRecords</font>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "TOP", admins_top_path, class: "glyphicon", style:"padding-top:15px;"%>
+        </li>
+        <li>
+         <%= link_to "顧客管理画面",admins_end_users_path, class: "glyphicon", style:"padding-top:15px;"%>
+        </li>
+        <li>
+           <%= link_to "商品管理画面", admins_sell_cds_path,class: "glyphicon", style:"padding-top:15px;"%>
+        </li>
+        <li>
+          <%= link_to "購入履歴一覧",  admins_orders_path, class: "glyphicon glyphicon-edit sign_up", style:"padding-top:15px;"%>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+

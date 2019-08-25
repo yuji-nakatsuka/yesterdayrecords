@@ -1,17 +1,17 @@
 class EndUsersController < ApplicationController
 
   def show
-    @end_user=EndUser.find(params.[:id])
+    @end_user=EndUser.find(params[:id])
   end
 
   def leave
-    @end_user=EndUser.find(params.[:id])
+    @end_user=EndUser.find(params[:id])
     @end_user.destroy
     redirect_to end_user_path
   end
 
   def edit
-    @end_user=EndUser.find(params.[:id])
+    @end_user=EndUser.find(params[:id])
   end
 
   def update

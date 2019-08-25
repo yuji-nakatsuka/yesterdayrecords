@@ -16,6 +16,29 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+
+header{
+		background-color: skyblue;
+		height: 80px;
+		margin-bottom: 50px;
+}
+
+header .container{
+	padding-top: 30px;
+		background-color: skyblue;
+
+}
+
+footer {
+	margin: 50px 0 0 0;
+	background-color: skyblue;
+	padding: 50px 0 0 0 ;
+}
+ footer .row{
+ 	/*消したら灰色になる*/
+		background-color: skyblue;
+ }
+
 .admin-login{
 	text-align: center;
 	padding: 50px;

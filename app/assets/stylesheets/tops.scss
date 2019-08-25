@@ -4,10 +4,10 @@
 
 
 .container {
+  width:100%
 }
 
 .main {
-  width:100%
 }
 
 
@@ -16,11 +16,12 @@ h1 {
 }
 
 
-table {
+.new-arivval-box {
   float:left;
   width:20%;
 }
 
-table td {
+.new-arivval-box table td {
   text-align:center;
+  padding:5px 5px;
 }
