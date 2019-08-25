@@ -24,7 +24,9 @@ Rails.application.routes.draw do
   end
   # artist,labelでも拡張可能？
   get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
-  resources :sell_cds, only: [:search,:show]
+  resources :sell_cds, only: [:search,:show] do
+    resource :favorites, only: [:create,:destroy,:show]
+  end
 
 
 
