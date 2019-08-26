@@ -1,1 +1,45 @@
 <%= render "layouts/end_header"%>
+
+<div class="container">
+
+  <div class="main">
+    <h1>購入履歴</h1>
+
+    <% @orders.each do |order|%>
+
+    <table border="1" rules="none">
+      <tr class="order-title">
+        <td>注文日<br><%= order.created_at %></td>
+        <td>合計枚数<br><%= total_quantity %></td>
+        <td>合計<br>¥<%= total_price %></td>
+        <td>お届け先<br><%= order.derivery_address.derivery_address %></td>
+        <td>配送状況：　<br><%= order.derivery_address.derivery_status %></td>
+        <td>注文番号：<br><%= link_to "注文詳細",end_user_order_path(order.id) %></td>
+      </tr>
+
+      <% order.sell_cds.each do |sell_cd|%>
+      <% total_price += sell_cd.price*sell_cd.order_contents.quantity %>
+      <% total_quantity += sell_cd.order_contents.quantity %>
+      <tr>
+        <td rowspan="4">画像<br></td>
+        <td colspan="4">商品名：<%= sell_cd.title %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4">個数：<%= sell_cd.order_contents.quantity %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4">価格：<%= sell_cd.price %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4">レーベル名：<%= sellcd.label.label %></td>
+      </tr>
+      <% end %>
+      </table>
+      <% end %>
+
+    </div>
+  </div>
+</div>

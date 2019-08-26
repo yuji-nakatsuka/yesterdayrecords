@@ -12,14 +12,19 @@ Rails.application.routes.draw do
   registrations: 'end_users/registrations'
   }
 
+  delete 'end_users/:id', to: 'end_users#leave',as: 'end_user_leave'
+  get 'search', to: 'end_users#search',as: 'end_user_search'
+
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :end_users, only: [:leave,:edit,:update,:show] do
-    get 'orders/finish' => 'orders#finish'
-    get 'orders/confirm' => 'orders#confirm'
+  resources :sell_cds, only: [:search,:show]
+  resources :end_users, only: [:edit,:update,:show] do
+    get 'orders/:id/finish',  to: 'orders#finish', as: 'finish'
+    get 'orders/confirm',  to: 'orders#confirm', as: 'confirm'
     resources :orders, only: [:create,:index,:show]
     post 'carts/:id' => 'carts#add', as: 'cart_add'
     resources :carts, only: [:destroy,:index]
+    resources :delivery_addresses, only: [:create,:update,:destroy]
   end
   # artist,labelでも拡張可能？
   get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
