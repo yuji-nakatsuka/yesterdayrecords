@@ -46528,3 +46528,981 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 06:33:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.7ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.1ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (4.1ms)
+  [1m[36mFavorite Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (2.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (3.4ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (1.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (58.9ms)
+Completed 200 OK in 858ms (Views: 799.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 06:33:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/sell_cds/1/favorites" for 10.0.2.2 at 2019-08-26 06:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#create as HTML
+  Parameters: {"authenticity_token"=>"b7GPwKYomxeLJ70JDJiBAeemUY5zo/4SM7t9vA0ngKdardChSTonbhDy/ws9tCu9dpJHD8yLQE3GKQZUN/7QKw==", "sell_cd_id"=>"1"}
+  [1m[36mSellCd Load (4.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mEndUser Load (5.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mEndUser Load (43.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mSellCd Load (0.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mFavorite Create (13.0ms)[0m  [1m[32mINSERT INTO "favorites" ("end_user_id", "sell_cd_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["end_user_id", 1], ["sell_cd_id", 1], ["created_at", "2019-08-26 06:54:50.024946"], ["updated_at", "2019-08-26 06:54:50.024946"]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:8
+Redirected to http://localhost:3000/sell_cds/1
+Completed 302 Found in 136ms (ActiveRecord: 85.1ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 06:54:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (17.3ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (2.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (9.6ms)
+  [1m[36mFavorite Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (1.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (2.4ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (3.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (136.4ms)
+Completed 200 OK in 1116ms (Views: 1010.2ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 06:54:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:01:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (3.3ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.8ms)
+
+
+  
+  [1m[36mCACHE Favorite Load (0.0ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+NoMethodError (undefined method `sell_cds' for #<Favorite::ActiveRecord_Relation:0x00007f2b5a82ccb0>):
+  
+app/controllers/end_users_controller.rb:6:in `show'
+Started GET "/end_users/.jpg" for 10.0.2.2 at 2019-08-26 07:01:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:06:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (1.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:7
+  [1m[36mSellCd Load (2.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 29.2ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/end_users_controller.rb:8:in `block in show'
+app/controllers/end_users_controller.rb:7:in `show'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:06:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (5.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:7
+  [1m[36mSellCd Load (1.9ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 9.5ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/end_users_controller.rb:8:in `block in show'
+app/controllers/end_users_controller.rb:7:in `show'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:07:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.4ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (1.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:7
+  [1m[36mSellCd Load (2.1ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.2ms)
+
+
+  
+NoMethodError (undefined method `[]=' for nil:NilClass):
+  
+app/controllers/end_users_controller.rb:8:in `block in show'
+app/controllers/end_users_controller.rb:7:in `show'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:07:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.1ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:7
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 23.5ms)
+
+
+  
+NameError (undefined local variable or method `favsell_cds' for #<EndUsersController:0x00005596b061d720>):
+  
+app/controllers/end_users_controller.rb:8:in `block in show'
+app/controllers/end_users_controller.rb:7:in `show'
+Started GET "/" for 10.0.2.2 at 2019-08-26 07:13:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopsController#top as HTML
+  Rendering tops/top.html.erb within layouts/application
+  [1m[36mEndUser Load (2.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (6.8ms)
+  [1m[36mSellCd Load (2.6ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."sell_status" = ? ORDER BY "created_time" ASC LIMIT ?[0m  [["sell_status", 1], ["LIMIT", 5]]
+  ↳ app/views/tops/top.html.erb:10
+  Rendered tops/top.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 3785ms (Views: 3715.5ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 07:14:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (3.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (5.0ms)
+  [1m[36mFavorite Exists (3.8ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (4.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (3.1ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (4.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (192.0ms)
+Completed 200 OK in 1007ms (Views: 850.7ms | ActiveRecord: 67.6ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 07:15:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds/1" for 10.0.2.2 at 2019-08-26 07:15:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.5ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/sell_cds_controller.rb:7
+  Rendering admins/sell_cds/show.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (8.2ms)
+  [1m[36mGenre Load (1.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:17
+  [1m[36mArtist Load (4.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:18
+  [1m[36mDisc Load (2.2ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:43
+  [1m[36mSong Load (4.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/admins/sell_cds/show.html.erb:46
+  Rendered admins/sell_cds/show.html.erb within layouts/application (116.3ms)
+Completed 200 OK in 924ms (Views: 836.1ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/admins/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 07:15:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sell_cds" for 10.0.2.2 at 2019-08-26 07:15:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#index as HTML
+  Rendering admins/sell_cds/index.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (0.7ms)
+  [1m[36mSellCd Load (2.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE SellCd Load (0.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE SellCd Load (0.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE SellCd Load (0.0ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered admins/sell_cds/index.html.erb within layouts/application (344.0ms)
+Completed 500 Internal Server Error in 468ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_admins_sell_cd_path' for #<#<Class:0x00005596ad8949e8>:0x00005596afc4ef50>):
+    2: 
+    3: <div>
+    4: 	<div>
+    5: 		<button class="btn btn-block"><%= link_to "商品追加",new_admins_sell_cd_path %></button>
+    6: 	</div>
+    7: 
+    8: 	<table>
+  
+app/views/admins/sell_cds/index.html.erb:5:in `_app_views_admins_sell_cds_index_html_erb___32445429941727073_47052841251500'
+Started GET "/admins/sell_cds" for 10.0.2.2 at 2019-08-26 07:15:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#index as HTML
+  Rendering admins/sell_cds/index.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (0.7ms)
+  [1m[36mSellCd Load (1.0ms)[0m  [1m[34mSELECT "sell_cds".* FROM "sell_cds"[0m
+  ↳ app/views/admins/sell_cds/index.html.erb:18
+  Rendered admins/sell_cds/index.html.erb within layouts/application (65.8ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `sell_cd' for #<SellCd:0x00007f10483d6e18>):
+    17: 
+    18: <% @sell_cds.reverse_each do |sell_cd| %>
+    19: 	<table>
+    20: 				<tr><td><%= attachment_image_tag sell_cd.sell_cd, :image_id, format: 'jpeg' , fallback: "no_image.jpg", size: "50x50" %></td></tr>
+    21: 				<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
+    22: 				<tr>
+    23: 					<% sell_cd.cd_artists.each do |name| %>
+  
+app/views/admins/sell_cds/index.html.erb:20:in `block in _app_views_admins_sell_cds_index_html_erb___32445429941727073_69853954237060'
+app/views/admins/sell_cds/index.html.erb:18:in `reverse_each'
+app/views/admins/sell_cds/index.html.erb:18:in `_app_views_admins_sell_cds_index_html_erb___32445429941727073_69853954237060'
+Started GET "/admins/sell_cds" for 10.0.2.2 at 2019-08-26 07:16:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::SellCdsController#index as HTML
+  Rendering admins/sell_cds/index.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (1.5ms)
+  [1m[36mSellCd Load (3.0ms)[0m  [1m[34mSELECT "sell_cds".* FROM "sell_cds"[0m
+  ↳ app/views/admins/sell_cds/index.html.erb:18
+  Rendered admins/sell_cds/index.html.erb within layouts/application (346.3ms)
+Completed 500 Internal Server Error in 618ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin_sell_cd' for #<#<Class:0x00005596ad8949e8>:0x00005596af8557c8>):
+    17: 
+    18: <% @sell_cds.reverse_each do |sell_cd| %>
+    19: 	<table>
+    20: 				<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
+    21: 				<tr>
+    22: 					<% sell_cd.cd_artists.each do |name| %>
+    23: 					<% artist = Artist.find_by(id: name.artist_id) %>
+  
+app/views/admins/sell_cds/index.html.erb:20:in `block in _app_views_admins_sell_cds_index_html_erb___32445429941727073_47052839107280'
+app/views/admins/sell_cds/index.html.erb:18:in `reverse_each'
+app/views/admins/sell_cds/index.html.erb:18:in `_app_views_admins_sell_cds_index_html_erb___32445429941727073_47052839107280'
+Started GET "/admins/sell_cds" for 10.0.2.2 at 2019-08-26 07:17:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#index as HTML
+  Rendering admins/sell_cds/index.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (0.8ms)
+  [1m[36mSellCd Load (2.1ms)[0m  [1m[34mSELECT "sell_cds".* FROM "sell_cds"[0m
+  ↳ app/views/admins/sell_cds/index.html.erb:18
+  Rendered admins/sell_cds/index.html.erb within layouts/application (329.6ms)
+Completed 500 Internal Server Error in 561ms (ActiveRecord: 9.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin_sell_cd' for #<#<Class:0x000055dc15c7ffa0>:0x000055dc15c72fd0>):
+    17: 
+    18: <% @sell_cds.reverse_each do |sell_cd| %>
+    19: 	<table>
+    20: 				<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
+    21: 				<tr>
+    22: 					<% sell_cd.cd_artists.each do |name| %>
+    23: 					<% artist = Artist.find_by(id: name.artist_id) %>
+  
+app/views/admins/sell_cds/index.html.erb:20:in `block in _app_views_admins_sell_cds_index_html_erb___2172332420171606899_47201873332760'
+app/views/admins/sell_cds/index.html.erb:18:in `reverse_each'
+app/views/admins/sell_cds/index.html.erb:18:in `_app_views_admins_sell_cds_index_html_erb___2172332420171606899_47201873332760'
+Started GET "/admins/sell_cds" for 10.0.2.2 at 2019-08-26 07:27:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::SellCdsController#index as HTML
+  Rendering admins/sell_cds/index.html.erb within layouts/application
+  Rendered layouts/_admin_header.html.erb (0.8ms)
+  [1m[36mSellCd Load (2.8ms)[0m  [1m[34mSELECT "sell_cds".* FROM "sell_cds"[0m
+  ↳ app/views/admins/sell_cds/index.html.erb:18
+  Rendered admins/sell_cds/index.html.erb within layouts/application (302.1ms)
+Completed 500 Internal Server Error in 421ms (ActiveRecord: 13.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `admin_sell_cd' for #<#<Class:0x000055bfad0aafb0>:0x000055bfad09dec8>):
+    17: 
+    18: <% @sell_cds.reverse_each do |sell_cd| %>
+    19: 	<table>
+    20: 		<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
+    21: 		<tr>
+    22: 			<% sell_cd.cd_artists.each do |name| %>
+    23: 			<% artist = Artist.find_by(id: name.artist_id) %>
+  
+app/views/admins/sell_cds/index.html.erb:20:in `block in _app_views_admins_sell_cds_index_html_erb__2726641804371532990_47140865138600'
+app/views/admins/sell_cds/index.html.erb:18:in `reverse_each'
+app/views/admins/sell_cds/index.html.erb:18:in `_app_views_admins_sell_cds_index_html_erb__2726641804371532990_47140865138600'
+Started GET "/end_users/1/carts" for 10.0.2.2 at 2019-08-26 07:32:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CartsController#index as HTML
+  Parameters: {"end_user_id"=>"1"}
+  [1m[36mEndUser Load (19.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:4
+  Rendering carts/index.html.erb within layouts/application
+  Rendered layouts/_end_header.html.erb (1.3ms)
+  [1m[36mGenre Load (1.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/layouts/_sidebar.html.erb:6
+  [1m[36mCart Load (2.3ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ app/views/carts/index.html.erb:3
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ app/views/carts/index.html.erb:3
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ app/views/carts/index.html.erb:3
+  [1m[36mCACHE Cart Load (0.0ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."end_user_id" = ? LIMIT ?[0m  [["end_user_id", 1], ["LIMIT", 11]]
+  ↳ app/views/carts/index.html.erb:3
+  Rendered layouts/_sidebar.html.erb (324.6ms)
+  Rendered carts/index.html.erb within layouts/application (380.4ms)
+Completed 500 Internal Server Error in 691ms (ActiveRecord: 42.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `sell_cds_genreidsearch_path' for #<#<Class:0x000055bfadde6dc8>:0x000055bfaddd9560>):
+     5: 		<ul>
+     6: 		<% genres.each do |genre|%>
+     7: 			<li>
+     8: 				<%= link_to sell_cds_genreidsearch_path(genre.id) do%>
+     9: 					<%=genre.genre%>
+    10: 				<%end%>
+    11: 			</li>
+  
+app/views/layouts/_sidebar.html.erb:8:in `block in _app_views_layouts__sidebar_html_erb___4264655515365006777_47140871700420'
+app/views/layouts/_sidebar.html.erb:6:in `_app_views_layouts__sidebar_html_erb___4264655515365006777_47140871700420'
+app/views/carts/index.html.erb:3:in `_app_views_carts_index_html_erb___351082518464576720_47140872077040'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:32:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (3.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.8ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  [1m[36mSellCd Load (2.4ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:9
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (4.8ms)
+  Rendered end_users/show.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 3230ms (Views: 3133.3ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:32:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.5ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  [1m[36mSellCd Load (1.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:9
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (7.8ms)
+  Rendered end_users/show.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 919ms (Views: 865.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:33:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (5.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  [1m[36mSellCd Load (2.6ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:9
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (5.1ms)
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:13
+  [1m[36mGenre Load (2.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:14
+  [1m[36mLabel Load (3.3ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:15
+  Rendered end_users/show.html.erb within layouts/application (146.1ms)
+Completed 200 OK in 921ms (Views: 815.0ms | ActiveRecord: 36.1ms)
+
+
+Started DELETE "/sell_cds/1/favorites" for 10.0.2.2 at 2019-08-26 07:33:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H6ObOheZ5GH+NO9RTpyptlM39Gi/WpNI2BghJ7VutXcqv8Rb+ItYGGXhrVN/sAMKwgPi6QByLRctilrPj7fl+w==", "sell_cd_id"=>"1"}
+  [1m[36mSellCd Load (5.7ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:13
+  [1m[36mFavorite Load (2.8ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:15
+  [1m[36mFavorite Destroy (36.9ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/favorites_controller.rb:15
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:15
+Redirected to http://localhost:3000/sell_cds/1
+Completed 302 Found in 108ms (ActiveRecord: 61.5ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 07:33:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (2.8ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (3.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (15.5ms)
+  [1m[36mFavorite Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (1.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (5.4ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (5.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (177.1ms)
+Completed 200 OK in 1103ms (Views: 957.9ms | ActiveRecord: 57.2ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 07:33:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:33:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (6.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (6.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (4.9ms)
+  Rendered end_users/show.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 543ms (Views: 469.1ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/end_users/.jpg" for 10.0.2.2 at 2019-08-26 07:33:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:34:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.7ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (4.8ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (2.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (10.5ms)
+  Rendered end_users/show.html.erb within layouts/application (80.3ms)
+Completed 200 OK in 1000ms (Views: 892.5ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:34:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (1.1ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (1.8ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (2.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (15.2ms)
+  Rendered end_users/show.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 899ms (Views: 854.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:34:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.8ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.3ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (6.1ms)
+  Rendered end_users/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 855ms (Views: 804.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:36:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (2.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (2.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (1.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (6.3ms)
+  Rendered end_users/show.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 733ms (Views: 687.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 07:36:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (1.5ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (3.7ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (9.5ms)
+  [1m[36mFavorite Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (2.8ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (1.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (80.6ms)
+Completed 200 OK in 1202ms (Views: 1149.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 07:36:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/sell_cds/1/favorites" for 10.0.2.2 at 2019-08-26 07:36:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#create as HTML
+  Parameters: {"authenticity_token"=>"eZjh/7PkLXvYGJc079N5ED5piuOgnjphktLHKYxxQHVMhL6eXPaRAkPN1Tbe/9Osr12cYh+2hD5nQLzBtqgQ+Q==", "sell_cd_id"=>"1"}
+  [1m[36mSellCd Load (3.6ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mEndUser Load (2.0ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mEndUser Load (1.2ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mSellCd Load (0.2ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[36mFavorite Create (5.2ms)[0m  [1m[32mINSERT INTO "favorites" ("end_user_id", "sell_cd_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["end_user_id", 1], ["sell_cd_id", 1], ["created_at", "2019-08-26 07:36:50.483186"], ["updated_at", "2019-08-26 07:36:50.483186"]]
+  ↳ app/controllers/favorites_controller.rb:8
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:8
+Redirected to http://localhost:3000/sell_cds/1
+Completed 302 Found in 87ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/sell_cds/1" for 10.0.2.2 at 2019-08-26 07:36:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SellCdsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSellCd Load (3.6ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sell_cds_controller.rb:7
+  Rendering sell_cds/show.html.erb within layouts/application
+  [1m[36mEndUser Load (2.4ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (10.7ms)
+  [1m[36mFavorite Exists (10.7ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."sell_cd_id" = ? AND "favorites"."end_user_id" = ? LIMIT ?[0m  [["sell_cd_id", 1], ["end_user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/sell_cd.rb:19
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."sell_cd_id" = ?[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:21
+  [1m[36mGenre Load (2.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sell_cds/show.html.erb:29
+  [1m[36mDisc Load (2.6ms)[0m  [1m[34mSELECT "discs".* FROM "discs" WHERE "discs"."sell_cd_id" = ? ORDER BY "discs"."number" ASC[0m  [["sell_cd_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:70
+  [1m[36mSong Load (2.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."disc_id" = ? ORDER BY "songs"."number" ASC[0m  [["disc_id", 1]]
+  ↳ app/views/sell_cds/show.html.erb:73
+  Rendered sell_cds/show.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 948ms (Views: 875.6ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/sell_cds/.jpg" for 10.0.2.2 at 2019-08-26 07:36:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/sell_cds/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/end_users/1" for 10.0.2.2 at 2019-08-26 07:36:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by EndUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEndUser Load (1.3ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:4
+  [1m[36mFavorite Load (1.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."end_user_id" = ?[0m  [["end_user_id", 1]]
+  ↳ app/controllers/end_users_controller.rb:8
+  [1m[36mSellCd Load (1.2ms)[0m  [1m[34mSELECT  "sell_cds".* FROM "sell_cds" WHERE "sell_cds"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/end_users_controller.rb:9
+  Rendering end_users/show.html.erb within layouts/application
+  [1m[36mEndUser Load (0.6ms)[0m  [1m[34mSELECT  "end_users".* FROM "end_users" WHERE "end_users"."id" = ? ORDER BY "end_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_end_header.html.erb:5
+  Rendered layouts/_end_header.html.erb (4.4ms)
+  [1m[36mArtist Load (2.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:14
+  [1m[36mGenre Load (2.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:15
+  [1m[36mLabel Load (2.2ms)[0m  [1m[34mSELECT  "labels".* FROM "labels" WHERE "labels"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/end_users/show.html.erb:16
+  Rendered end_users/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 516ms (Views: 457.8ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/end_users/.jpg" for 10.0.2.2 at 2019-08-26 07:36:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/end_users/.jpg"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'

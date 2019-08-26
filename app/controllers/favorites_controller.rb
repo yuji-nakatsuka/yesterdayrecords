@@ -16,6 +16,4 @@ class FavoritesController < ApplicationController
             redirect_to  sell_cd_path(sell_cd.id)
 	end
 
-	def index
-	end
 end

@@ -2,7 +2,6 @@
 
 <div>
 	<div>
-		<button class="btn btn-block"><%= link_to "商品追加",new_admins_sell_cd_path %></button>
 	</div>
 
 	<table>
@@ -18,19 +17,18 @@
 
 <% @sell_cds.reverse_each do |sell_cd| %>
 	<table>
-				<tr><td><%= attachment_image_tag sell_cd.sell_cd, :image_id, format: 'jpeg' , fallback: "no_image.jpg", size: "50x50" %></td></tr>
-				<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
-				<tr>
-					<% sell_cd.cd_artists.each do |name| %>
-					<% artist = Artist.find_by(id: name.artist_id) %>
-					<td><%= artist.artist %></td>
-					<% end %>
-				</tr>
-				<tr><td><%= sell_cd.stock %></td></tr>
-				<tr><td><span>sell_cd.value</span><span>sell_cd.sale_status</span></td></tr>
-				<tr><td><span><%= link_to "編集", edit_admins_sell_cd_path(sell_cd.id) %></span><span><%= link_to "削除",admins_sell_cd_path(sell_cd.id),method: :delete, data: { confirm: '本当に削除しますか？'} %></span></td></tr>
+		<tr><td><%= link_to sell_cd.title , admin_sell_cd(sell_cd) %></td></tr>
+		<tr>
+			<% sell_cd.cd_artists.each do |name| %>
+			<% artist = Artist.find_by(id: name.artist_id) %>
+			<td><%= artist.artist %></td>
+			<% end %>
+		</tr>
+		<tr><td><%= sell_cd.stock %></td></tr>
+		<tr><td><span>sell_cd.value</span><span>sell_cd.sale_status</span></td></tr>
+		<tr><td><span><%= link_to "編集", edit_admins_sell_cd_path(sell_cd.id) %></span><span><%= link_to "削除",admins_sell_cd_path(sell_cd.id),method: :delete, data: { confirm: '本当に削除しますか？'} %></span></td></tr>
 
-        </table>
+    </table>
 	<%= paginate @sell_cds %>
 	<% end %>
 
