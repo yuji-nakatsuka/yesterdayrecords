@@ -17,8 +17,8 @@ class OrdersController < ApplicationController
   end
 
   def index
-    @orders = Order.where(end_user_id: current_end_user)
-
+    @order = Order.find(current_end_user)
+    enum(@order)
   end
 
   def show

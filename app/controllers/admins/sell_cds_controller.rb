@@ -11,6 +11,9 @@ class Admins::SellCdsController < ApplicationController
 		@sell_cds = SellCd.all
 	end
 
+	def search
+	end
+
 	def destroy
 		sell_cd = SellCd.find(params[:id])
 		if sell_cd.destroy
@@ -30,8 +33,15 @@ class Admins::SellCdsController < ApplicationController
 
 	def main_new
 		@sell_cd = SellCd.new
-		@discs = @sell_cd.discs.build
-		@songs = @discs.songs.build
+
+		# disc,song作成時使用 cocoon
+			@discs = @sell_cd.discs.build
+			@songs = @discs.songs.build
+
+		# label,artist,genre表示のため
+			@labelid = Label.getlabelid
+			@artistid = Artist.getartistid
+			@genreid = Genre.getgenreid
 	end
 
 	def artist_create
@@ -46,18 +56,6 @@ class Admins::SellCdsController < ApplicationController
 	def main_create
 		sell_cd = SellCd.new(sell_cd_params)
 		disc_number = 0
-
-		sell_cd.discs_attributes.each do |disc|
-			disc_number += 1
-			disc.number = disc_number
-
-			song_number = 0
-
-			disc.songs_attributes.each do |song|
-				song_number += 1
-				song.number = song_number
-			end
-		end
 
 		if sell_cd.save
 			redirect_to admins_sell_cd_path(sell_cd.id)

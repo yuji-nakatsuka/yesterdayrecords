@@ -26,8 +26,11 @@ Rails.application.routes.draw do
     resources :carts, only: [:destroy,:index]
     resources :delivery_addresses, only: [:create,:update,:destroy]
   end
-
-
+  # artist,labelでも拡張可能？
+  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
+  resources :sell_cds, only: [:search,:show] do
+    resource :favorites, only: [:create,:destroy,:show]
+  end
 
 
 
@@ -46,8 +49,9 @@ Rails.application.routes.draw do
     put 'sell_cds/main_update' => 'sell_cds#main_update'
     resources :sell_cds, only: [:index,:edit,:destroy,:show]
     get 'top' => 'top#top'
+    resources :orders, only: [:index]
     resources :end_users, only: [:index,:edit,:destroy,:show,:update] do
-      resources :orders, only: [:show,:update,:index]
+      resources :orders, only: [:show,:update]
     end
   end
 
