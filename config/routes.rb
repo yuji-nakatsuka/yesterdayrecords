@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   devise_for :admins, controllers: {
   sessions:      'admins/sessions',
   passwords:     'admins/passwords',
@@ -23,7 +22,7 @@ Rails.application.routes.draw do
     resources :carts, only: [:destroy,:index]
   end
   # artist,labelでも拡張可能？
-  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
+  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidsearch'
   resources :sell_cds, only: [:search,:show]
 
 

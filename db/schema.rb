@@ -93,7 +93,7 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
   create_table "order_contents", force: :cascade do |t|
     t.integer "order_id", null: false
     t.integer "sell_cd_id", null: false
-    t.string "quantity", null: false
+    t.integer "quantity", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -102,7 +102,8 @@ ActiveRecord::Schema.define(version: 2019_08_14_103345) do
     t.integer "end_user_id", null: false
     t.integer "total_price", null: false
     t.integer "payment_method", null: false
-    t.integer "delivery_address_id", null: false
+    t.string "zip", null: false
+    t.text "delivery_address", null: false
     t.integer "delivery_status", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
