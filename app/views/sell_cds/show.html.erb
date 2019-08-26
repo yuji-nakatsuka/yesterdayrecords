@@ -7,17 +7,7 @@
   <div class="image-top-infos clearfix">
     <div class="cd-image">
       <img src=".jpg">
-       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %>
-    </div>
-
-    <div class="top-infos">
-
-      <div class="title-group">
-        <h2><%= @sell_cd.title %>
-
-
-
-
+       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %><br>
                 <div class="fav">
                   <%if @sell_cd.favorited_by?(current_end_user)%>
                     <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-deatroy", method: :delete do %>
@@ -28,19 +18,14 @@
                      <i class="fa fa-heart" aria-hidden="true"></i>
                     <%end%>
                   <%end%>
+                  <%= @sell_cd.favorites.count %> いいね
                 </div>
+    </div>
 
+    <div class="top-infos">
 
-
-
-
-
-
-
-
-
-
-        </h2>
+      <div class="title-group">
+        <h2><%= @sell_cd.title %></h2>
         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
         <h2>U-Z</h2>
       <%# --モデル編集後、アーティスト置き換え <%= @sell_cd.artist.artst %>
