@@ -19,3 +19,4 @@ class SellCd < ApplicationRecord
 		favorites.where(end_user_id: end_user.id).exists?
 	end
 end
+

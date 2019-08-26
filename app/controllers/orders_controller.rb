@@ -1,9 +1,14 @@
 class OrdersController < ApplicationController
 
   def confirm
+<<<<<<< HEAD
+    @cart = Cart.find(current_end_user)
+
+=======
     @order = Order.new
     @carts = Cart.where(end_user_id: current_end_user)
     @delivery_address = DeliveryAddress.new
+>>>>>>> master
   end
 
   def create
@@ -24,5 +29,9 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
+
+
+	def update
+	end
 
 end

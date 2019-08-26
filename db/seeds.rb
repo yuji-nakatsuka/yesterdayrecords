@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+
 Artist.create(artist:"U-Z")
 Label.create(label:"IRMA RECORDS")
 Genre.create(genre:"Future Soul")

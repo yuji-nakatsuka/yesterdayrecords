@@ -1,0 +1,13 @@
+<%= render "layouts/admin_header"%>
+
+<h1>Genre編集画面</h1>
+<p>（注意）ここでGenre名を変更するとそのGenreが持つ全てのCDのGenre名も変更されます。</p>
+
+<div class="main-new">
+	<%= form_for(@genre , url: admins_sell_cds_genre_update_path) do |f| %>
+	<h4>Genre</h4>
+	 <%= f.text_field :genre ,class:"col-xs-12"%>
+	    <%= f.submit "Update Genre",:class =>"btn btn-primary btn-lg btn-block"%>
+	  </div>
+	<% end %>
+</div>

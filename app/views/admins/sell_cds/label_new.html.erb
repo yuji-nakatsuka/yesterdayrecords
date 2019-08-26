@@ -1,0 +1,22 @@
+<div class="container">
+
+  <%= form_for (@label), url: admins_sell_cds_label_create_path do |f| %>
+  <% if @label.errors.any? %>
+  <div id="error_explanation">
+     <h2><%= @label.errors.count %>件のエラーが発生しました。</h2>
+     <ul>
+      <% @label.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+<% end %>
+<% end %>
+      </ul>
+  </div>
+    <div>
+      <h1>Label追加</h1>
+      <h1>Label</h1>
+      <%= f.text_field :label ,class:"col-xs-12"%>
+    </div>
+
+     <%= f.submit "追加", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
+     <% end %>
+</div>

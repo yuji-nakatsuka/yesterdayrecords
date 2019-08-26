@@ -1,9 +1,14 @@
 <%= render "layouts/admin_header"%>
+<% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 
 
 <h1>商品作成画面</h1>
 <div class="main-new">
-<%= form_with(model: @sell_cd, url: admins_sell_cds_main_create_path, local: true) do |form| %>
+<%= form_with(model: SellCd.new, url: admins_sell_cds_main_create_path, local: true) do |form| %>
   <div class="field">
 <!-- title -->
     <%= form.label :title %><br>
@@ -11,17 +16,17 @@
 <!-- artist_id -->
     <%= form.label :artist_id %><br>
     <%= form.select :artist_id,@artistid %>
-    <%= link_to admins_sell_cds_artist_new_path ,class:"btn" do%>新規アーティストの追加<%end%>
+    <%= link_to admins_sell_cds_artist_new_path ,class:"btn" ,data: {"turbolinks" => false} do%>新規アーティストの追加<%end%>
     <br>
 <!-- label_id -->
     <%= form.label :label_id %><br>
     <%= form.select :label_id, @labelid %>
-    <%= link_to admins_sell_cds_label_new_path ,class:"btn" do%>新規レーベルの追加<%end%>
+    <%= link_to admins_sell_cds_label_new_path ,class:"btn" ,data: {"turbolinks" => false} do%>新規レーベルの追加<%end%>
     <br>
 <!-- genre_id -->
     <%= form.label :genre_id %><br>
     <%= form.select :genre_id,@genreid %>
-    <%= link_to admins_sell_cds_genre_new_path ,class:"btn" do%>新規ジャンルの追加<%end%>
+    <%= link_to admins_sell_cds_genre_new_path ,class:"btn" ,data: {"turbolinks" => false} do%>新規ジャンルの追加<%end%>
     <br>
 <!-- value -->
     <%= form.label :value %><br>

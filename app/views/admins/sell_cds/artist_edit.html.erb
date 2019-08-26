@@ -1,0 +1,13 @@
+<%= render "layouts/admin_header"%>
+
+<h1>Artist編集画面</h1>
+<p>（注意）ここでArtist名を変更するとそのArtistが持つ全てのCDのArtist名も変更されます。</p>
+
+<div class="main-new">
+	<%= form_for(@artist , url: admins_sell_cds_artist_update_path) do |f| %>
+	<h4>Artist</h4>
+	 <%= f.text_field :artist ,class:"col-xs-12"%>
+	    <%= f.submit "Update Artist",:class =>"btn btn-primary btn-lg btn-block"%>
+	  </div>
+	<% end %>
+</div>
