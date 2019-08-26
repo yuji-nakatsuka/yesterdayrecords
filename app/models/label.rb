@@ -1,5 +1,6 @@
 class Label < ApplicationRecord
-  has_many :sell_cds
+  has_many :sell_cds, dependent: :destroy
+   validates :label, presence: true, uniqueness: true
 
   	# label,genre,artistまとめたいな @admins/sell_cds
     def self.getlabelid

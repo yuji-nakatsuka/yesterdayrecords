@@ -9,6 +9,24 @@ class Admins::SellCdsController < ApplicationController
 		@discs = @sell_cd.discs.order(number: "ASC")
 	end
 
+	def artist_show
+		@artist = Artist.find(params[:id])
+		@sell_cds = SellCd.where(artist_id: @artist)
+		@kaminari = @sell_cds.page(params[:page]).per(PER)
+	end
+
+	def genre_show
+		@genre = Genre.find(params[:id])
+		@sell_cds = SellCd.where(genre_id: @genre)
+		@kaminari = @sell_cds.page(params[:page]).per(PER)
+	end
+
+	def label_show
+		@label = Label.find(params[:id])
+		@sell_cds = SellCd.where(label_id: @label)
+		@kaminari = SellCd.page(params[:page]).per(PER)
+	end
+
 	def index
 		@sell_cds = SellCd.page(params[:page]).per(PER)
 	end
@@ -24,7 +42,29 @@ class Admins::SellCdsController < ApplicationController
   		redirect_to admins_sell_cds_path
   		end
 	end
+	def genre_destroy
+		genre = Genre.find(params[:id])
+		if genre.destroy
+			flash[:notice] = "genre was successfully destroyed"
+			redirect_to admins_sell_cds_genre_index_path
+		end
+	end
 
+	def artist_destroy
+		artist = Artist.find(params[:id])
+		if artist.destroy
+			flash[:notice] = "artist was successfully destroyed"
+			redirect_to admins_sell_cds_artist_index_path
+		end
+	end
+
+	def label_destroy
+		label = Label.find(params[:id])
+		if label.destroy
+			flash[:notice] = "label was successfully destroyed"
+			redirect_to admins_sell_cds_label_index_path
+		end
+	end
 
 
 
@@ -76,18 +116,15 @@ class Admins::SellCdsController < ApplicationController
 
 
 	def artist_edit
-		@sell_cd = SellCd.find(params[:id])
-		@artist - @sell_cd.artist_id
+		@artist = Artist.find(params[:id])
 	end
 
 	def genre_edit
-		@sell_cd = SellCd.find(params[:id])
-		@genre = @sell_cd.genre_id
+		@genre = Genre.find(params[:id])
 	end
 
 	def label_edit
-		@sell_cd = SellCd.find(params[:id])
-		@label = @sell_cd.label_id
+		@label = Label.find(params[:id])
 	end
 
 	def main_edit
@@ -104,13 +141,24 @@ class Admins::SellCdsController < ApplicationController
 
 
 
+	def genre_index
+		@genres = Genre.page(params[:page]).per(PER)
+	end
+
+	def artist_index
+		@artists = Artist.page(params[:page]).per(PER)
+	end
+
+	def label_index
+		@labels = Label.page(params[:page]).per(PER)
+	end
+
 #ここはプルダウン
 	def artist_update
-		@sell_cd = SellCd.find(params[:id])
-		@artist = @sell_cd.artist_id
+		@artist = Artist.find(params[:id])
 		if @artist.update(artist_params)
 			flash[:notice] = "You have updated successfully"
-			redirect_to admins_sell_cd_path(@sell_cd)
+			redirect_to  admins_sell_cds_artist_index_path
 		else
 			flash[:notice] = "You don't have updated unsuccessfully"
 			render :artist_edit
@@ -118,11 +166,10 @@ class Admins::SellCdsController < ApplicationController
 	end
 #ここはプルダウン
 	def genre_update
-		@sell_cd = SellCd.find(params[:id])
-		@genre = @sell_cd.genre_id
+		@genre = Genre.find(params[:id])
 		if @genre.update(genre_params)
 			flash[:notice] = "You have updated successfully"
-			redirect_to admins_sell_cd_path(@sell_cd)
+			redirect_to admins_sell_cds_genre_index_path
 		else
 			flash[:notice] = "You have updated unsuccessfully"
 			render :artist_edit
@@ -130,11 +177,10 @@ class Admins::SellCdsController < ApplicationController
 	end
 #ここはプルダウン
 	def label_update
-		@sell_cd = SellCd.find(params[:id])
-		@label = @sell_cd.label_id
+		@label = Label.find(params[:id])
 		if @label.update(label_params)
 			flash[:notice] = "You have updated successfully"
-			redirect_to admins_sell_cd_path(@sell_cd)
+			redirect_to admins_sell_cds_label_index_path
 		else
 			flash[:notice] = "You don't have updated unsuccessfully"
 			render :genre_edit

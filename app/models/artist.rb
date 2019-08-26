@@ -1,6 +1,7 @@
 class Artist < ApplicationRecord
 
-  has_many :sell_cds
+  has_many :sell_cds, dependent: :destroy
+  validates :artist, presence: true
 
 
   	# label,genre,artistまとめたいな @admins/sell_cds
