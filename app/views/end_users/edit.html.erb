@@ -39,6 +39,10 @@
 
   <div class="end-user-da-edit-add-form">
     <%= form_for @delivery_address,url: end_user_delivery_addresses_path(@end_user) do |f| %>
+
+            <label>郵便番号</label>
+            <%= f.text_field :zip %>
+
             <label>配送先の住所</label>
             <%= f.text_field :delivery_address %>
 
@@ -50,13 +54,17 @@
 
     <div class="end-user-da-edit-edit-form">
 
-    <%= @delivery_addresses.each do |da| %>
+    <% @delivery_addresses.each do |da| %>
       <%= form_for da,url: end_user_delivery_address_path(@end_user) do |f| %>
+              <label>郵便番号</label>
+              <%= f.text_field :zip %>
+
               <label>配送先の住所</label>
               <%= f.text_field :delivery_address %>
 
           <!-- ここに追加 -->
           <%= f.submit "変更を保存" %>
+          <%= link_to "削除", end_user_delivery_address_path(da.end_user_id,da.id), method: :delete %>
       <% end %>
       <% end %>
 

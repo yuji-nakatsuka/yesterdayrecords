@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   }
 
   delete 'end_users/:id', to: 'end_users#leave',as: 'end_user_leave'
-  get 'search', to: 'end_users#leave',as: 'end_user_leave'
+  get 'search', to: 'end_users#search',as: 'end_user_search'
 
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -24,7 +24,7 @@ Rails.application.routes.draw do
     resources :orders, only: [:create,:index,:show]
     post 'carts/:id' => 'carts#add', as: 'cart_add'
     resources :carts, only: [:destroy,:index]
-    resources :delivery_addresses, only: [:create,:update]
+    resources :delivery_addresses, only: [:create,:update,:destroy]
   end
 
 

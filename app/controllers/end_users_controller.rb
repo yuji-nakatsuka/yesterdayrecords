@@ -2,6 +2,7 @@ class EndUsersController < ApplicationController
 
   def show
     @end_user=EndUser.find(params[:id])
+    @delivery_addresses = @end_user.delivery_addresses
   end
 
   def leave

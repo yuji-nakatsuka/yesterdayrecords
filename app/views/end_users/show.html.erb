@@ -29,10 +29,12 @@
 					<td>メールアドレス</td>
 					<td><%=@end_user.email%></td>
 				</tr>
+				<% @delivery_addresses.each do |delivery_address| %>
 				<tr>
 					<td>配送先住所</td>
-					<td><%=%></td>
+					<td><%= delivery_address.zip %> <%= delivery_address.delivery_address %></td>
 				</tr>
+				<%end%>
 			</table>
 		</div>
 		<div class="end_user-show-edit-btns">

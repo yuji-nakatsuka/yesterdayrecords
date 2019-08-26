@@ -11,6 +11,7 @@ class CartsController < ApplicationController
 
 	def add
 		cart = Cart.new(cart_params)
+		cart.end_user_id = current_end_user.id
 		cart.save
 		redirect_to end_user_carts_path
 	end

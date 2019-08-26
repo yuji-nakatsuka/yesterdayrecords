@@ -4,7 +4,7 @@
   <div class="main">
     <h1>購入履歴</h1>
 
-    <%= @orders.each do |order|%>
+    <% @orders.each do |order|%>
 
     <table border="1" rules="none">
       <tr class="order-title">
@@ -16,7 +16,7 @@
         <td>注文番号：<br><%= link_to "注文詳細",end_user_order_path(order.id) %></td>
       </tr>
 
-      <%= order.sell_cds.each do |sell_cd|%>
+      <% order.sell_cds.each do |sell_cd|%>
       <% total_price += sell_cd.price*sell_cd.order_contents.quantity %>
       <% total_quantity += sell_cd.order_contents.quantity %>
       <tr>
