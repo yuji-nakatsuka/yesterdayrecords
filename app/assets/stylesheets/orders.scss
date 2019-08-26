@@ -1,3 +1,37 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.finish-orders-list {
+  width:80%;
+  margin: 0 auto;
+}
+
+.finish-orders-list table{
+  width:100%;
+}
+
+.order-title{
+  background-color: lightgray;
+}
+
+.finish-orders-list td{
+  padding:5px;
+}
+
+.order-calculation {
+  width:80%;
+}
+
+.order-calculation table{
+  width:100%;
+  text-align: right;
+}
+
+.confirm-contents {
+  width:80%;
+}
+
+.confirm-contents table{
+  width:100%;
+}

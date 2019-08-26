@@ -1,3 +1,4 @@
+<%= render "layouts/end_header"%>
 
 <div class="container">
 
@@ -5,13 +6,13 @@
 
   <h1>アカウント情報の変更</h1>
 
-  <div class="form">
+  <div class="end-user-edit-form">
     <%= form_for(@end_user) do |f| %>
             <label>名前　姓</label>
             <%= f.text_field :last_name,placeholder:"田中"%>
 
             <label>名前　名</label>
-            <%= f.text_field :last_name,placeholder:"太郎"%>
+            <%= f.text_field :first_name,placeholder:"太郎"%>
 
             <label>名前　カナ姓</label>
             <%= f.text_field :kana_last,placeholder:"タナカ"%>
@@ -31,14 +32,42 @@
             <label>メールアドレス</label>
             <%= f.text_field :email,placeholder:"a@a"%>
 
-            <label>配送先の住所</label>
-            <%= f.text_field :delivery_address,placeholder:"大阪府堺市"%>
-
         <!-- ここに追加 -->
-        <%= f.submit "変更を保存", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
+        <%= f.submit "変更を保存" %>
     <% end %>
 
   </div>
+
+  <div class="end-user-da-edit-add-form">
+    <%= form_for @delivery_address,url: end_user_delivery_addresses_path(@end_user) do |f| %>
+
+            <label>郵便番号</label>
+            <%= f.text_field :zip %>
+
+            <label>配送先の住所</label>
+            <%= f.text_field :delivery_address %>
+
+        <!-- ここに追加 -->
+        <%= f.submit "新規追加" %>
+    <% end %>
+  </div>
+
+
+    <div class="end-user-da-edit-edit-form">
+
+    <% @delivery_addresses.each do |da| %>
+      <%= form_for da,url: end_user_delivery_address_path(@end_user) do |f| %>
+              <label>郵便番号</label>
+              <%= f.text_field :zip %>
+
+              <label>配送先の住所</label>
+              <%= f.text_field :delivery_address %>
+
+          <!-- ここに追加 -->
+          <%= f.submit "変更を保存" %>
+          <%= link_to "削除", end_user_delivery_address_path(da.end_user_id,da.id), method: :delete %>
+      <% end %>
+      <% end %>
 
   </div>
 

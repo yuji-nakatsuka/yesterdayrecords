@@ -1,0 +1,85 @@
+<%= render "layouts/end_header"%>
+<div class="container">
+
+  <div class="main">
+    <h1>注文内容</h1>
+
+    <div class="confirm-contents">
+    <h2>注文商品一覧</h2>
+
+    <% if !@carts.nil?%>
+    <table border="1" rules="none">
+
+      <%= @carts.each do |cart| %>
+      <tr>
+        <td rowspan="7"><%= attachment_image_tag cart.sellcd.image, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
+        <td colspan="4"><%= cart.sellcd.title %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><%= cart.sellcd.artist.artist %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"><%= cart.sellcd.label.label %></td>
+      </tr>
+
+      <tr>
+        <td colspan="4"> <%= cart.sellcd.genre.genre %> </td>
+      </tr>
+
+      <tr>
+        <td colspan="3">数量</td>
+        <td colspan="3"><%= cart.quantity %>個</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">カートから削除</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">ステータス　<%= enum(cart.sellcd.sell_status)  %></td>
+        <td colspan="2">価格　<%= cart.sellcd.value %></td>
+      </tr>
+
+      <%end%>
+      </table>
+    <%end%>
+
+    <div class="confirm-delivery-addresses">
+      <h2>送付先を選択してください</h2>
+      <table border="1" rules="none">
+      <tr>
+        <td>郵便番号：</td>
+      </tr>
+      <tr>
+        <td>住所：</td>
+      </tr>
+    </table>
+
+    <%= form_for end_user_delivery_addresses_path(current_end_user.id) do |da| %>
+    <table border="1" rules="none">
+    <tr>
+      <td>新規住所</td>
+      <td><%= da.text_field :delivery_address %></td>
+      <td><%= da.submit "追加" %></td>
+    </tr>
+    </table>
+    <%end%>
+
+    <h2>支払い方法を選択してください</h2>
+
+    <%= form_for @order %>
+
+      <label>支払い方法</label>
+      <%= f.select :payment_method, [[["クレジットカード",0],["銀行振込",1],["代引",2],]%>
+
+      <%= f.submit "購入する"%>
+
+    <%end%>
+
+
+    </div>
+    </div>
+  </div>
+</div>
