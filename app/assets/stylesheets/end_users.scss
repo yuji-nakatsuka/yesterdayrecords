@@ -1,3 +1,10 @@
 // Place all the styles related to the end_users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.end_user-show-edit-btns .btn-info,
+.end_user-show-edit-btns .btn-success,
+.end_user-show-edit-btns .btn-danger
+{
+  width: 26%
+}

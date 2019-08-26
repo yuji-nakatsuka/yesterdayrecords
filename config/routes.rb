@@ -12,17 +12,22 @@ Rails.application.routes.draw do
   registrations: 'end_users/registrations'
   }
 
+  delete 'end_users/:id', to: 'end_users#leave',as: 'end_user_leave'
+  get 'search', to: 'end_users#leave',as: 'end_user_leave'
+
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :end_users, only: [:leave,:edit,:update,:show] do
-    get 'end_users/end_user_id/orders/:id/finish',  to: 'orders#finish', as: 'finish'
-    get 'end_users/end_user_id/orders/confirm',  to: 'orders#confirm', as: 'confirm'
+  resources :sell_cds, only: [:search,:show]
+  resources :end_users, only: [:edit,:update,:show] do
+    get 'orders/:id/finish',  to: 'orders#finish', as: 'finish'
+    get 'orders/confirm',  to: 'orders#confirm', as: 'confirm'
     resources :orders, only: [:create,:index,:show]
-    post 'carts/:id' => 'carts#add'
+    post 'carts/:id' => 'carts#add', as: 'cart_add'
     resources :carts, only: [:destroy,:index]
+    resources :delivery_addresses, only: [:create,:update]
   end
 
-  resources :sell_cds, only: [:searrch,:show]
+
 
 
 
