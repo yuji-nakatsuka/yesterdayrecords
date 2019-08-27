@@ -5,10 +5,23 @@
   <div class="sell_cd_show_all">
 
   <div class="image-top-infos clearfix">
-    <div class="cd-image">
-      <img src=".jpg">
-       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %><br>
+    <div class="cd-images">
+      <%if @sell_cd.image != nil%>
+          <div class="a">
+            <div class="b">
+               <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+            </div>
+            <%@sell_cd.sell_cd_images.each do |image|%>
+              <div class="b">
+                 <%= attachment_image_tag image, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+              </div>
+            <%end%>
+          </div>
+      <%end%>
+    </div><br>
                 <div class="fav">
+                  <% if end_user_signed_in? %>
+
                   <%if @sell_cd.favorited_by?(current_end_user)%>
                     <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-deatroy", method: :delete do %>
                     <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i>
@@ -18,6 +31,7 @@
                      <i class="fa fa-heart" aria-hidden="true"></i>
                     <%end%>
                   <%end%>
+                <%end%>
                   <%= @sell_cd.favorites.count %> いいね
                 </div>
     </div>

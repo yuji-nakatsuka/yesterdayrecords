@@ -1,13 +1,31 @@
 <%= render "layouts/admin_header"%>
+<div class="container">
+  <div class="sell_cd_show_all">
+  <div class="image-top-infos clearfix">
+    <div class="cd-image">
+
+</div>
+
+</div>
+</div>
+</div>
 
 <div class="container">
 
   <div class="sell_cd_show_all">
 
   <div class="image-top-infos clearfix">
-    <div class="cd-image">
-      <img src=".jpg">
-       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %>
+    <div class="cd-images">
+    <div class="a">
+      <div class="b">
+         <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+      </div>
+      <%@sell_cd.sell_cd_images.each do |image|%>
+        <div class="b">
+           <%= attachment_image_tag image, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+        </div>
+      <%end%>
+    </div>
     </div>
 
     <div class="top-infos">
@@ -15,7 +33,7 @@
       <div class="title-group">
         <h2><%= @sell_cd.title %></h2>
         <p class="genre-name"><%= @sell_cd.genre.genre %></p>
-        <h2><%=@sell_cd.artist.artist%></h2>
+        <h2><%= @sell_cd.artist.artist %></h2>
       </div>
 
 
@@ -33,7 +51,7 @@
         </tr>
 
         <tr>
-          <td colspan="3"><%= link_to edit_admins_sell_cd_path(params[:id]) ,class:"btn btn-primary btn-lg btn-block" do%>商品編集<%end%></td>
+          <td colspan="3"><%= link_to  admins_sell_cds_main_edit_path(@sell_cd) ,class:"btn btn-primary btn-lg btn-block" do%>商品編集<%end%></td>
         </tr>
 
       </table>

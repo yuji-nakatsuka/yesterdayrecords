@@ -28,4 +28,8 @@ class OrdersController < ApplicationController
     @order = Order.find(params[:id])
   end
 
+
+	def update
+	end
+
 end

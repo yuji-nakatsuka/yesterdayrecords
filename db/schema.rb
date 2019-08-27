@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_08_27_043908) do
     t.datetime "updated_at", null: false
   end
 
+
   create_table "delivery_addresses", force: :cascade do |t|
     t.integer "end_user_id", null: false
     t.string "zip", null: false
