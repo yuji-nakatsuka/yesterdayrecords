@@ -38,6 +38,14 @@
     <%= form.label :image %><br>
     <%= form.attachment_field :image %><br>
 
+
+      <%= form.fields_for :sell_cd_images do |i| %>
+      <%end%>
+      <div class="links">
+       <%= link_to_add_association "add image", form, :sell_cd_images %>
+      </div>
+
+
   </div>
   <div class="discs">
     <%= form.fields_for :discs do |f| %>

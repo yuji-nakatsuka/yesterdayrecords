@@ -8,6 +8,9 @@ class OrdersController < ApplicationController
 
   def create
     @order = Order.new
+    if @order.delivery_address ==nil
+    else
+    end
     @order.save
     redirect_to end_user_finish_path(@order.id)
   end

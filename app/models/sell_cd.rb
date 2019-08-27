@@ -7,7 +7,9 @@ class SellCd < ApplicationRecord
 	belongs_to :label
 	belongs_to :genre
 	has_many :favorites, dependent: :destroy
+	has_many :sell_cd_images, dependent: :destroy
 	accepts_nested_attributes_for :discs, allow_destroy: true
+	accepts_nested_attributes_for :sell_cd_images, allow_destroy: true
 
 
 	def self.search(search)

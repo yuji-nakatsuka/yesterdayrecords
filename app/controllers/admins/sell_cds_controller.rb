@@ -37,6 +37,7 @@ class Admins::SellCdsController < ApplicationController
 		# disc,song作成時使用 cocoon
 			@discs = @sell_cd.discs.build
 			@songs = @discs.songs.build
+			@sell_cd_images = @sell_cd.sell_cd_images.build
 
 		# label,artist,genre表示のため
 			@labelid = Label.getlabelid
@@ -82,7 +83,7 @@ class Admins::SellCdsController < ApplicationController
 	private
 
     def sell_cd_params
-      params.require(:sell_cd).permit(:title, :artist_id, :genre_id, :label_id, :value, :image_id, :sell_status, :stock, discs_attributes: [:id, :disc, :number, :_destroy, songs_attributes: [:id, :song, :number, :_destroy]])
+      params.require(:sell_cd).permit(:title, :artist_id, :genre_id, :label_id, :value, :image_id, :sell_status, :stock, discs_attributes: [:id, :disc, :number, :_destroy, songs_attributes: [:id, :song, :number, :_destroy]], sell_cd_images_attributes: [:id,:image_id,:_destroy])
     end
 
 end
