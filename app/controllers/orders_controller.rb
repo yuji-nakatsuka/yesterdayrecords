@@ -9,7 +9,7 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new
     @order.save
-    redirect_to finish_path
+    redirect_to end_user_finish_path(@order.id)
   end
 
   def finish

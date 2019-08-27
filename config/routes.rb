@@ -17,7 +17,6 @@ Rails.application.routes.draw do
 
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :sell_cds, only: [:search,:show]
   resources :end_users, only: [:edit,:update,:show] do
     get 'orders/:id/finish',  to: 'orders#finish', as: 'finish'
     get 'orders/confirm',  to: 'orders#confirm', as: 'confirm'
@@ -27,7 +26,7 @@ Rails.application.routes.draw do
     resources :delivery_addresses, only: [:create,:update,:destroy]
   end
   # artist,labelでも拡張可能？
-  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidserch'
+  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidsearch'
   resources :sell_cds, only: [:search,:show] do
     resource :favorites, only: [:create,:destroy,:show]
   end
