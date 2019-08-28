@@ -41,7 +41,7 @@
 							</tr>
 						</table>
 					</div>
-					<% subtotal_value += cart.sell_cd.value %>
+					<% subtotal_value += cart.sell_cd.value*cart.quantity %>
 					<% total_cd += cart.quantity %>
 				<%end%>
 			</div>

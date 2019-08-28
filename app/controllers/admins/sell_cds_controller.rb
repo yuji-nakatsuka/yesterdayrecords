@@ -1,7 +1,7 @@
 class Admins::SellCdsController < ApplicationController
 	#before_action :authenticate_user!
 
-	PER = 10
+	PER = 5
 
 	def show
 		@sell_cd = SellCd.new
@@ -130,9 +130,6 @@ class Admins::SellCdsController < ApplicationController
 	def main_edit
 		@sell_cd = SellCd.find(params[:id])
 
-				# disc,song作成時使用 cocoon
-			@discs = @sell_cd.discs.build
-			@songs = @discs.songs.build
 
 			@labelid = Label.getlabelid
 			@artistid = Artist.getartistid
@@ -201,8 +198,6 @@ class Admins::SellCdsController < ApplicationController
 
 
 	def main_new
-		p "ssss"
-		puts "aaaaaa"
 		@sell_cd = SellCd.new
 
 		# disc,song作成時使用 cocoon
@@ -231,7 +226,7 @@ class Admins::SellCdsController < ApplicationController
 	private
 
     def sell_cd_params
-      params.require(:sell_cd).permit(:title, :artist_id, :genre_id, :label_id, :value, :image, :sell_status, :stock, discs_attributes: [:id, :disc, :number, :_destroy, songs_attributes: [:id, :song, :number, :_destroy]])
+      params.require(:sell_cd).permit(:title, :artist_id, :genre_id, :label_id, :value, :image, :sell_status, :stock, discs_attributes: [:id, :disc, :number, :_destroy, songs_attributes: [:id, :song, :number, :_destroy]], sell_cd_images_attributes: [:id,:image,:_destroy])
     end
 
 	def artist_params
@@ -240,10 +235,6 @@ class Admins::SellCdsController < ApplicationController
 
 	def genre_params
 		params.require(:genre).permit(:genre)
-	end
-
-	def label_params
-		params.require(:label).permit(:label)
 	end
 
 end

@@ -40,8 +40,20 @@
     <%= form.select :sell_status, [[enum(1), 1],[enum(2), 2]] %><br>
 <!-- image_id   refile -->
 <!-- 画像を複数投稿可能にしたいな -->
+<div>
     <%= form.label :image %><br>
+    <div class="edit-cd-image">
+      <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "edit-cd-image" %>
+    <div>
     <%= form.attachment_field :image %><br>
+</div>
+
+      <%= form.fields_for :sell_cd_images do |i| %>
+        <%= render "sell_cd_image_edit_fields", f: i %>
+      <%end%>
+      <div class="links">
+       <%= link_to_add_association "add image", form, :sell_cd_images %>
+      </div>
 
   </div>
   <div class="discs">
