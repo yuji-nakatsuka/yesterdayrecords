@@ -1,6 +1,8 @@
 class Admins::EndUsersController < ApplicationController
+	PER =10
+
 	def index
-		@end_users = EndUser.all
+		@end_users = EndUser.all.page(params[:page]).per(PER)
 	end
 
 	def show
@@ -8,6 +10,7 @@ class Admins::EndUsersController < ApplicationController
 	end
 
 	def edit
+		@end_user=EndUser.find(params[:end_user_id])
 	end
 
 	def destroy

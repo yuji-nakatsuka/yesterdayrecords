@@ -1,57 +1,70 @@
+
+<%= render "layouts/end_header"%>
+
 <div class="container">
 
   <div class="main">
     <h1>ありがとうございます。注文が確定されました。</h1>
 
+    <div class="finish-orders-contents">
+      <div class="finish-orders-list">
+        <table border=1 rules="none">
+            <tr class="order-title">
+              <td>注文日<br><%= @order.created_at.strftime('%Y/%m/%d')%></td>
+                  <% total_quantity=0 %>
+                  <% @order.order_contents.each do |order_content| %>
+                  <% total_quantity += order_content.quantity %>
+                  <% end %>
+              <td>合計枚数<br><%=total_quantity%></td>
+              <td>合計<br>¥<%= @order.total_price %></td>
+              <td>お届け先<br><%=@order.delivery_address%></td>
+              <td>配送状況<br>
+                  <%=delivery_status_enum(@order.delivery_status)%>
+              </td>
+              <td>注文番号：<br><%=@order.id%></td>
+            </tr>
+          <% @order.order_contents.each do |order_content| %>
+              <tr>
+                  <%sell_cd = SellCd.find_by(id: order_content.sell_cd_id)%>
+                  <td rowspan="4"><%= attachment_image_tag sell_cd, :image%><br></td>
+                  <td colspan="6">商品名：<%=sell_cd.title%></td>
+              </tr>
 
-    <div class="finish-orders-list">
-    <table border="1" rules="none">
-      <tr class="order-title">
-        <td>注文日<br></td>
-        <td>合計枚数<br></td>
-        <td>合計<br></td>
-        <td>お届け先<br></td>
-        <td>注文番号：<br></td>
-      </tr>
+              <tr>
+                 <td colspan="6">個数：<%=order_content.quantity%></td>
+              </tr>
 
-      <tr>
-        <td rowspan="4">画像<br></td>
-        <td colspan="4">商品名：</td>
-      </tr>
+              <tr>
+                  <td colspan="6">価格：<%=sell_cd.value%></td>
+              </tr>
 
-      <tr>
-        <td colspan="4">個数：</td>
-      </tr>
+              <tr>
+                  <td colspan="6">レーベル名：<%=sell_cd.label.label%></td>
+              </tr>
+          <%end%>
+        </table>
+      </div>
 
-      <tr>
-        <td colspan="4">価格：</td>
-      </tr>
-
-      <tr>
-        <td colspan="4">レーベル名：</td>
-      </tr>
+      <div class="order-calculation">
+        <table rules="none" border="1">
+        <tr>
+          <td colspan="6">小計</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="6">消費税</td>
+          <td><%= @order.total_price*0.08 %></td>
+        </tr>
+        <tr>
+          <td colspan="6">送料</td>
+          <td>¥500</td>
+        </tr>
+        <tr>
+          <td colspan="6">合計</td>
+          <td>¥<%=@order.total_price%></td>
+        </tr>
       </table>
-
-    <div class="order-calculation">
-      <table>
-      <tr>
-        <td colspan="4">小計</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="4">消費税</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="4">送料</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td colspan="4">合計</td>
-        <td>¥ </td>
-      </tr>
-    </table>
-
+      </div>
     </div>
 
   </div>

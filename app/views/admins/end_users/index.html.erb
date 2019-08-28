@@ -1,3 +1,5 @@
+<%= render "layouts/admin_header"%>
+
 <div class="admin-index">
 	<h2>顧客一覧画面</h2>
 
@@ -15,6 +17,7 @@
 		</tr>
 		<% @end_users.each do |end_user| %>
 			<tr>
+				 <!-- ,class: "glyphicon", style:"padding-top:15px;"@admin_header -->
 					<td><%=link_to "#{end_user.first_name}", admins_end_user_path(end_user)%></td>
 					<td><%=link_to "#{end_user.last_name}", admins_end_user_path(end_user)%></td>
 					<td><%=end_user.kana_first%></td>
@@ -24,9 +27,10 @@
 					<td><%=end_user.phone_number%></td>
 					<td><%=end_user.email%></td>
 					<td><%= end_user.created_at.strftime('%Y/%m/%d') %></td>
-					<td><%=link_to "編集", edit_end_user_path(end_user) %></td>
-					<td><%=link_to "削除", end_user_registration_path(end_user) %></td>
+					<td><%=link_to "編集", edit_admins_end_user_path(end_user) %></td>
+					<td><%=link_to "削除", admins_end_user_path(end_user.id), method: :delete %></td>
 			</tr>
 		<% end %>
 	</table>
+
 </div>

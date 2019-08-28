@@ -1,3 +1,4 @@
+<%= render "layouts/end_header"%>
 <div class="container">
 
   <div class="main">
@@ -7,76 +8,71 @@
     <h2>注文商品一覧</h2>
 
     <% if !@carts.nil?%>
-    <table border="1" rules="none">
 
-      <%= @carts.each do |cart| %>
+
+      <% @carts.each do |cart| %>
+
+      <div class="order-confirm-left">
+      <table border="1" rules="none" style="border-bottom-style:hidden;">
       <tr>
-        <td rowspan="7"><%= attachment_image_tag cart.sellcd.image, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
-        <td colspan="4"><%= cart.sellcd.title %></td>
+        <td rowspan="4"><%= attachment_image_tag cart.sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
+        <td colspan="4"><h3><%= cart.sell_cd.title %></h3></td>
       </tr>
 
       <tr>
-        <td colspan="4"><%= cart.sellcd.artist.artist %></td>
+        <td colspan="4">アーティスト:<%= cart.sell_cd.artist.artist %></td>
       </tr>
 
       <tr>
-        <td colspan="4"><%= cart.sellcd.label.label %></td>
+        <td colspan="4">レーベル:<%= cart.sell_cd.label.label %></td>
       </tr>
 
       <tr>
-        <td colspan="4"> <%= cart.sellcd.genre.genre %> </td>
+        <td colspan="4">ジャンル:<%= cart.sell_cd.genre.genre %></td>
       </tr>
+      </table>
+      </div>
 
+      <div class="order-confirm-right">
+      <table border="1" rules="none" style="border-top-style:hidden;">
       <tr>
         <td colspan="3">数量</td>
-        <td colspan="3"><%= cart.quantity %>個</td>
+        <td colspan="1"><%= cart.quantity %>個</td>
       </tr>
 
       <tr>
-        <td colspan="4">カートから削除</td>
+        <td colspan="4"><%=link_to end_user_cart_path(cart.end_user_id, cart), method: :delete do%>カートから削除<%end%></td>
       </tr>
 
       <tr>
-        <td colspan="2">ステータス　<%= enum(cart.sellcd.sell_status)  %></td>
-        <td colspan="2">価格　<%= cart.sellcd.value %></td>
+        <td colspan="2">ステータス　<%= enum(cart.sell_cd.sell_status)  %></td>
+        <td colspan="2">価格　¥<%= cart.sell_cd.value %></td>
       </tr>
-
-      <%end%>
       </table>
+      </div>
+      <%end%>
     <%end%>
 
-    <div class="confirm-delivery-addresses">
-      <h2>送付先を選択してください</h2>
-      <table border="1" rules="none">
-      <tr>
-        <td>郵便番号：</td>
-      </tr>
-      <tr>
-        <td>住所：</td>
-      </tr>
-    </table>
 
-    <%= form_for end_user_delivery_addresses_path(current_end_user.id) do |da| %>
-    <table border="1" rules="none">
-    <tr>
-      <td>新規住所</td>
-      <td><%= da.text_field :delivery_address %></td>
-      <td><%= da.submit "追加" %></td>
-    </tr>
-    </table>
-    <%end%>
+  <%= form_for @order,url:end_user_orders_path(current_end_user.id) do |f|%>
 
+    <h2>お届け先を選択してください</h2>
+  <label><%= f.radio_button :delivery_address, "#{@end_user.address}" %><%= @end_user.zip %> <%= @end_user.address %></label><br>
+
+  <% @end_user.delivery_addresses.each do |da| %>
+  <label><%= f.radio_button :delivery_address, "#{da.delivery_address}" %><%= da.zip %> <%= da.delivery_address %></label><br>
+  <%end%>
     <h2>支払い方法を選択してください</h2>
 
-    <%= form_for @order %>
+    <label>支払い方法</label>
+      <%= f.select :payment_method, [["クレジットカード",0],["銀行振込",1],["代引",2]] %>
 
-      <label>支払い方法</label>
-      <%= f.select :payment_method, [[["クレジットカード",0],["銀行振込",1],["代引",2],]%>
+      <div class="order-confirm-buy">
+        <%= f.submit "購入する"%>
+      </div>
 
-      <%= f.submit "購入する"%>
 
-    <%end%>
-
+  <%end%>
 
     </div>
     </div>

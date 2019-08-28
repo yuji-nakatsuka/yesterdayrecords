@@ -1,0 +1,39 @@
+<%= render "layouts/admin_header"%>
+
+<div class="finish-orders-list">
+  <%@orders.each do |order| %>
+    <table border="1" rules="none">
+      <tr class="order-title">
+        <td>注文日<br><%=order.created_at.strftime('%Y/%m/%d')%></td>
+        <% total_quantity=0 %>
+          <% order.order_contents.each do |order_content| %>
+            <% total_quantity += order_content.quantity %>
+            <% end %>
+            <td>合計枚数<br><%=total_quantity%></td>
+            <td>配送状況<br><%=delivery_status_enum(order.delivery_status)%></td>
+            <td>合計<br><%=order.total_price%></td>
+            <td>お届け先<br><%=order.delivery_address%></td>
+            <td>注文番号：<%=order.id%><br><%=link_to admins_end_user_order_path(order.end_user_id,order.id) do %>注文詳細<%end%></td>
+      </tr>
+      <% order.order_contents.each do |order_content| %>
+        <tr>
+            <%sell_cd = SellCd.find_by(id: order_content.sell_cd_id)%>
+            <td rowspan="4"><%= attachment_image_tag sell_cd, :image%><br></td>
+            <td colspan="4">商品名：<%=sell_cd.title%></td>
+        </tr>
+
+        <tr>
+           <td colspan="4">個数：<%=order_content.quantity%></td>
+        </tr>
+
+        <tr>
+            <td colspan="4">価格：<%=sell_cd.value%></td>
+        </tr>
+
+        <tr>
+            <td colspan="4">レーベル名：<%=sell_cd.label.label%></td>
+        </tr>
+      <%end%>
+    </table>
+  <%end%>
+</div>

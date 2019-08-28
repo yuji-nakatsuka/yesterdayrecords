@@ -76,3 +76,4 @@ gem 'paranoia'
 
 
 gem 'kaminari'
+gem 'pry-byebug'

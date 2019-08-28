@@ -13,11 +13,10 @@ Rails.application.routes.draw do
   }
 
   delete 'end_users/:id', to: 'end_users#leave',as: 'end_user_leave'
-  get 'search', to: 'end_users#search',as: 'end_user_search'
+  get 'search', to: 'sell_cds#search',as: 'sell_cds_search'
 
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :sell_cds, only: [:search,:show]
   resources :end_users, only: [:edit,:update,:show] do
     get 'orders/:id/finish',  to: 'orders#finish', as: 'finish'
     get 'orders/confirm',  to: 'orders#confirm', as: 'confirm'
@@ -26,8 +25,11 @@ Rails.application.routes.draw do
     resources :carts, only: [:destroy,:index]
     resources :delivery_addresses, only: [:create,:update,:destroy]
   end
-
-
+  # artist,labelでも拡張可能？
+  get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidsearch'
+  resources :sell_cds, only: [:search,:show] do
+    resource :favorites, only: [:create,:destroy,:show]
+  end
 
 
 
@@ -46,8 +48,9 @@ Rails.application.routes.draw do
     put 'sell_cds/main_update' => 'sell_cds#main_update'
     resources :sell_cds, only: [:index,:edit,:destroy,:show]
     get 'top' => 'top#top'
+    resources :orders, only: [:index]
     resources :end_users, only: [:index,:edit,:destroy,:show,:update] do
-      resources :orders, only: [:show,:update,:index]
+      resources :orders, only: [:show,:update]
     end
   end
 

@@ -1,3 +1,6 @@
+<%= render "layouts/end_header"%>
+
+
 <div class="end_users-show">
 	<div class="end-user-info">
 		<div class="end_users-table">
@@ -44,3 +47,22 @@
 		</div>
 	</div>
 </div>
+
+
+<table class="table table-striped">
+	<h2>Favorite CD</h2>
+	<tr>
+		<td>タイトル</td>
+		<td>アーティスト</td>
+		<td>ジャンル</td>
+		<td>レーベル</td>
+	</tr>
+	<% @favsell_cds.each do |favsell_cd| %>
+	<tr>
+		<td><%=favsell_cd.title%></td>
+		<td><%=favsell_cd.artist.artist%></td>
+		<td><%=favsell_cd.genre.genre%></td>
+		<td><%=favsell_cd.label.label%></td>
+	</tr>
+	<% end %>
+</table>
