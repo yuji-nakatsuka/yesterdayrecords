@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
     @carts = Cart.where(end_user_id: current_end_user)
     @delivery_address = DeliveryAddress.new
     @end_user=EndUser.find(params[:end_user_id])
+
   end
 
   def create
@@ -17,7 +18,8 @@ class OrdersController < ApplicationController
     @carts.each do |cart|
       @total_price+=cart.sell_cd.value*cart.quantity
     end
-    @total_price*=1.08+500
+    @total_price*=1.08
+    @total_price += 500
     @order.total_price = @total_price
     @order.delivery_status = 0
     @order.save
@@ -29,6 +31,9 @@ class OrdersController < ApplicationController
       @order_content.quantity = cart.quantity
       @order_content.order_id = @order.id
       @order_content.save
+      sell_cd =SellCd.find(cart.sell_cd_id)
+      sell_cd.stock -= cart.quantity
+      sell_cd.save
       cart.destroy
     end
 

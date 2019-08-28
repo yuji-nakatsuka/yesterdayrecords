@@ -54,7 +54,7 @@
     <%end%>
 
 
-  <%= form_for @order,url:end_user_orders_path(current_end_user.id) do |f|%>
+  <%= form_for @sell_cd,url:end_user_orders_path(current_end_user.id) do |f|%>
 
     <h2>お届け先を選択してください</h2>
   <label><%= f.radio_button :delivery_address, "#{@end_user.address}" %><%= @end_user.zip %> <%= @end_user.address %></label><br>

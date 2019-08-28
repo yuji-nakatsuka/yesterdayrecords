@@ -49,11 +49,11 @@
         <table rules="none" border="1">
         <tr>
           <td colspan="6">小計</td>
-          <td></td>
+          <td><%= (((@order.total_price-500)/108)*100).to_i %></td>
         </tr>
         <tr>
           <td colspan="6">消費税</td>
-          <td><%= @order.total_price*0.08 %></td>
+          <td><%= (((@order.total_price-500)/108)*8).to_i %></td>
         </tr>
         <tr>
           <td colspan="6">送料</td>

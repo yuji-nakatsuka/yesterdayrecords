@@ -1,0 +1,18 @@
+<%= render "layouts/admin_header"%>
+
+			<h1>Artist</h1>
+			<p>削除すると、そのArtistが持つ全てのCDが削除されます。</p>
+<table>
+	<thead>
+		<tr>
+		</tr>
+	</thead>
+	<tbody>
+		<% @artists.each do |artist| %>
+		<tr>
+			<td><%= link_to artist.artist ,admins_sell_cds_artist_show_path(artist.id) %></td>
+			<td><span><%= link_to "編集" , admins_sell_cds_artist_edit_path(artist.id)%></span>  /  <span><%= link_to "削除",admins_sell_cds_artist_destroy_path(artist.id),method: :delete, data: { confirm: '削除すると、そのArtistが持つ全てのCDが削除されます。本当に削除しますか？'} %></apan></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

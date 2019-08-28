@@ -6,8 +6,7 @@
 
   <div class="image-top-infos clearfix">
     <div class="cd-image">
-      <img src=".jpg">
-       <%= attachment_image_tag @sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %>
+       <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg'  %>
     </div>
 
     <div class="top-infos">
@@ -33,7 +32,7 @@
         </tr>
 
         <tr>
-          <td colspan="3"><%= link_to edit_admins_sell_cd_path(params[:id]) ,class:"btn btn-primary btn-lg btn-block" do%>商品編集<%end%></td>
+          <td colspan="3"><%= link_to  admins_sell_cds_main_edit_path(@sell_cd) ,class:"btn btn-primary btn-lg btn-block" do%>商品編集<%end%></td>
         </tr>
 
       </table>
