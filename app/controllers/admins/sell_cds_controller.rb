@@ -1,7 +1,7 @@
 class Admins::SellCdsController < ApplicationController
 	#before_action :authenticate_user!
 
-	PER = 10
+	PER = 5
 
 	def show
 		@sell_cd = SellCd.new
