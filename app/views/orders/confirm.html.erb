@@ -46,10 +46,6 @@
 
       <tr>
         <td colspan="2">ステータス　<%= enum(cart.sell_cd.sell_status)  %></td>
-<<<<<<< HEAD
-
-=======
->>>>>>> fc8f9bfd0d65014ac95793e9901fe8354b37b600
         <td colspan="2">価格　¥<%= cart.sell_cd.value %></td>
       </tr>
       </table>
@@ -59,7 +55,6 @@
 
 
   <%= form_for @sell_cd,url:end_user_orders_path(current_end_user.id) do |f|%>
-<<<<<<< HEAD
 
     <h2>お届け先を選択してください</h2>
   <label><%= f.radio_button :delivery_address, "#{@end_user.address}" %><%= @end_user.zip %> <%= @end_user.address %></label><br>
@@ -72,20 +67,6 @@
     <label>支払い方法</label>
       <%= f.select :payment_method, [["クレジットカード",0],["銀行振込",1],["代引",2]] %>
 
-=======
-
-    <h2>お届け先を選択してください</h2>
-  <label><%= f.radio_button :delivery_address, "#{@end_user.address}" %><%= @end_user.zip %> <%= @end_user.address %></label><br>
-
-  <% @end_user.delivery_addresses.each do |da| %>
-  <label><%= f.radio_button :delivery_address, "#{da.delivery_address}" %><%= da.zip %> <%= da.delivery_address %></label><br>
-  <%end%>
-    <h2>支払い方法を選択してください</h2>
-
-    <label>支払い方法</label>
-      <%= f.select :payment_method, [["クレジットカード",0],["銀行振込",1],["代引",2]] %>
-
->>>>>>> fc8f9bfd0d65014ac95793e9901fe8354b37b600
       <div class="order-confirm-buy">
         <%= f.submit "購入する"%>
       </div>
