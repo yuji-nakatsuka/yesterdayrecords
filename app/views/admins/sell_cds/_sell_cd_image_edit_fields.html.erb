@@ -1,0 +1,5 @@
+<div class="nested-fields">
+  <%= attachment_image_tag f.object, :image, size: "50*50",format: 'jpg' , class: "edit-cd-image" %>
+  <%= f.attachment_field :image %>
+  <%= link_to_remove_association "remove image", f %>
+</div>

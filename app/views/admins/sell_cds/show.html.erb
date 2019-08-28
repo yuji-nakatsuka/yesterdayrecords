@@ -1,12 +1,31 @@
 <%= render "layouts/admin_header"%>
+<div class="container">
+  <div class="sell_cd_show_all">
+  <div class="image-top-infos clearfix">
+    <div class="cd-image">
+
+</div>
+
+</div>
+</div>
+</div>
 
 <div class="container">
 
   <div class="sell_cd_show_all">
 
   <div class="image-top-infos clearfix">
-    <div class="cd-image">
-       <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg'  %>
+    <div class="cd-images">
+    <div class="a">
+      <div class="b">
+         <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+      </div>
+      <%@sell_cd.sell_cd_images.each do |image|%>
+        <div class="b">
+           <%= attachment_image_tag image, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+        </div>
+      <%end%>
+    </div>
     </div>
 
     <div class="top-infos">
