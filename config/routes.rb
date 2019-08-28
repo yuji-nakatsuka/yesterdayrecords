@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   }
 
   delete 'end_users/:id', to: 'end_users#leave',as: 'end_user_leave'
-  get 'search', to: 'end_users#search',as: 'end_user_search'
+  get 'sell_cds/search', to: 'end_users#search',as: 'sell_cds_search'
 
   root 'tops#top'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -27,7 +27,6 @@ Rails.application.routes.draw do
   end
   # artist,labelでも拡張可能？
   get 'sell_cds/genreidsearch/:genre_id' => 'sell_cds#genreidsearch', as: 'sell_cds_genreidsearch'
-  get 'sell_cds/search' => 'sell_cds#search'
   resources :sell_cds, only: [:show] do
     resource :favorites, only: [:create,:destroy,:show]
   end
@@ -60,7 +59,7 @@ Rails.application.routes.draw do
     patch 'sell_cds/:id/label_update' => 'sell_cds#label_update',as: 'sell_cds_label_update'
     patch 'sell_cds/:id/main_update' => 'sell_cds#main_update',as: 'sell_cds_main_update'
     get 'sell_cds/:id/main_edit' => 'sell_cds#main_edit',as: 'sell_cds_main_edit'
-    resources :sell_cds, only: [:index,:edit,:destroy,:show]
+    resources :sell_cds, only: [:index,:destroy,:show]
     get 'top' => 'top#top'
     resources :orders, only: [:index]
     resources :end_users, only: [:index,:edit,:destroy,:show,:update] do

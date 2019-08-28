@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .finish-orders-list {
   width:80%;
   margin: 0 auto;
@@ -21,17 +22,33 @@
 
 .order-calculation {
   width:80%;
+  margin:0 auto;
 }
 
 .order-calculation table{
-  width:100%;
+  width:20%;
   text-align: right;
+  margin-top: 15px;
+  float:right;
+  border-top-style:hidden;
+  border-left-style:hidden;
+  border-right-style:hidden;
 }
 
 .confirm-contents {
   width:80%;
+  margin:0 auto;
 }
 
 .confirm-contents table{
   width:100%;
+}
+
+.order-confirm-right table{
+  text-align: right;
+  margin-bottom:10px;
+}
+
+.order-confirm-buy {
+  float:right;
 }
