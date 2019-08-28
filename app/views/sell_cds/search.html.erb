@@ -1,0 +1,26 @@
+<%= render "layouts/end_header"%>
+
+<div class="container">
+
+  <div class="main">
+
+    <h2><%= @search_word %>での検索結果</h2>
+
+    <div class="sell-cd-search-boxes">
+      <% @sell_cds.each do |sell_cd| %>
+        <div class="sell-cd-search-box">
+        <table class="cdrow">
+          <tr><td colspan="2"><%= attachment_image_tag sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %></td></tr>
+          <tr><td colspan="2"><%= link_to sell_cd_path(sell_cd.id) do %><%= sell_cd.title %><%end%></td></tr>
+          <tr><td colspan="2"><%= sell_cd.artist.artist %></td></tr>
+          <tr><td><%= sell_cd.value %>円</td><td><%= enum(sell_cd.sell_status) %></td></tr>
+          </table>
+
+        <% end %>
+
+    </div>
+
+    <%= paginate @sell_cds %>
+  </div>
+  </div>
+</div>

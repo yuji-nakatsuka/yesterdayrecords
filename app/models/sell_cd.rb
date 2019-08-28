@@ -11,12 +11,15 @@ class SellCd < ApplicationRecord
 
 
 	def self.search(search)
-		return self.all unless search
-		self.where(['content LIKE ?', "%#{search}%"])
-	end
+      if search
+      	SellCd.where(['title LIKE ?', "%#{search}%"])
+      else
+        SellCd.all
+      end
+    end
 
-	def favorited_by?(end_user)
-		favorites.where(end_user_id: end_user.id).exists?
-	end
+		def favorited_by?(end_user)
+		        favorites.where(end_user_id: end_user.id).exists?
+		    end
+
 end
-

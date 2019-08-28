@@ -1,7 +1,10 @@
 class SellCdsController < ApplicationController
 
+  PER = 10
+
   def search
-    @sell_cd = SellCd.search(params[:search])
+    @sell_cds = SellCd.search(params[:search]).page(params[:page])
+    @search_word = params[:search]
   end
 
   def show
