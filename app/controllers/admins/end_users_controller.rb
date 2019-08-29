@@ -1,7 +1,7 @@
 class Admins::EndUsersController < ApplicationController
 
-	before_action :authenticate_user!
-	
+	before_action :authenticate_admin!
+
 	PER =10
 
 	def index
