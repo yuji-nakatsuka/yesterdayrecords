@@ -1,5 +1,5 @@
 class EndUsersController < ApplicationController
-
+  before_action :authenticate_end_user!
   def show
     @end_user=EndUser.find(params[:id])
     @delivery_addresses=@end_user.delivery_addresses

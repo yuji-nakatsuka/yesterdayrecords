@@ -1,5 +1,5 @@
 class FavoritesController < ApplicationController
-
+	before_action :authenticate_end_user!
 
 	def create
 		sell_cd = SellCd.find(params[:sell_cd_id])
