@@ -15,7 +15,7 @@
       <div class="order-confirm-left">
       <table border="1" rules="none" style="border-bottom-style:hidden;">
       <tr>
-        <td rowspan="4"><%= attachment_image_tag cart.sell_cd.image, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
+        <td rowspan="4"><%= attachment_image_tag cart.sell_cd, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
         <td colspan="4"><h3><%= cart.sell_cd.title %></h3></td>
       </tr>
 
@@ -57,6 +57,7 @@
   <%= form_for @order,url:end_user_orders_path(current_end_user.id) do |f|%>
 
     <h2>お届け先を選択してください</h2>
+
   <label><%= f.radio_button :delivery_address, "#{@end_user.address}" %><%= @end_user.zip %> <%= @end_user.address %></label><br>
 
   <% @end_user.delivery_addresses.each do |da| %>

@@ -29,7 +29,6 @@ header .container{
 }
 
 footer {
-	margin: 50px 0 0 0;
 	background-color: skyblue;
 	padding: 50px 0 0 0 ;
 }
@@ -68,7 +67,7 @@ footer {
   clear: both;
 }
 
-<<<<<<< HEAD
+
 .slick-dots {
   li {
     font-size: 20px !important;
@@ -79,14 +78,41 @@ footer {
     }
   }
 }
-=======
->>>>>>> fc8f9bfd0d65014ac95793e9901fe8354b37b600
+
 .header-site-logo {
   float:left;
   margin-right: 100px;
+  color:white;
 }
 
 .search_form {
   float:left;
   padding-top: 15px;
+}
+
+.bgcolor {
+  background-image: asset_url("polygon-full.jpg");
+  background-size: contain;
+  padding-bottom:50px;
+}
+
+.cart-cd-image {
+  display:inline-block;
+  width:20rem;
+  height:20rem;
+}
+
+.top-cd-image {
+  display:inline-block;
+  width:12rem;
+  height:12rem;
+}
+
+.soldout {
+  text-align: center;
+  width:100%;
+}
+
+.container {
+
 }

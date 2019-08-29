@@ -237,6 +237,8 @@ class Admins::SellCdsController < ApplicationController
 		params.require(:genre).permit(:genre)
 	end
 
+	def label_params
+		params.require(:label).permit(:label)
+	end
+
 end
-
-
