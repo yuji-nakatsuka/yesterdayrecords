@@ -10,7 +10,7 @@
       <% @arrivals.each do |arrival| %>
         <div class="new-arivval-box">
           <table border="1" rules="none">
-              <tr><td colspan="2"><%= attachment_image_tag arrival.image, :image, :fill, 100, 100,format: 'jpg'  %></td></tr>
+              <tr><td colspan="2"><%= attachment_image_tag arrival, :image, :fill, 100, 100,format: 'jpg'  %></td></tr>
               <tr><td colspan="2"><%= link_to sell_cd_path(arrival.id) do %><%= arrival.title %><%end%></td></tr>
               <tr><td colspan="2"><%= arrival.artist.artist %></td></tr>
               <tr><td><%= arrival.value %>円</td><td><%= enum(arrival.sell_status) %></td></tr>

@@ -69,3 +69,18 @@
             }
     	});
 	})
+<<<<<<< HEAD
+
+
+
+$(function() {
+  $('.a').slick({
+      dots: true,
+  });
+
+  $('.slick-dots li').on('mouseover', function() {
+    $('.a').slick('goTo', $(this).index());
+  });
+});
+=======
+>>>>>>> fc8f9bfd0d65014ac95793e9901fe8354b37b600
