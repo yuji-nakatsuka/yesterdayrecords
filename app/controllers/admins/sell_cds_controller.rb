@@ -1,5 +1,5 @@
 class Admins::SellCdsController < ApplicationController
-	before_action :authenticate_user!
+	before_action :authenticate_admin!
 
 	PER = 5
 
