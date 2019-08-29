@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_end_user!
 
   def confirm
     @order = Order.new
