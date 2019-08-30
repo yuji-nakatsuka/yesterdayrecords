@@ -12,7 +12,13 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(confirm_params)
     @delivery_address=DeliveryAddress.find_by(delivery_address: @order.delivery_address)
-    @order.zip = @delivery_address.zip
+    if @delivery_address.nil?
+      @d_end_user = EndUser.find(params[:end_user_id])
+      @delivery_address = @d_end_user.zip
+      @order.zip = @delivery_address
+    else
+      @order.zip = @delivery_address.zip
+    end
     @order.end_user_id = params[:end_user_id]
     @total_price=0
     @carts = Cart.where(end_user_id: params[:end_user_id])

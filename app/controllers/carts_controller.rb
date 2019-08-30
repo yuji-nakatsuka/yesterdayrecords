@@ -1,5 +1,6 @@
 class CartsController < ApplicationController
 	before_action :authenticate_end_user!
+
 	def index
 		@genres = Genre.all
 		@carts = Cart.where(end_user_id: current_end_user.id)

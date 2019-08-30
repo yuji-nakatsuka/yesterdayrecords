@@ -1,5 +1,5 @@
 class Admins::SellCdsController < ApplicationController
-	#before_action :authenticate_user!
+	before_action :authenticate_admin!
 
 	PER = 5
 
@@ -237,6 +237,8 @@ class Admins::SellCdsController < ApplicationController
 		params.require(:genre).permit(:genre)
 	end
 
+	def label_params
+		params.require(:label).permit(:label)
+	end
+
 end
-
-
