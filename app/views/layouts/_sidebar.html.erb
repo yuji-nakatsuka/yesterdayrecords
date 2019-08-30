@@ -1,10 +1,10 @@
 <!-- genres -->
 <div class="sidebar">
 	<div class="col-xs-3">
-		<h3>ジャンル</h3>
+		<h3>GENRE</h3>
 		<ul>
 		<% genres.each do |genre|%>
-			<li>
+			<li class="genre-list">
 				<%= link_to sell_cds_genreidsearch_path(genre.id) do%>
 					<%=genre.genre%>
 				<%end%>

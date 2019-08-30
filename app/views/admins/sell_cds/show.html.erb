@@ -1,4 +1,7 @@
 <%= render "layouts/admin_header"%>
+
+<div class="bg-container">
+
 <div class="container">
   <div class="sell_cd_show_all">
   <div class="image-top-infos clearfix">
@@ -65,7 +68,7 @@
          <% disc.songs.order(number: "ASC").each do |song| %>
          <table class="disc-info">
            <tr>
-             <td><%= song.number %></td>
+             <td class="song-number"><%= song.number %></td>
              <td><%= song.song %></td>
            </tr>
          </table>
@@ -79,5 +82,7 @@
 
 
   </div>
+
+</div>
 
 </div>

@@ -1,4 +1,6 @@
 <%= render "layouts/admin_header"%>
+
+<div class="bg-container">
 			<h1>Genre</h1>
 			<p>削除すると、そのLabelが持つ全てのCDが削除されます。</p>
 
@@ -17,3 +19,8 @@
 		<% end %>
 	</tbody>
 </table>
+
+	<%= paginate @genres %>
+
+
+</div>

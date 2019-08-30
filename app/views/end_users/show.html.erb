@@ -1,11 +1,11 @@
 <%= render "layouts/end_header"%>
-
+<div class="bg-container">
 
 <div class="end_users-show">
 	<div class="end-user-info">
 		<div class="end_users-table">
-			<table class="table table-striped">
-				<tr>
+			<table class="table">
+				<tr class="order-title">
 					<td class="end_users-table-title" colspan="2">マイページ</td>
 				</tr>
 				<tr>
@@ -50,8 +50,8 @@
 
 <div class="fav-cd-table">
 <table class="table table-striped">
-	<h2>Favorite CD</h2>
-	<tr>
+	<h2>Wish List</h2>
+	<tr class="wish-list-head">
 		<td>タイトル</td>
 		<td>アーティスト</td>
 		<td>ジャンル</td>
@@ -66,4 +66,6 @@
 	</tr>
 	<% end %>
 </table>
+</div>
+
 </div>

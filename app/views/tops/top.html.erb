@@ -1,6 +1,16 @@
 
 <%= render "layouts/end_header"%>
+
+<div class="messege">
+<h1>KEEP VIBE, FUTURE MUSIC</h1>
+<p>古き良き音楽のカタチを未来に伝えてゆく。</p>
+</div>
+
+<div class="bg-container">
+
+
 <div class="container">
+
 <%= render "layouts/sidebar" ,genres: @genres%>
 
 
@@ -12,13 +22,13 @@
     <div class="new-arivval-boxes clearfix">
       <% @arrivals.each do |arrival| %>
         <div class="new-arivval-box">
-          <table border="1" rules="none">
+          <table border="1" rules="none" class="top-cd-table">
               <%if arrival.image != nil%>
               <tr><td colspan="2"><span class="top-cd-image"><%= attachment_image_tag arrival, :image,format: 'jpg' , class: "cd-image" %></span></td></tr>
             <%else%>
               <tr><td colspan="2"><span class="top-cd-image"><%= image_tag 'anpan.png', class: "top-cd-no-image" %></span></td></tr>
             <%end%>
-              <tr><td colspan="2"><%= link_to sell_cd_path(arrival.id) do %><%= arrival.title %><%end%></td></tr>
+              <tr class="top-cd-title"><td colspan="2"><%= link_to sell_cd_path(arrival.id) do %><%= arrival.title %><%end%></td></tr>
               <tr><td colspan="2"><%= arrival.artist.artist %></td></tr>
               <tr><td><%= arrival.value %>円</td><td><%= enum(arrival.sell_status) %></td></tr>
           </table>
@@ -29,4 +39,5 @@
   </div>
 </div>
 
+</div>
 </div>

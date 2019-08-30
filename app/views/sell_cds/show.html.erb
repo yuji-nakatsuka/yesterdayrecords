@@ -1,5 +1,6 @@
 <%= render "layouts/end_header"%>
 
+<div class="bg-container">
 <div class="container">
 <%= render "layouts/sidebar" ,genres: @genres%>
 
@@ -61,7 +62,7 @@
 
         <tr>
           <td>購入個数</td>
-          <td colspan="2" rowspan="2"><%= f.submit "カートに追加", class:"btn btn-primary btn-lg btn-block" %></td>
+          <td colspan="2" rowspan="2"><%= f.submit "カートに追加", class:"btn btn-default btn-lg btn-block" %></td>
         </tr>
 
         <tr>
@@ -85,15 +86,15 @@
 
       <%if @sell_cd.favorited_by?(current_end_user)%>
         <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-deatroy", method: :delete do %>
-        <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i>
+        <i class="fas fa-compact-disc" aria-hidden="true" style="color:orange;"></i>
       <%end%>
       <%else%>
         <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-create", method: :post do %>
-         <i class="fa fa-heart" aria-hidden="true"></i>
+         <i class="fas fa-compact-disc" aria-hidden="true" style="color:white;"></i>
         <%end%>
       <%end%>
     <%end%>
-      <%= @sell_cd.favorites.count %> いいね
+      <%= @sell_cd.favorites.count %> Wish
     </div>
 
 
@@ -103,7 +104,7 @@
       <% disc.songs.order(number: "ASC").each do |song| %>
       <table class="disc-info">
         <tr>
-          <td><%= song.number %></td>
+          <td class="song-number"><%= song.number %></td>
           <td><%= song.song %></td>
         </tr>
       </table>
@@ -112,6 +113,8 @@
   <% end %>
 
   </div>
+
+</div>
 
 </div>
 

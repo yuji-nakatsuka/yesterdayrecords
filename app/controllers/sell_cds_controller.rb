@@ -1,6 +1,5 @@
 class SellCdsController < ApplicationController
 
-
   PER = 10
 
   def search
@@ -18,9 +17,9 @@ class SellCdsController < ApplicationController
 
 
   def genreidsearch
-  	@sell_cds = SellCd.where(genre_id: params[:genre_id]).page(params[:page])
+  	@sell_cds = SellCd.where(genre_id: params[:genre_id]).page(params[:page]).per(PER)
     @genres = Genre.all
-    @search_word = params[:search]
+    @genre_name = Genre.find_by(id: params[:genre_id])
   end
 
 end

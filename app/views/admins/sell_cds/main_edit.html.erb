@@ -1,4 +1,6 @@
 <%= render "layouts/admin_header"%>
+<div class="bg-container">
+
 <% if flash[:notice] %>
       <div class="flash">
         <%= flash[:notice] %>
@@ -68,4 +70,6 @@
     <%= form.submit "Update Sell Cd",:class =>"btn btn-primary btn-lg btn-block"%>
   </div>
 <% end %>
+</div>
+
 </div>

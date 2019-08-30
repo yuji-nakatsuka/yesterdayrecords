@@ -1,5 +1,6 @@
 <%= render "layouts/end_header"%>
 
+<div class="bg-container">
 <div class="container">
 
 <div class="main">
@@ -7,33 +8,47 @@
   <h1>アカウント情報の変更</h1>
 
   <div class="end-user-edit-form">
+    <table class="end-user-edit-table">
     <%= form_for(@end_user) do |f| %>
-            <label>名前　姓</label>
+          <tr><td><label>名前　姓</label><br>
             <%= f.text_field :last_name,placeholder:"田中"%>
+          </td></tr>
 
-            <label>名前　名</label>
+          <tr><td><label>名前　名</label><br>
             <%= f.text_field :first_name,placeholder:"太郎"%>
+          </td></tr>
 
-            <label>名前　カナ姓</label>
+          <tr><td><label>名前　カナ姓</label><br>
             <%= f.text_field :kana_last,placeholder:"タナカ"%>
+          </td></tr>
 
-            <label>名前　カナ名</label>
+          <tr><td><label>名前　カナ名</label><br>
             <%= f.text_field :kana_first,placeholder:"タロウ"%>
+          </td></tr>
 
-            <label>郵便番号</label><span>ハイフン無し</span>
+          <tr><td><label>郵便番号</label><span>ハイフン無し</span><br>
             <%= f.text_field :zip,placeholder:"0000000"%>
+          </td></tr>
 
-            <label>住所</label>
+          <tr><td><label>住所</label><br>
             <%= f.text_field :address,placeholder:"大阪府大阪市"%>
+          </td></tr>
 
-            <label>電話番号</label>
+          <tr><td>
+            <label>電話番号</label><br>
             <%= f.text_field :phone_number,placeholder:"0000000000"%>
+          </td></tr>
 
-            <label>メールアドレス</label>
+          <tr><td>
+            <label>メールアドレス</label><br>
             <%= f.text_field :email,placeholder:"a@a"%>
+          </td></tr>
 
         <!-- ここに追加 -->
+        <tr><td>
         <%= f.submit "変更を保存" %>
+        </td></tr>
+      </table>
     <% end %>
 
   </div>
@@ -41,14 +56,21 @@
   <div class="end-user-da-edit-add-form">
     <%= form_for @delivery_address,url: end_user_delivery_addresses_path(@end_user) do |f| %>
 
-            <label>郵便番号</label>
+    <table class="end-user-edit-table-2">
+        <tr><td>
+            <label>郵便番号</label><br>
             <%= f.text_field :zip %>
+        </td></tr>
 
-            <label>配送先の住所</label>
+        <tr><td>
+            <label>配送先の住所</label><br>
             <%= f.text_field :delivery_address %>
-
+        </td></tr>
         <!-- ここに追加 -->
+        <tr><td>
         <%= f.submit "新規追加" %>
+        </td></tr>
+    </table>
     <% end %>
   </div>
 
@@ -65,10 +87,13 @@
 
           <!-- ここに追加 -->
           <%= f.submit "変更を保存" %>
+
           <%= link_to "削除", end_user_delivery_address_path(da.end_user_id,da.id), method: :delete %>
       <% end %>
       <% end %>
 
   </div>
+
+</div>
 
 </div>

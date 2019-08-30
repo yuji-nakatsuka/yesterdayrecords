@@ -1,5 +1,7 @@
 
 <%= render "layouts/end_header"%>
+
+<div class="bg-container">
 <div class="container">
 <%= render "layouts/sidebar" ,genres: @genres%>
 
@@ -14,7 +16,7 @@
 			<div class="carts-index-boxes">
 				<% @carts.each do |cart| %>
 					<div class="carts-index-box">
-						<table>
+						<table class="cart-table">
 							<tr>
 								<td rowspan="4"><span class="cart-cd-image"><%= attachment_image_tag cart.sell_cd, :image,class: "cd-image"%></span></td>
 								<td colspan="1"><h3 class="carts-index-box-title"><%=cart.sell_cd.title%></h3></td>
@@ -36,9 +38,7 @@
 								<td class="cart-index-box-order-item"><%=link_to end_user_cart_path(cart.end_user_id, cart), method: :delete do%>カートから削除<%end%></td>
 							</tr>
 							<tr>
-								<td></td>
-								<td class="cart-index-box-order-item"><%=%>status<%=%></td>
-								<td class="cart-index-box-order-item">価格 : ¥<%=cart.sell_cd.value%></td>
+								<td colspan="3" class="cart-index-box-order-item">価格 : ¥<%=cart.sell_cd.value%></td>
 							</tr>
 						</table>
 					</div>
@@ -47,7 +47,7 @@
 				<%end%>
 			</div>
 			<div class="carts-index-value clearfix">
-				<table>
+				<table class="cart-table-2">
 					<tr>
 						<td class="carts-index-value-title">合計枚数</td><td class="carts-index-value-total"><%=total_cd%></td>
 					</tr>
@@ -67,5 +67,6 @@
 			<%= link_to '購入へ進む',end_user_confirm_path(current_end_user.id), class:"btn btn-default to-order-confirm-btn" %>
 		</div>
 	</div>
+</div>
 </div>
 </div>

@@ -1,5 +1,5 @@
 <%= render "layouts/admin_header"%>
-<div>
+<div class="bg-container">
 <h1>Genre has CDindex</h1>
 
 
@@ -8,7 +8,7 @@
 				<tr>
 					<td><%= attachment_image_tag sell_cd, :image, format: 'jpeg' , size: "50x50" %></td></tr>
 					<td><%= link_to sell_cd.title %></td>
-					<td><span><%= sell_cd.artist.artist %></span>  /  
+					<td><span><%= sell_cd.artist.artist %></span>  /
 					<span><%= sell_cd.stock %>個</span></td></tr>
 					<td><span><%= sell_cd.value %>円</span>  /  <span><%= enum(sell_cd.sell_status) %></span></td></tr>
 					<td><span><%= link_to "編集",  admins_sell_cds_main_edit_path(sell_cd.id) %></span> / <span><%= link_to "削除",admins_sell_cd_path(sell_cd.id),method: :delete, data: { confirm: '本当に削除しますか？'} %></span></td>
