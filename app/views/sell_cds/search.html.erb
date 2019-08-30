@@ -1,30 +1,37 @@
 <div class="main clearfix">
 <%= render "layouts/end_header"%>
-<%= render "layouts/sidebar" ,genres: @genres%>
 
-  <div class="main col-xs-9">
+<div class="bg-container">
+  <div class="container">
+  <%= render "layouts/sidebar" ,genres: @genres%>
+  <div class="col-xs-9">
 
     <% if @search_word.empty? %>
-    <h2>全ての商品</h2>
+    <h1>全ての商品</h1>
     <% else %>
-    <h2><%= @search_word %>での検索結果</h2>
+    <h1><%= @search_word %>での検索結果</h1>
     <% end %>
 
-    <div class="new-arivval-boxes">
+    <div class="new-arivval-boxes clearfix">
       <% @sell_cds.each do |sell_cd| %>
         <div class="new-arivval-box">
-        <table>
-          <tr><td colspan="2"><%= attachment_image_tag sell_cd, :image, :fill, 100, 100,format: 'jpg'  %></td></tr>
-          <tr><td colspan="2"><%= link_to sell_cd_path(sell_cd.id) do %><%= sell_cd.title %><%end%></td></tr>
+        <table border="1" rules="none" class="top-cd-table">
+          <%if sell_cd.image != nil%>
+          <tr><td colspan="2"><span class="top-cd-image"><%= attachment_image_tag sell_cd, :image,format: 'jpg' , class: "cd-image" %></span></td></tr>
+        <%else%>
+          <tr><td colspan="2"><span class="top-cd-image"><%= image_tag 'anpan.png', class: "top-cd-no-image" %></span></td></tr>
+        <%end%>
+          <tr class="top-cd-title"><td colspan="2"><%= link_to sell_cd_path(sell_cd.id) do %><%= sell_cd.title %><%end%></td></tr>
           <tr><td colspan="2"><%= sell_cd.artist.artist %></td></tr>
           <tr><td><%= sell_cd.value %>円</td><td><%= enum(sell_cd.sell_status) %></td></tr>
           </table>
 
           </div>
         <% end %>
-
-
     <%= paginate @sell_cds %>
   </div>
   </div>
+  </div>
+</div>
+
 </div>

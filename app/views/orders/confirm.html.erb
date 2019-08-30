@@ -1,4 +1,6 @@
 <%= render "layouts/end_header"%>
+<div class="bg-container">
+
 <div class="container">
 
   <div class="main">
@@ -13,9 +15,9 @@
       <% @carts.each do |cart| %>
 
       <div class="order-confirm-left">
-      <table border="1" rules="none" style="border-bottom-style:hidden;">
+      <table class="order-confirm-table">
       <tr>
-        <td rowspan="4"><%= attachment_image_tag cart.sell_cd, :image, :fill, 100, 100,format: 'jpg'  %><br></td>
+        <td rowspan="4"><span class="cart-cd-image"><%= attachment_image_tag cart.sell_cd, :image, :fill, 100, 100,format: 'jpg',class:"cd-image"  %></span></td>
         <td colspan="4"><h3><%= cart.sell_cd.title %></h3></td>
       </tr>
 
@@ -34,7 +36,7 @@
       </div>
 
       <div class="order-confirm-right">
-      <table border="1" rules="none" style="border-top-style:hidden;">
+      <table class="order-confirm-table-2">
       <tr>
         <td colspan="3">数量</td>
         <td colspan="1"><%= cart.quantity %>個</td>
@@ -69,7 +71,7 @@
       <%= f.select :payment_method, [["クレジットカード",0],["銀行振込",1],["代引",2]] %>
 
       <div class="order-confirm-buy">
-        <%= f.submit "購入する"%>
+        <%= f.submit "購入する",class:"btn btn-default to-order-confirm-btn"%>
       </div>
 
 
@@ -78,4 +80,6 @@
     </div>
     </div>
   </div>
+</div>
+
 </div>

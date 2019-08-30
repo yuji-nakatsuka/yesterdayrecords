@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-get 'end_users/leave' => 'end_users#leave', as: 'end_user_leave'
+delete 'end_users/:id/leave' => 'end_users#leave', as: 'end_user_leave'
 get 'sell_cds/search' => 'sell_cds#search', as: 'sell_cds_search'
 
  devise_for :admins, controllers: {

@@ -15,26 +15,27 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Anton|Covered+By+Your+Grace|Josefin+Sans|Kaushan+Script|Lexend+Deca|Lexend+Zetta|Lobster|Manjari|Montserrat|Oswald|Playfair+Display|Roboto+Condensed|Satisfy|Teko&display=swap');
 
 header{
-		background-color: skyblue;
+		background-color: rgb(28, 28, 40);
 		height: 80px;
 		margin-bottom: 50px;
 }
 
 header .container{
 	padding-top: 30px;
-		background-color: skyblue;
+		background-color: rgb(28, 28, 40);
 
 }
 
 footer {
-	background-color: skyblue;
+	background-color: rgb(28, 28, 40);
 	padding: 50px 0 0 0 ;
 }
  footer .row{
  	/*消したら灰色になる*/
-		background-color: skyblue;
+		background-color: rgb(28, 28, 40);
  }
 
 
@@ -83,6 +84,8 @@ footer {
   float:left;
   margin-right: 100px;
   color:white;
+  border:2px solid rgb(230, 230, 230);
+  padding:0 5px;
 }
 
 .search_form {
@@ -91,8 +94,9 @@ footer {
 }
 
 .bgcolor {
-  background-image: asset_url("polygon-full.jpg");
-  background-size: contain;
+  background-image: asset_url("bg.jpg");
+  background-size: cover;
+  background-position: center;
   padding-bottom:50px;
 }
 
@@ -103,7 +107,6 @@ footer {
 }
 
 .top-cd-image {
-  display:inline-block;
   width:12rem;
   height:12rem;
 }
@@ -111,4 +114,61 @@ footer {
 .soldout {
   text-align: center;
   width:100%;
+}
+
+.bg-container {
+  background-color: rgba(10, 10, 10, 0.5);
+  padding:50px 50px 50px 50px;
+}
+
+// 文字色を白にする
+.footer-font,.col-xs-3,.glyphicon,.top-infos,.genre-list a,h2,label,.cdrow,.disc-infos,.carts-index-box,.carts-index-box a,.cart-table-2,.order-confirm-table,.order-confirm-table-2,.finish-order-table,.table,.order-calculation,.finish-orders-list,.fav,.end_users-table-title{
+  color:rgb(230, 230, 230);
+}
+
+// 文字色を黒にする
+input,.wish-list-head,.end_users-table-title{
+  color:rgb(10, 10, 10);
+}
+
+//背景色を黒にする
+.carts-index-box,.cart-table-2,.finish-order-table,.table,.new_order,.order-confirm-left,.order-confirm-right,.finish-orders-list{
+  background-color: rgba(0, 0, 0,0.3);
+}
+
+.glyphicon,.genre-list {
+  font-family: Oswald;
+}
+
+.admin-login-form {
+  background-color: rgba(28, 28, 40,0.9);
+  border:none;
+}
+
+ h2{
+ font-family:Oswald;
+}
+
+.end-user-edit-table td,.end-user-edit-table-2 td{
+  padding:5px;
+}
+
+.messege {
+  text-align: center;
+  color:rgb(230, 230, 230);
+}
+
+.messege h1{
+  font-family:Lexend Zetta!important;
+  text-shadow: 1px 1px 0 rgba(28, 28, 40,0.8)
+}
+
+.messege p{
+  background-color: rgba(28, 28, 40,0.8);
+}
+
+.btn-default {
+  background-color: rgb(224, 128, 28);
+  color:rgb(230, 230, 230);
+  border: none;
 }
