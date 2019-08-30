@@ -1,5 +1,7 @@
 <%= render "layouts/end_header"%>
 
+<div class="bg-container">
+
 <div class="finish-orders-list">
   <table border="1" rules="none">
       <tr class="order-title">
@@ -22,7 +24,7 @@
     <% @order.order_contents.each do |order_content| %>
         <tr>
             <%sell_cd = SellCd.find_by(id: order_content.sell_cd_id)%>
-            <td rowspan="4"><%= attachment_image_tag sell_cd, :image%><br></td>
+            <td rowspan="4"><span class="cart-cd-image"><%= attachment_image_tag sell_cd, :image,class:"cd-image"%></span></td>
             <td colspan="4">商品名：<%=sell_cd.title%></td>
         </tr>
 
@@ -39,4 +41,6 @@
         </tr>
     <%end%>
   </table>
+</div>
+
 </div>

@@ -1,40 +1,30 @@
 <%= render "layouts/end_header"%>
 
+<div class="bg-container">
 <div class="container">
+<%= render "layouts/sidebar" ,genres: @genres%>
 
+<div class="col-xs-9">
   <div class="sell_cd_show_all">
-
-  <div class="image-top-infos clearfix">
-    <div class="cd-images">
-      <%if @sell_cd.image != nil%>
-          <div class="a">
-            <div class="b">
-               <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
-            </div>
-            <%@sell_cd.sell_cd_images.each do |image|%>
+        <div class="cd-images">
+        <%if @sell_cd.image != nil%>
+            <div class="a">
               <div class="b">
-                 <%= attachment_image_tag image, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
+                 <%= attachment_image_tag @sell_cd, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
               </div>
-            <%end%>
-          </div>
-      <%end%>
-    </div><br>
-                <div class="fav">
-                  <% if end_user_signed_in? %>
-
-                  <%if @sell_cd.favorited_by?(current_end_user)%>
-                    <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-deatroy", method: :delete do %>
-                    <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i>
-                  <%end%>
-                  <%else%>
-                    <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-create", method: :post do %>
-                     <i class="fa fa-heart" aria-hidden="true"></i>
-                    <%end%>
-                  <%end%>
-                <%end%>
-                  <%= @sell_cd.favorites.count %> いいね
+              <%@sell_cd.sell_cd_images.each do |image|%>
+                <div class="b">
+                   <%= attachment_image_tag image, :image, size: "50*50",format: 'jpg' , class: "cd-image" %>
                 </div>
-    </div>
+                <%end%>
+        <%else%>
+          <%= image_tag 'anpan.png',class: "cd-no-image" %>
+        <%end%>
+
+        </div>
+
+
+        </div>
 
     <div class="top-infos">
 
@@ -58,12 +48,21 @@
           <td><%= enum(@sell_cd.sell_status) %></td>
         </tr>
 
+        <% if @sell_cd.stock == 0 %>
+      </table>
+      <table class="soldout">
+          <tr>
+          <td colspan="3" class="btn btn-danger btn-lg btn-block">在庫切れ</td>
+          </tr>
+      </table>
+          <%else%>
+
     <% if end_user_signed_in? %>
       <%= form_for(@cart, url: end_user_cart_add_path(current_end_user)) do |f| %>
 
         <tr>
           <td>購入個数</td>
-          <td colspan="2" rowspan="2"><%= f.submit "カートに追加", class:"btn btn-primary btn-lg btn-block" %></td>
+          <td colspan="2" rowspan="2"><%= f.submit "カートに追加", class:"btn btn-default btn-lg btn-block" %></td>
         </tr>
 
         <tr>
@@ -72,13 +71,32 @@
 
         <%= f.hidden_field :sell_cd_id, :value => @sell_cd.id %>
 
+        <% end %>
       <% end %>
 
     <% end %>
       </table>
 
+      </div>
+
+
+
+    <div class="fav">
+      <% if end_user_signed_in? %>
+
+      <%if @sell_cd.favorited_by?(current_end_user)%>
+        <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-deatroy", method: :delete do %>
+        <i class="fas fa-compact-disc" aria-hidden="true" style="color:orange;"></i>
+      <%end%>
+      <%else%>
+        <%= link_to sell_cd_favorites_path(@sell_cd), class: "fav-create", method: :post do %>
+         <i class="fas fa-compact-disc" aria-hidden="true" style="color:white;"></i>
+        <%end%>
+      <%end%>
+    <%end%>
+      <%= @sell_cd.favorites.count %> Wish
     </div>
-  </div>
+
 
    <% @discs.each do |disc| %>
     <div class="disc-infos">
@@ -95,5 +113,9 @@
   <% end %>
 
   </div>
+
+</div>
+
+</div>
 
 </div>

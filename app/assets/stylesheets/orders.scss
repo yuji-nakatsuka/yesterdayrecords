@@ -6,6 +6,7 @@
 .finish-orders-list {
   width:80%;
   margin: 0 auto;
+  border:solid rgb(230, 230, 230);
 }
 
 .finish-orders-list table{
@@ -13,7 +14,8 @@
 }
 
 .order-title{
-  background-color: lightgray;
+  background-color: rgb(230, 230, 230);
+  color:rgb(10, 10, 10);
 }
 
 .finish-orders-list td{
@@ -23,7 +25,10 @@
 .order-calculation {
   width:80%;
   margin:0 auto;
+
 }
+
+
 
 .order-calculation table{
   width:20%;
@@ -33,6 +38,7 @@
   border-top-style:hidden;
   border-left-style:hidden;
   border-right-style:hidden;
+  border-color: rgb(230, 230, 230);
 }
 
 .confirm-contents {
@@ -44,9 +50,24 @@
   width:100%;
 }
 
+.order-confirm-left {
+  border:solid rgb(230, 230, 230);
+  border-bottom-style:hidden;
+  padding:10px 10px 0px 10px;
+}
+
+.order-confirm-right {
+  border:solid rgb(230, 230, 230);
+  border-top-style:hidden;
+  padding:0px 10px 10px 10px;
+}
+
 .order-confirm-right table{
   text-align: right;
   margin-bottom:10px;
+}
+
+.order-confirm-right a{color:rgb(230, 230, 230);
 }
 
 .order-confirm-buy {
