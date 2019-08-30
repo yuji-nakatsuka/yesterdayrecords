@@ -68,7 +68,7 @@
          <% disc.songs.order(number: "ASC").each do |song| %>
          <table class="disc-info">
            <tr>
-             <td><%= song.number %></td>
+             <td class="song-number"><%= song.number %></td>
              <td><%= song.song %></td>
            </tr>
          </table>
